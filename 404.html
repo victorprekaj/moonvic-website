@@ -1,96 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 — Page Not Found | MOONVIC</title>
 
-  <title>404 — Page Not Found | MOONVIC</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/moonvic-logo.png" />
+    <link rel="preload" href="assets/moonvic-logo.png" as="image">
 
-  <!-- SEO META TAGS -->
-  <meta name="description" content="The page you're looking for cannot be found. Stay within the MOONVIC universe — The Gold Standard of Web3." />
-  <meta name="keywords" content="MOONVIC 404, page not found, MVIC error page, Web3 token" />
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="The page you're looking for doesn't exist or has been moved. Return to the MOONVIC universe.">
+    <meta name="keywords" content="MOONVIC, MVIC, 404, not found, crypto, Web3">
+    <meta name="author" content="MOONVIC Team">
 
-  <!-- OPEN GRAPH -->
-  <meta property="og:title" content="404 — Page Not Found | MOONVIC" />
-  <meta property="og:description" content="This page does not exist. Return to the MOONVIC homepage — The Gold Standard of Web3." />
-  <meta property="og:image" content="assets/moonvic-logo.png" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://yourdomain.com/404.html" />
+    <!-- OpenGraph -->
+    <meta property="og:title" content="404 — Page Not Found | MOONVIC" />
+    <meta property="og:description" content="The page you're looking for doesn't exist or has been moved. Return to the MOONVIC universe." />
+    <meta property="og:image" content="https://victorprekaj.github.io/moonvic-website/assets/moonvic-og.png" />
+    <meta property="og:url" content="https://victorprekaj.github.io/moonvic-website/404.html" />
+    <meta property="og:type" content="website" />
 
-  <!-- TWITTER CARD -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="404 — Page Not Found | MOONVIC" />
-  <meta name="twitter:description" content="This page does not exist. Return to the MOONVIC homepage — The Gold Standard of Web3." />
-  <meta name="twitter:image" content="assets/moonvic-logo.png" />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="404 — Page Not Found | MOONVIC" />
+    <meta name="twitter:description" content="The page you're looking for doesn't exist or has been moved. Return to the MOONVIC universe." />
+    <meta name="twitter:image" content="https://victorprekaj.github.io/moonvic-website/assets/moonvic-og.png" />
 
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" type="image/png" href="assets/moonvic-logo.png" />
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "404 — Page Not Found",
+      "description": "The page you're looking for doesn't exist or has been moved.",
+      "url": "https://victorprekaj.github.io/moonvic-website/404.html"
+    }
+    </script>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- NAVIGATION -->
-<nav class="navbar">
-    <div class="logo">
-        <img src="assets/moonvic-logo.png" alt="MOONVIC Logo">
-        <span>MOONVIC</span>
-    </div>
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="assets/moonvic-logo.png" alt="MOONVIC Logo" loading="lazy">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="tokenomics.html">Tokenomics</a></li>
+                <li><a href="roadmap.html">Roadmap</a></li>
+                <li><a href="how-to-buy.html">How to Buy</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
 
-    <div class="hamburger" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
+            <!-- Mobile Menu -->
+            <div class="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </nav>
+    </header>
 
-    <ul class="nav-links" id="navMenu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="tokenomics.html">Tokenomics</a></li>
-        <li><a href="roadmap.html">Roadmap</a></li>
-        <li><a href="how-to-buy.html">How to Buy</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-</nav>
+    <!-- 404 Hero -->
+    <section class="hero fade-in">
+        <h1>404 — Not Found</h1>
+        <p>The page you're looking for doesn't exist or has been moved.</p>
+    </section>
 
-<!-- 404 HERO -->
-<section class="page-hero fade-in" style="padding-top:140px; text-align:center;">
-    <h1 style="color:#ffd700; font-size:3rem; letter-spacing:0.15em; text-transform:uppercase;">
-        404 — Not Found
-    </h1>
-    <p style="color:#d6d6d6; margin-top:10px; font-size:1.2rem;">
-        The page you're looking for doesn't exist or has been moved.
-    </p>
-</section>
-
-<!-- 404 CONTENT -->
-<section class="page-content fade-in-delay" style="max-width:700px; margin:40px auto; padding:20px; text-align:center;">
-
-    <div style="background:#101010; padding:30px; border-radius:12px; border:1px solid rgba(255,215,0,0.18);">
-        <p style="color:#d6d6d6; font-size:1.1rem;">
-            Don’t worry — you’re still in the MOONVIC universe.
+    <!-- 404 Content -->
+    <section class="error-page fade-in">
+        <h2>You’re still in the MOONVIC universe.</h2>
+        <p>
+            Even the best explorers drift off‑course sometimes.  
+            But don’t worry — the path forward is just one click away.
         </p>
-        <a href="index.html" 
-           style="display:inline-block; margin-top:20px; padding:12px 24px; background:#ffd700; color:#000; 
-                  border-radius:6px; font-weight:bold; text-decoration:none; letter-spacing:0.05em;">
-            Return Home
-        </a>
-    </div>
 
-</section>
+        <a href="index.html" class="btn">Return Home</a>
+    </section>
 
-<!-- FOOTER -->
-<footer class="footer">
-    © 2026 MOONVIC — The Gold Standard of Web3.
-</footer>
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 MOONVIC. All Rights Reserved.</p>
+    </footer>
 
-<!-- MOBILE MENU SCRIPT -->
-<script>
-function toggleMenu() {
-    document.getElementById("navMenu").classList.toggle("show");
-}
-</script>
+    <!-- Mobile Menu Script -->
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
 
 </body>
 </html>
-
