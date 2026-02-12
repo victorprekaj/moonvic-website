@@ -1,44 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MOONVIC — The Gold Standard of Web3</title>
 
-    <!-- JSON-LD Structured Data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "MOONVIC",
-      "url": "https://victorprekaj.github.io/moonvic-website/",
-      "description": "MOONVIC (MVIC) is a premium Ethereum-based token built for ambition, innovation, and long-term value.",
-      "publisher": {
-        "@type": "Organization",
-        "name": "MOONVIC",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://victorprekaj.github.io/moonvic-website/assets/moonvic-logo.png"
-        }
-      },
-      "sameAs": [
-        "https://twitter.com/",
-        "https://t.me/",
-        "https://discord.com/"
-      ]
-    }
-    </script>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/moonvic-logo.png" />
+    <link rel="preload" href="assets/moonvic-logo.png" as="image">
 
     <!-- SEO Meta Tags -->
-    <meta name="description" content="MOONVIC (MVIC) is a premium Ethereum-based token built for ambition, innovation, and long-term value." />
-    <meta name="keywords" content="MOONVIC, MVIC, crypto token, Ethereum token, Web3, blockchain, DeFi, crypto project" />
-    <link rel="canonical" href="https://victorprekaj.github.io/moonvic-website/" />
+    <meta name="description" content="MOONVIC (MVIC) is a premium Ethereum-based token built for ambition, innovation, and long-term value. Join the movement shaping the future of Web3.">
+    <meta name="keywords" content="MOONVIC, MVIC, crypto, Ethereum token, Web3, blockchain, decentralized finance, roadmap, tokenomics">
+    <meta name="author" content="MOONVIC Team">
 
     <!-- OpenGraph -->
     <meta property="og:title" content="MOONVIC — The Gold Standard of Web3" />
     <meta property="og:description" content="MOONVIC (MVIC) is a premium Ethereum-based token built for ambition, innovation, and long-term value." />
-    <meta property="og:image" content="https://victorprekaj.github.io/moonvic-website/assets/moonvic-logo.png" />
+    <meta property="og:image" content="https://victorprekaj.github.io/moonvic-website/assets/moonvic-og.png" />
     <meta property="og:url" content="https://victorprekaj.github.io/moonvic-website/" />
     <meta property="og:type" content="website" />
 
@@ -46,24 +25,34 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="MOONVIC — The Gold Standard of Web3" />
     <meta name="twitter:description" content="MOONVIC (MVIC) is a premium Ethereum-based token built for ambition, innovation, and long-term value." />
-    <meta name="twitter:image" content="https://victorprekaj.github.io/moonvic-website/assets/moonvic-logo.png" />
+    <meta name="twitter:image" content="https://victorprekaj.github.io/moonvic-website/assets/moonvic-og.png" />
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="assets/moonvic-logo.png" />
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Cryptocurrency",
+      "name": "MOONVIC",
+      "symbol": "MVIC",
+      "description": "MOONVIC (MVIC) is a premium Ethereum-based token built for ambition, innovation, and long-term value.",
+      "url": "https://victorprekaj.github.io/moonvic-website/",
+      "logo": "https://victorprekaj.github.io/moonvic-website/assets/moonvic-logo.png"
+    }
+    </script>
 
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- NAVIGATION -->
+    <!-- Navigation -->
     <header>
         <nav class="navbar">
             <div class="logo">
-                <img src="assets/moonvic-logo.png" alt="MOONVIC Logo" />
+                <img src="assets/moonvic-logo.png" alt="MOONVIC Logo">
             </div>
-            <ul class="nav-links" id="navLinks">
+            <ul class="nav-links">
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="tokenomics.html">Tokenomics</a></li>
@@ -73,52 +62,54 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
 
-            <div class="hamburger" onclick="toggleMenu()">
+            <!-- Mobile Menu -->
+            <div class="hamburger">
                 <span></span><span></span><span></span>
             </div>
         </nav>
     </header>
 
-    <!-- HERO SECTION -->
-    <section class="hero">
-        <h1>MOONVIC</h1>
-        <p>The Gold Standard of Web3</p>
-        <a href="how-to-buy.html" class="btn">Buy Now</a>
+    <!-- Hero Section -->
+    <section class="hero fade-in">
+        <h1>MOONVIC (MVIC)</h1>
+        <p>The Gold Standard of Web3 — Built for ambition, innovation, and long-term value.</p>
+        <a href="how-to-buy.html" class="btn">Buy MOONVIC</a>
     </section>
 
-    <!-- HIGHLIGHTS -->
-    <section class="highlights">
-        <div class="highlight-box">
-            <h3>Premium Branding</h3>
-            <p>A luxury Web3 identity built for long-term value.</p>
-        </div>
-        <div class="highlight-box">
-            <h3>Strong Tokenomics</h3>
-            <p>Designed for sustainability, growth, and investor confidence.</p>
-        </div>
-        <div class="highlight-box">
-            <h3>Community Driven</h3>
-            <p>MOONVIC thrives through transparency and community trust.</p>
-        </div>
+    <!-- About Section -->
+    <section class="about fade-in">
+        <h2>What is MOONVIC?</h2>
+        <p>MOONVIC is a premium Ethereum-based token designed to empower the next generation of Web3 builders, investors, and innovators.</p>
+        <a href="about.html" class="btn">Learn More</a>
     </section>
 
-    <!-- FOOTER -->
+    <!-- Tokenomics Preview -->
+    <section class="tokenomics-preview fade-in">
+        <h2>Tokenomics</h2>
+        <p>Explore the supply, distribution, and long-term sustainability of MOONVIC.</p>
+        <a href="tokenomics.html" class="btn">View Tokenomics</a>
+    </section>
+
+    <!-- Roadmap Preview -->
+    <section class="roadmap-preview fade-in">
+        <h2>Roadmap</h2>
+        <p>See the future of MOONVIC and the milestones ahead.</p>
+        <a href="roadmap.html" class="btn">View Roadmap</a>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>© 2026 MOONVIC — The Gold Standard of Web3.</p>
-        <a href="terms.html">Terms</a> • 
-        <a href="privacy.html">Privacy</a>
+        <p>© 2024 MOONVIC. All Rights Reserved.</p>
     </footer>
 
-    <!-- MOBILE MENU SCRIPT -->
+    <!-- Mobile Menu Script -->
     <script>
-        function toggleMenu() {
-            const nav = document.getElementById("navLinks");
-            nav.classList.toggle("open");
-        }
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
     </script>
 
 </body>
 </html>
-
-
-
