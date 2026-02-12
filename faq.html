@@ -1,119 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOONVIC FAQ — Answers for the Community</title>
 
-  <title>MOONVIC FAQ — The Gold Standard of Web3</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/moonvic-logo.png" />
+    <link rel="preload" href="assets/moonvic-logo.png" as="image">
 
-  <!-- SEO META TAGS -->
-  <meta name="description" content="Find answers to the most frequently asked questions about MOONVIC — the gold standard of Web3. Learn about the token, buying process, safety, and more." />
-  <meta name="keywords" content="MOONVIC FAQ, MVIC questions, crypto FAQ, Web3 help, Ethereum token, blockchain guide" />
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Find answers to the most common questions about MOONVIC (MVIC). Learn about the token, contract, buying process, safety, and more.">
+    <meta name="keywords" content="MOONVIC, MVIC, FAQ, crypto questions, Ethereum token, Web3 help, blockchain guide">
+    <meta name="author" content="MOONVIC Team">
 
-  <!-- OPEN GRAPH -->
-  <meta property="og:title" content="MOONVIC FAQ — The Gold Standard of Web3" />
-  <meta property="og:description" content="Get answers to common questions about MOONVIC, the premium Ethereum-based token built for long-term value." />
-  <meta property="og:image" content="assets/moonvic-logo.png" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://yourdomain.com/faq.html" />
+    <!-- OpenGraph -->
+    <meta property="og:title" content="MOONVIC FAQ — Answers for the Community" />
+    <meta property="og:description" content="Everything you need to know about MOONVIC (MVIC) in one place." />
+    <meta property="og:image" content="https://victorprekaj.github.io/moonvic-website/assets/moonvic-og.png" />
+    <meta property="og:url" content="https://victorprekaj.github.io/moonvic-website/faq.html" />
+    <meta property="og:type" content="website" />
 
-  <!-- TWITTER CARD -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="MOONVIC FAQ — The Gold Standard of Web3" />
-  <meta name="twitter:description" content="Learn everything you need to know about MOONVIC — buying, safety, tokenomics, and more." />
-  <meta name="twitter:image" content="assets/moonvic-logo.png" />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="MOONVIC FAQ — Answers for the Community" />
+    <meta name="twitter:description" content="Everything you need to know about MOONVIC (MVIC) in one place." />
+    <meta name="twitter:image" content="https://victorprekaj.github.io/moonvic-website/assets/moonvic-og.png" />
 
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" type="image/png" href="assets/moonvic-logo.png" />
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is MOONVIC?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MOONVIC (MVIC) is a premium Ethereum-based token built for ambition, innovation, and long-term value."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the total supply?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MOONVIC has a fixed total supply of 1,000,000,000 MVIC."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is the contract verified?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, the MOONVIC smart contract is verified on Etherscan."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- NAVIGATION -->
-<nav class="navbar">
-    <div class="logo">
-        <img src="assets/moonvic-logo.png" alt="MOONVIC Logo">
-        <span>MOONVIC</span>
-    </div>
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="assets/moonvic-logo.png" alt="MOONVIC Logo" loading="lazy">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="tokenomics.html">Tokenomics</a></li>
+                <li><a href="roadmap.html">Roadmap</a></li>
+                <li><a href="how-to-buy.html">How to Buy</a></li>
+                <li><a href="faq.html" class="active">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
 
-    <div class="hamburger" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
+            <!-- Mobile Menu -->
+            <div class="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </nav>
+    </header>
 
-    <ul class="nav-links" id="navMenu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="tokenomics.html">Tokenomics</a></li>
-        <li><a href="roadmap.html">Roadmap</a></li>
-        <li><a href="how-to-buy.html">How to Buy</a></li>
-        <li><a href="faq.html" class="active">FAQ</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-</nav>
+    <!-- FAQ Hero -->
+    <section class="hero fade-in">
+        <h1>Frequently Asked Questions</h1>
+        <p>Clear answers. Strong confidence. The MOONVIC community deserves transparency.</p>
+    </section>
 
-<!-- PAGE HERO -->
-<section class="page-hero fade-in" style="padding-top:120px; text-align:center;">
-    <h1 style="color:#ffd700; letter-spacing:0.18em; text-transform:uppercase;">Frequently Asked Questions</h1>
-    <p style="color:#d6d6d6; margin-top:10px;">Everything you need to know about MOONVIC.</p>
-</section>
+    <!-- FAQ Content -->
+    <section class="faq-page fade-in">
 
-<!-- FAQ CONTENT -->
-<section class="page-content fade-in-delay" style="max-width:900px; margin:40px auto; padding:20px; line-height:1.7;">
+        <h2>What is MOONVIC?</h2>
+        <p>
+            MOONVIC (MVIC) is a premium Ethereum-based token designed for innovators, investors, and builders who want a clean, cinematic, and trustworthy Web3 experience.
+        </p>
 
-    <h2 style="color:#ffd700;">What is MOONVIC?</h2>
-    <p>
-      MOONVIC is a premium Ethereum-based token designed for ambition, innovation, and long-term value.
-    </p>
+        <h2>What is the total supply?</h2>
+        <p>
+            MOONVIC has a fixed supply of <strong>1,000,000,000 MVIC</strong>.  
+            No inflation. No hidden minting. No surprises.
+        </p>
 
-    <h2 style="color:#ffd700; margin-top:30px;">Is MOONVIC safe?</h2>
-    <p>
-      MOONVIC is deployed on the Ethereum blockchain using a verified smart contract.  
-      As with all crypto, always double-check contract addresses and use trusted platforms.
-    </p>
+        <h2>Is the contract verified?</h2>
+        <p>
+            Yes — the MOONVIC smart contract is fully verified on Etherscan for transparency and trust.
+        </p>
 
-    <h2 style="color:#ffd700; margin-top:30px;">What is the total supply?</h2>
-    <p>
-      The total supply is  
-      <strong style="color:#ffd700;">1,000,000,000 MVIC</strong>.
-    </p>
+        <h2>What network is MOONVIC on?</h2>
+        <p>
+            MOONVIC is deployed on the <strong>Ethereum Mainnet</strong>, the most secure and established blockchain ecosystem.
+        </p>
 
-    <h2 style="color:#ffd700; margin-top:30px;">Where can I buy MOONVIC?</h2>
-    <p>
-      You can buy MOONVIC on Uniswap by swapping ETH for MVIC using the official contract address.
-    </p>
+        <h2>How do I buy MOONVIC?</h2>
+        <p>
+            You can follow the full step‑by‑step guide on the <a href="how-to-buy.html">How to Buy</a> page.
+        </p>
 
-    <h2 style="color:#ffd700; margin-top:30px;">What wallet should I use?</h2>
-    <p>
-      MetaMask, Coinbase Wallet, and Trust Wallet are all compatible with MOONVIC.
-    </p>
+        <h2>Is MOONVIC safe?</h2>
+        <p>
+            MOONVIC is built with transparency, verified code, and a clean token structure.  
+            As always, holders should use secure wallets and follow Web3 best practices.
+        </p>
 
-    <h2 style="color:#ffd700; margin-top:30px;">Is there a roadmap?</h2>
-    <p>
-      Yes — MOONVIC has a long-term roadmap focused on expansion, innovation, and global reach.
-    </p>
+        <h2>Where can I see the roadmap?</h2>
+        <p>
+            The full cinematic roadmap is available on the <a href="roadmap.html">Roadmap</a> page.
+        </p>
 
-    <h2 style="color:#ffd700; margin-top:30px;">How do I contact the team?</h2>
-    <p>
-      You can reach us through the contact page or email:  
-      <strong style="color:#ffd700;">contact@moonvic.io</strong>
-    </p>
+        <h2>Who created MOONVIC?</h2>
+        <p>
+            MOONVIC was created by a team committed to premium branding, long‑term value, and elite execution in Web3.
+        </p>
 
-</section>
+        <h2>What makes MOONVIC different?</h2>
+        <p>
+            MOONVIC blends cinematic branding, professional structure, community energy, and long‑term sustainability — a rare combination in the crypto space.
+        </p>
 
-<!-- FOOTER -->
-<footer class="footer">
-    © 2026 MOONVIC — The Gold Standard of Web3.
-</footer>
+        <a href="contact.html" class="btn">Still Have Questions?</a>
+    </section>
 
-<!-- MOBILE MENU SCRIPT -->
-<script>
-function toggleMenu() {
-    document.getElementById("navMenu").classList.toggle("show");
-}
-</script>
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 MOONVIC. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
 
 </body>
 </html>
-
