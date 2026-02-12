@@ -1,69 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MOONVIC | The Gold Standard of Web3</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" type="image/png" href="moonvic-logo.png" />
-  <meta name="description" content="MOONVIC — The Gold Standard of Web3. A bold, premium crypto experience built for the future." />
-</head>
-<body>
-  <!-- Fixed Navigation -->
-  <header class="nav-header">
-    <div class="nav-logo">
-      <img src="moonvic-logo.png" alt="MOONVIC Logo" />
-      <span>MOONVIC</span>
+<nav class="navbar">
+    <div class="logo">
+        <img src="assets/moonvic-logo.png" alt="MOONVIC Logo">
+        <span>MOONVIC</span>
     </div>
-    <nav class="nav-links">
-      <a href="index.html" class="active">Home</a>
-      <a href="about.html">About</a>
-      <a href="tokenomics.html">Tokenomics</a>
-      <a href="roadmap.html">Roadmap</a>
-      <a href="how-to-buy.html">How to Buy</a>
-      <a href="faq.html">FAQ</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <img src="moonvic-logo.png" alt="MOONVIC Logo" class="hero-logo" />
-      <h1>MOONVIC</h1>
-      <h2>The Gold Standard of Web3.</h2>
-      <p>
-        A bold, premium crypto experience designed for those who refuse to think small.
-        Built for visionaries, powered by community, and crafted to stand out.
-      </p>
-      <div class="hero-buttons">
-        <a href="how-to-buy.html" class="btn primary">How to Buy</a>
-        <a href="tokenomics.html" class="btn secondary">View Tokenomics</a>
-      </div>
+    <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
     </div>
-    <div class="hero-glow"></div>
-    <div class="hero-particles"></div>
-  </section>
 
-  <!-- Highlight Sections -->
-  <section class="highlights">
-    <div class="highlight-card">
-      <h3>Premium Identity</h3>
-      <p>Black and gold, sharp MV branding, and a visual language that signals wealth and intention.</p>
-    </div>
-    <div class="highlight-card">
-      <h3>Built for Momentum</h3>
-      <p>Designed to attract attention, build trust, and give MOONVIC the presence it deserves.</p>
-    </div>
-    <div class="highlight-card">
-      <h3>Future Focused</h3>
-      <p>Roadmap, tokenomics, and ecosystem built to grow with the next wave of Web3.</p>
-    </div>
-  </section>
+    <ul class="nav-links" id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="tokenomics.html">Tokenomics</a></li>
+        <li><a href="roadmap.html">Roadmap</a></li>
+        <li><a href="how-to-buy.html">How to Buy</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
 
-  <footer class="footer">
-    <p>© MOONVIC — The Gold Standard of Web3.</p>
-  </footer>
-</body>
-</html>
