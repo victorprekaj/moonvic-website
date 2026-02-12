@@ -5,40 +5,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Roadmap | MOONVIC</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" type="image/png" href="moonvic-logo.png" />
+  <link rel="icon" type="image/png" href="assets/moonvic-logo.png" />
 </head>
 
 <body>
-  <!-- Navigation -->
-  <header class="nav-header">
-    <div class="nav-logo">
-      <img src="moonvic-logo.png" alt="MOONVIC Logo" />
-      <span>MOONVIC</span>
-    </div>
-    <nav class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="tokenomics.html">Tokenomics</a>
-      <a href="roadmap.html" class="active">Roadmap</a>
-      <a href="how-to-buy.html">How to Buy</a>
-      <a href="faq.html">FAQ</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
 
-  <!-- Page Hero -->
-  <section class="page-hero" style="padding-top:120px; text-align:center;">
+<!-- NAVIGATION -->
+<nav class="navbar">
+    <div class="logo">
+        <img src="assets/moonvic-logo.png" alt="MOONVIC Logo">
+        <span>MOONVIC</span>
+    </div>
+
+    <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <ul class="nav-links" id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="tokenomics.html">Tokenomics</a></li>
+        <li><a href="roadmap.html" class="active">Roadmap</a></li>
+        <li><a href="how-to-buy.html">How to Buy</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero fade-in" style="padding-top:120px; text-align:center;">
     <h1 style="color:#ffd700; letter-spacing:0.18em; text-transform:uppercase;">Roadmap</h1>
     <p style="color:#d6d6d6; margin-top:10px;">A clear path toward long‑term growth and innovation.</p>
-  </section>
+</section>
 
-  <!-- Roadmap Content -->
-  <section class="page-content" style="max-width:1000px; margin:40px auto; padding:20px;">
+<!-- ROADMAP CONTENT -->
+<section class="page-content fade-in-delay" style="max-width:1000px; margin:40px auto; padding:20px;">
 
     <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:20px;">
 
       <!-- Phase 1 -->
-      <div style="background:#101010; padding:20px; border-radius:12px; border:1px solid rgba(255,215,0,0.18);">
+      <div class="card-animate" style="background:#101010; padding:20px; border-radius:12px; border:1px solid rgba(255,215,0,0.18);">
         <h3 style="color:#ffd700; margin-bottom:10px; text-transform:uppercase; letter-spacing:0.12em;">Phase 1 — Launch</h3>
         <ul style="list-style:none; padding-left:0; line-height:1.7;">
           <li>Token Deployment</li>
@@ -49,7 +57,7 @@
       </div>
 
       <!-- Phase 2 -->
-      <div style="background:#101010; padding:20px; border-radius:12px; border:1px solid rgba(255,215,0,0.18);">
+      <div class="card-animate" style="background:#101010; padding:20px; border-radius:12px; border:1px solid rgba(255,215,0,0.18);">
         <h3 style="color:#ffd700; margin-bottom:10px; text-transform:uppercase; letter-spacing:0.12em;">Phase 2 — Growth</h3>
         <ul style="list-style:none; padding-left:0; line-height:1.7;">
           <li>Marketing Push</li>
@@ -60,7 +68,7 @@
       </div>
 
       <!-- Phase 3 -->
-      <div style="background:#101010; padding:20px; border-radius:12px; border:1px solid rgba(255,215,0,0.18);">
+      <div class="card-animate" style="background:#101010; padding:20px; border-radius:12px; border:1px solid rgba(255,215,0,0.18);">
         <h3 style="color:#ffd700; margin-bottom:10px; text-transform:uppercase; letter-spacing:0.12em;">Phase 3 — Expansion</h3>
         <ul style="list-style:none; padding-left:0; line-height:1.7;">
           <li>Ecosystem Tools</li>
@@ -71,7 +79,7 @@
       </div>
 
       <!-- Phase 4 -->
-      <div style="background:#101010; padding:20px; border-radius:12px; border:1px solid rgba(255,215,0,0.18);">
+      <div class="card-animate" style="background:#101010; padding:20px; border-radius:12px; border:1px solid rgba(255,215,0,0.18);">
         <h3 style="color:#ffd700; margin-bottom:10px; text-transform:uppercase; letter-spacing:0.12em;">Phase 4 — Future</h3>
         <ul style="list-style:none; padding-left:0; line-height:1.7;">
           <li>Advanced Utilities</li>
@@ -83,10 +91,19 @@
 
     </div>
 
-  </section>
+</section>
 
-  <footer class="footer">
-    <p>© MOONVIC — The Gold Standard of Web3.</p>
-  </footer>
+<!-- FOOTER -->
+<footer class="footer">
+    © 2026 MOONVIC — The Gold Standard of Web3.
+</footer>
+
+<!-- MOBILE MENU SCRIPT -->
+<script>
+function toggleMenu() {
+    document.getElementById("navMenu").classList.toggle("show");
+}
+</script>
+
 </body>
 </html>
