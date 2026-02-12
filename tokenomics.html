@@ -1,115 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOONVIC Tokenomics — Engineered for Long‑Term Value</title>
 
-  <title>MOONVIC Tokenomics — The Gold Standard of Web3</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/moonvic-logo.png" />
+    <link rel="preload" href="assets/moonvic-logo.png" as="image">
 
-  <!-- SEO META TAGS -->
-  <meta name="description" content="Explore MOONVIC tokenomics — a premium Ethereum-based token with transparent supply, sustainable structure, and long-term value." />
-  <meta name="keywords" content="MOONVIC, MVIC, tokenomics, crypto supply, Ethereum token, Web3, blockchain, premium token" />
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Explore the official tokenomics of MOONVIC (MVIC). A premium Ethereum-based token engineered for sustainability, clarity, and long-term value.">
+    <meta name="keywords" content="MOONVIC, MVIC, tokenomics, crypto supply, Ethereum token, Web3, blockchain, decentralized finance">
+    <meta name="author" content="MOONVIC Team">
 
-  <!-- OPEN GRAPH -->
-  <meta property="og:title" content="MOONVIC Tokenomics — The Gold Standard of Web3" />
-  <meta property="og:description" content="Discover the transparent and sustainable tokenomics behind MOONVIC, built for long-term value and growth." />
-  <meta property="og:image" content="assets/moonvic-logo.png" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://yourdomain.com/tokenomics.html" />
+    <!-- OpenGraph -->
+    <meta property="og:title" content="MOONVIC Tokenomics — Engineered for Long‑Term Value" />
+    <meta property="og:description" content="Discover the structured, transparent, and sustainable tokenomics behind MOONVIC (MVIC)." />
+    <meta property="og:image" content="https://victorprekaj.github.io/moonvic-website/assets/moonvic-og.png" />
+    <meta property="og:url" content="https://victorprekaj.github.io/moonvic-website/tokenomics.html" />
+    <meta property="og:type" content="website" />
 
-  <!-- TWITTER CARD -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="MOONVIC Tokenomics — The Gold Standard of Web3" />
-  <meta name="twitter:description" content="Learn about MOONVIC's transparent supply, structure, and long-term token strategy." />
-  <meta name="twitter:image" content="assets/moonvic-logo.png" />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="MOONVIC Tokenomics — Engineered for Long‑Term Value" />
+    <meta name="twitter:description" content="Discover the structured, transparent, and sustainable tokenomics behind MOONVIC (MVIC)." />
+    <meta name="twitter:image" content="https://victorprekaj.github.io/moonvic-website/assets/moonvic-og.png" />
 
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" type="image/png" href="assets/moonvic-logo.png" />
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Cryptocurrency",
+      "name": "MOONVIC",
+      "symbol": "MVIC",
+      "description": "MOONVIC (MVIC) is a premium Ethereum-based token engineered for ambition, innovation, and long-term value.",
+      "url": "https://victorprekaj.github.io/moonvic-website/tokenomics.html",
+      "logo": "https://victorprekaj.github.io/moonvic-website/assets/moonvic-logo.png"
+    }
+    </script>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- NAVIGATION -->
-<nav class="navbar">
-    <div class="logo">
-        <img src="assets/moonvic-logo.png" alt="MOONVIC Logo">
-        <span>MOONVIC</span>
-    </div>
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="assets/moonvic-logo.png" alt="MOONVIC Logo" loading="lazy">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="tokenomics.html" class="active">Tokenomics</a></li>
+                <li><a href="roadmap.html">Roadmap</a></li>
+                <li><a href="how-to-buy.html">How to Buy</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
 
-    <div class="hamburger" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
+            <!-- Mobile Menu -->
+            <div class="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </nav>
+    </header>
 
-    <ul class="nav-links" id="navMenu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="tokenomics.html" class="active">Tokenomics</a></li>
-        <li><a href="roadmap.html">Roadmap</a></li>
-        <li><a href="how-to-buy.html">How to Buy</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-</nav>
+    <!-- Tokenomics Hero -->
+    <section class="hero fade-in">
+        <h1>MOONVIC Tokenomics</h1>
+        <p>Structured. Transparent. Engineered for long‑term value and sustainable growth.</p>
+    </section>
 
-<!-- PAGE HERO -->
-<section class="page-hero fade-in" style="padding-top:120px; text-align:center;">
-    <h1 style="color:#ffd700; letter-spacing:0.18em; text-transform:uppercase;">Tokenomics</h1>
-    <p style="color:#d6d6d6; margin-top:10px;">Transparent. Sustainable. Built for long-term value.</p>
-</section>
+    <!-- Tokenomics Content -->
+    <section class="tokenomics-page fade-in">
 
-<!-- TOKENOMICS CONTENT -->
-<section class="page-content fade-in-delay" style="max-width:900px; margin:40px auto; padding:20px; line-height:1.7;">
+        <h2>Total Supply</h2>
+        <p>
+            MOONVIC (MVIC) is minted with a fixed, non‑inflationary supply designed to protect long‑term value and ensure scarcity.
+        </p>
 
-    <h2 style="color:#ffd700;">Total Supply</h2>
-    <p>
-      MOONVIC has a fixed total supply of  
-      <strong style="color:#ffd700;">1,000,000,000 MVIC</strong>.
-    </p>
+        <div class="tokenomics-box">
+            <h3>Total Supply:</h3>
+            <p><strong>1,000,000,000 MVIC</strong></p>
+        </div>
 
-    <h2 style="color:#ffd700; margin-top:30px;">Contract Address</h2>
-    <p style="word-break:break-all;">
-      <strong style="color:#ffd700;">0x3c7462004dd99b680b3736982a965effc7d285aa</strong>
-    </p>
+        <h2>Distribution Breakdown</h2>
+        <p>
+            The MOONVIC supply is allocated with precision — balancing ecosystem growth, community strength, and long‑term sustainability.
+        </p>
 
-    <h2 style="color:#ffd700; margin-top:30px;">Token Distribution</h2>
-    <ul style="margin-left:20px; color:#d6d6d6;">
-        <li>Liquidity Pool</li>
-        <li>Community Growth</li>
-        <li>Marketing & Expansion</li>
-        <li>Long-Term Development</li>
-    </ul>
+        <ul>
+            <li><strong>60% — Public & Community</strong><br>Fair distribution to early supporters, holders, and the broader ecosystem.</li>
+            <li><strong>20% — Development & Expansion</strong><br>Fueling future utilities, integrations, and ecosystem growth.</li>
+            <li><strong>10% — Liquidity</strong><br>Ensuring smooth trading and long‑term market stability.</li>
+            <li><strong>10% — Strategic Reserves</strong><br>Reserved for partnerships, listings, and future opportunities.</li>
+        </ul>
 
-    <h2 style="color:#ffd700; margin-top:30px;">Why This Structure?</h2>
-    <p>
-      MOONVIC’s tokenomics are designed to ensure:
-    </p>
-    <ul style="margin-left:20px; color:#d6d6d6;">
-        <li>Long-term sustainability</li>
-        <li>Fair distribution</li>
-        <li>Strong liquidity</li>
-        <li>Community-driven growth</li>
-    </ul>
+        <h2>Why This Structure Works</h2>
+        <p>
+            MOONVIC’s tokenomics are built on three pillars:
+        </p>
 
-    <h2 style="color:#ffd700; margin-top:30px;">A Foundation for the Future</h2>
-    <p>
-      With transparent supply and a clear structure, MOONVIC is built to thrive in the evolving Web3 landscape.
-    </p>
+        <ul>
+            <li><strong>Clarity</strong> — No hidden mechanics. No confusing token games.</li>
+            <li><strong>Sustainability</strong> — A structure that supports long‑term growth, not short‑term hype.</li>
+            <li><strong>Community</strong> — The majority of supply belongs to the people who believe in the project.</li>
+        </ul>
 
-</section>
+        <h2>Smart Contract Details</h2>
+        <p>
+            MOONVIC is deployed on the Ethereum blockchain using a verified, transparent smart contract.
+        </p>
 
-<!-- FOOTER -->
-<footer class="footer">
-    © 2026 MOONVIC — The Gold Standard of Web3.
-</footer>
+        <div class="tokenomics-box">
+            <p><strong>Contract Address:</strong><br>0x3c7462004dd99b680b3736982a965effc7d285aa</p>
+            <p><strong>Symbol:</strong> MVIC</p>
+            <p><strong>Network:</strong> Ethereum Mainnet</p>
+        </div>
 
-<!-- MOBILE MENU SCRIPT -->
-<script>
-function toggleMenu() {
-    document.getElementById("navMenu").classList.toggle("show");
-}
-</script>
+        <h2>The MOONVIC Philosophy</h2>
+        <p>
+            Tokenomics should empower — not confuse.  
+            MOONVIC’s structure reflects its identity:  
+            <strong>elite, cinematic, transparent, and built for the long game.</strong>
+        </p>
+
+        <a href="roadmap.html" class="btn">View the Roadmap</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 MOONVIC. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
 
 </body>
 </html>
