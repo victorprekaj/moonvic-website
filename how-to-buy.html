@@ -1,112 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Buy MOONVIC — Step‑by‑Step Guide</title>
 
-  <title>How to Buy MOONVIC — The Gold Standard of Web3</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/moonvic-logo.png" />
+    <link rel="preload" href="assets/moonvic-logo.png" as="image">
 
-  <!-- SEO META TAGS -->
-  <meta name="description" content="Learn how to buy MOONVIC — a premium Ethereum-based token built for ambition, innovation, and long-term value. Step-by-step guide for beginners and experts." />
-  <meta name="keywords" content="how to buy MOONVIC, buy MVIC, crypto guide, Ethereum token, Web3, Uniswap, blockchain" />
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Learn how to buy MOONVIC (MVIC) with this simple, step-by-step guide. Fast, secure, and beginner-friendly.">
+    <meta name="keywords" content="MOONVIC, MVIC, how to buy crypto, Ethereum token, Web3 guide, buy MVIC">
+    <meta name="author" content="MOONVIC Team">
 
-  <!-- OPEN GRAPH -->
-  <meta property="og:title" content="How to Buy MOONVIC — The Gold Standard of Web3" />
-  <meta property="og:description" content="Step-by-step guide to buying MOONVIC, the premium Ethereum-based token built for long-term value." />
-  <meta property="og:image" content="assets/moonvic-logo.png" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://yourdomain.com/how-to-buy.html" />
+    <!-- OpenGraph -->
+    <meta property="og:title" content="How to Buy MOONVIC — Step‑by‑Step Guide" />
+    <meta property="og:description" content="A simple, cinematic, and beginner-friendly guide to buying MOONVIC (MVIC)." />
+    <meta property="og:image" content="https://victorprekaj.github.io/moonvic-website/assets/moonvic-og.png" />
+    <meta property="og:url" content="https://victorprekaj.github.io/moonvic-website/how-to-buy.html" />
+    <meta property="og:type" content="website" />
 
-  <!-- TWITTER CARD -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="How to Buy MOONVIC — The Gold Standard of Web3" />
-  <meta name="twitter:description" content="Follow this simple guide to purchase MOONVIC on Ethereum using Uniswap." />
-  <meta name="twitter:image" content="assets/moonvic-logo.png" />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="How to Buy MOONVIC — Step‑by‑Step Guide" />
+    <meta name="twitter:description" content="A simple, cinematic, and beginner-friendly guide to buying MOONVIC (MVIC)." />
+    <meta name="twitter:image" content="https://victorprekaj.github.io/moonvic-website/assets/moonvic-og.png" />
 
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" type="image/png" href="assets/moonvic-logo.png" />
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "How to Buy MOONVIC",
+      "description": "A simple, step-by-step guide to buying MOONVIC (MVIC).",
+      "step": [
+        {"@type": "HowToStep", "name": "Create a Wallet"},
+        {"@type": "HowToStep", "name": "Buy Ethereum (ETH)"},
+        {"@type": "HowToStep", "name": "Connect to a DEX"},
+        {"@type": "HowToStep", "name": "Swap ETH for MVIC"}
+      ]
+    }
+    </script>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- NAVIGATION -->
-<nav class="navbar">
-    <div class="logo">
-        <img src="assets/moonvic-logo.png" alt="MOONVIC Logo">
-        <span>MOONVIC</span>
-    </div>
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="assets/moonvic-logo.png" alt="MOONVIC Logo" loading="lazy">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="tokenomics.html">Tokenomics</a></li>
+                <li><a href="roadmap.html">Roadmap</a></li>
+                <li><a href="how-to-buy.html" class="active">How to Buy</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
 
-    <div class="hamburger" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
+            <!-- Mobile Menu -->
+            <div class="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </nav>
+    </header>
 
-    <ul class="nav-links" id="navMenu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="tokenomics.html">Tokenomics</a></li>
-        <li><a href="roadmap.html">Roadmap</a></li>
-        <li><a href="how-to-buy.html" class="active">How to Buy</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-</nav>
+    <!-- Hero -->
+    <section class="hero fade-in">
+        <h1>How to Buy MOONVIC</h1>
+        <p>A simple, cinematic, step‑by‑step guide for new holders entering the MOONVIC universe.</p>
+    </section>
 
-<!-- PAGE HERO -->
-<section class="page-hero fade-in" style="padding-top:120px; text-align:center;">
-    <h1 style="color:#ffd700; letter-spacing:0.18em; text-transform:uppercase;">How to Buy MOONVIC</h1>
-    <p style="color:#d6d6d6; margin-top:10px;">A simple step-by-step guide to joining the MOONVIC movement.</p>
-</section>
+    <!-- How to Buy Content -->
+    <section class="how-to-buy-page fade-in">
 
-<!-- HOW TO BUY CONTENT -->
-<section class="page-content fade-in-delay" style="max-width:900px; margin:40px auto; padding:20px; line-height:1.7;">
+        <h2>Step 1 — Create a Wallet</h2>
+        <p>
+            To hold MOONVIC (MVIC), you need a Web3 wallet.  
+            The most popular options are:
+        </p>
+        <ul>
+            <li>MetaMask</li>
+            <li>Trust Wallet</li>
+            <li>Coinbase Wallet</li>
+        </ul>
+        <p>Download your preferred wallet and follow the setup instructions.</p>
 
-    <h2 style="color:#ffd700;">Step 1 — Install a Crypto Wallet</h2>
-    <p>
-      Download a trusted Ethereum wallet such as MetaMask, Coinbase Wallet, or Trust Wallet.
-    </p>
+        <h2>Step 2 — Buy Ethereum (ETH)</h2>
+        <p>
+            MOONVIC runs on the Ethereum network.  
+            You’ll need ETH to swap for MVIC and to pay gas fees.
+        </p>
+        <p>You can buy ETH on exchanges like:</p>
+        <ul>
+            <li>Coinbase</li>
+            <li>Binance</li>
+            <li>Kraken</li>
+            <li>Crypto.com</li>
+        </ul>
 
-    <h2 style="color:#ffd700; margin-top:30px;">Step 2 — Add Ethereum (ETH)</h2>
-    <p>
-      Purchase ETH through your wallet or a centralized exchange like Coinbase, Binance, or Kraken.  
-      Transfer ETH to your wallet if needed.
-    </p>
+        <h2>Step 3 — Connect to a Decentralized Exchange (DEX)</h2>
+        <p>
+            Once you have ETH in your wallet, connect to a DEX such as:
+        </p>
+        <ul>
+            <li>Uniswap</li>
+            <li>SushiSwap</li>
+        </ul>
+        <p>Make sure your wallet is connected to the Ethereum network.</p>
 
-    <h2 style="color:#ffd700; margin-top:30px;">Step 3 — Visit Uniswap</h2>
-    <p>
-      Go to <strong style="color:#ffd700;">app.uniswap.org</strong> and connect your wallet.
-    </p>
+        <h2>Step 4 — Swap ETH for MVIC</h2>
+        <p>
+            Enter the official MOONVIC contract address:
+        </p>
 
-    <h2 style="color:#ffd700; margin-top:30px;">Step 4 — Enter the MOONVIC Contract Address</h2>
-    <p style="word-break:break-all;">
-      Paste the official MOONVIC contract address:  
-      <strong style="color:#ffd700;">0x3c7462004dd99b680b3736982a965effc7d285aa</strong>
-    </p>
+        <div class="tokenomics-box">
+            <p><strong>Contract Address:</strong><br>0x3c7462004dd99b680b3736982a965effc7d285aa</p>
+        </div>
 
-    <h2 style="color:#ffd700; margin-top:30px;">Step 5 — Swap ETH for MOONVIC</h2>
-    <p>
-      Choose the amount of ETH you want to swap, review the details, and confirm the transaction.
-    </p>
+        <p>
+            Select MVIC, choose the amount you want to buy, and confirm the transaction.  
+            After a few seconds, MOONVIC will appear in your wallet.
+        </p>
 
-    <h2 style="color:#ffd700; margin-top:30px;">Step 6 — You're In</h2>
-    <p>
-      Once the transaction confirms, you officially hold MOONVIC — welcome to the movement.
-    </p>
+        <h2>Welcome to the MOONVIC Universe</h2>
+        <p>
+            You’re now part of a cinematic, elite, and fast‑growing Web3 movement.  
+            Hold strong. Stay early. Build the future.
+        </p>
 
-</section>
+        <a href="tokenomics.html" class="btn">View Tokenomics</a>
+    </section>
 
-<!-- FOOTER -->
-<footer class="footer">
-    © 2026 MOONVIC — The Gold Standard of Web3.
-</footer>
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 MOONVIC. All Rights Reserved.</p>
+    </footer>
 
-<!-- MOBILE MENU SCRIPT -->
-<script>
-function toggleMenu() {
-    document.getElementById("navMenu").classList.toggle("show");
-}
-</script>
+    <!-- Mobile Menu Script -->
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
 
 </body>
 </html>
