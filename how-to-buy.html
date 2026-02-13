@@ -4,82 +4,130 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>How to Buy MOONVIC</title>
-    <link rel="icon" type="image/png" href="assets/images/moonvic-logo.png" />
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header>
-    <nav class="navbar">
-        <div class="logo">
-            <img src="assets/images/moonvic-logo.png" alt="MOONVIC Logo">
-        </div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="tokenomics.html">Tokenomics</a></li>
-            <li><a href="ecosystem.html">Ecosystem</a></li>
-            <li><a href="roadmap.html">Roadmap</a></li>
-            <li><a href="how-to-buy.html" class="active">How to Buy</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <div class="hamburger">
-            <span></span><span></span><span></span>
-        </div>
-    </nav>
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="logo">
+        <a href="index.html"><img src="assets/images/moonvic-logo.png" alt="MOONVIC Logo"></a>
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="ecosystem.html">Ecosystem</a></li>
+        <li><a href="tokenomics.html">Tokenomics</a></li>
+        <li><a href="roadmap.html">Roadmap</a></li>
+        <li><a href="how-to-buy.html" class="active">How to Buy</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <div class="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+    </div>
 </header>
 
-<main>
-    <section class="page-hero">
-        <h1>How to Buy MOONVIC</h1>
-        <p>Step-by-step for new and experienced users.</p>
-    </section>
+<!-- HERO -->
+<section class="page-hero">
+    <h1>How to Buy MOONVIC</h1>
+    <p>The Gold Standard of Web3 — Step-by-step guide for new and experienced users.</p>
+</section>
 
-    <section class="content-section">
-        <h2>Step 1 — Get a Wallet</h2>
-        <p>
-            Install a Web3 wallet like MetaMask, Trust Wallet, or another Ethereum-compatible wallet.
-            Make sure you safely back up your seed phrase.
-        </p>
-    </section>
+<!-- ⭐ GLOWING LIVE STATS BOX (HEAVY NEON) -->
+<section class="stats-box fade-in">
+    <h2 class="stats-title">Live MOONVIC Stats</h2>
 
-    <section class="content-section">
-        <h2>Step 2 — Fund with ETH</h2>
-        <p>
-            Buy ETH on a centralized exchange or within your wallet, then send it to your Web3 wallet
-            address on the Ethereum network.
-        </p>
-    </section>
+    <div class="stats-grid">
+        <div class="stat-item">
+            <span class="stat-label">Price</span>
+            <span id="mv-price" class="stat-value">$0.00</span>
+        </div>
 
-    <section class="content-section">
-        <h2>Step 3 — Connect to a DEX</h2>
-        <p>
-            Open a decentralized exchange (DEX) like Uniswap, connect your wallet, and ensure you are
-            on the Ethereum network.
-        </p>
-    </section>
+        <div class="stat-item">
+            <span class="stat-label">Market Cap</span>
+            <span id="mv-mcap" class="stat-value">$0</span>
+        </div>
 
-    <section class="content-section">
-        <h2>Step 4 — Swap ETH for MOONVIC (MV)</h2>
-        <p>
-            Paste the official MOONVIC contract address, select MV, and swap your desired amount of ETH.
-            Always double-check the contract address before confirming.
-        </p>
-    </section>
+        <div class="stat-item">
+            <span class="stat-label">24h Volume</span>
+            <span id="mv-volume" class="stat-value">$0</span>
+        </div>
 
-    <section class="content-section">
-        <h2>Step 5 — Add Token to Wallet</h2>
-        <p>
-            Add the MOONVIC contract address to your wallet’s custom tokens so your MV balance appears
-            correctly.
-        </p>
-    </section>
-</main>
+        <div class="stat-item">
+            <span class="stat-label">Liquidity</span>
+            <span id="mv-liquidity" class="stat-value">$0</span>
+        </div>
 
+        <div class="stat-item">
+            <span class="stat-label">Holders</span>
+            <span id="mv-holders" class="stat-value">0</span>
+        </div>
+
+        <div class="stat-item">
+            <span class="stat-label">Contract</span>
+            <span class="stat-value contract-address">0x3c7462004dd99b680b3736982a965effc7d285aa</span>
+        </div>
+    </div>
+
+    <a class="buy-btn" href="https://dexscreener.com/ethereum/0x3c7462004dd99b680b3736982a965effc7d285aa" target="_blank">
+        Buy on DexScreener
+    </a>
+</section>
+
+<!-- CONTENT SECTION -->
+<section class="content-section">
+    <h2>Step 1 — Get a Wallet</h2>
+    <p>Download MetaMask, Trust Wallet, or Coinbase Wallet to store and manage your MOONVIC tokens.</p>
+
+    <h2>Step 2 — Add Ethereum</h2>
+    <p>Purchase ETH on any exchange (Coinbase, Binance, Crypto.com) and transfer it to your wallet.</p>
+
+    <h2>Step 3 — Connect to DexScreener</h2>
+    <p>Click the “Buy on DexScreener” button above to open the MOONVIC trading pair.</p>
+
+    <h2>Step 4 — Swap ETH for MOONVIC</h2>
+    <p>Use the DexScreener swap interface to exchange ETH for MOONVIC instantly.</p>
+
+    <h2>Step 5 — You're In</h2>
+    <p>Welcome to the MOONVIC ecosystem — the Gold Standard of Web3.</p>
+</section>
+
+<!-- FOOTER -->
 <footer>
-    <p>© 2024 MOONVIC. All Rights Reserved.</p>
+    <p>© 2026 MOONVIC. All Rights Reserved.</p>
 </footer>
+
+<!-- MOBILE MENU SCRIPT -->
+<script>
+function toggleMenu() {
+    const nav = document.querySelector('.nav-links');
+    nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+}
+</script>
+
+<!-- ⭐ LIVE DATA SCRIPT -->
+<script>
+async function loadMoonvicStats() {
+    const url = "https://api.dexscreener.com/latest/dex/tokens/0x3c7462004dd99b680b3736982a965effc7d285aa";
+    const res = await fetch(url);
+    const data = await res.json();
+
+    const pair = data.pairs[0];
+
+    document.getElementById("mv-price").innerText = "$" + Number(pair.priceUsd).toFixed(8);
+    document.getElementById("mv-mcap").innerText = "$" + pair.fdv.toLocaleString();
+    document.getElementById("mv-volume").innerText = "$" + pair.volume.h24.toLocaleString();
+    document.getElementById("mv-liquidity").innerText = "$" + pair.liquidity.usd.toLocaleString();
+    document.getElementById("mv-holders").innerText = pair.txns.h24.toLocaleString();
+}
+
+loadMoonvicStats();
+setInterval(loadMoonvicStats, 15000);
+</script>
 
 </body>
 </html>
