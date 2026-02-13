@@ -4,137 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MOONVIC FAQ</title>
-
-    <link rel="icon" type="image/png" href="assets/moonvic-logo.png" />
+    <link rel="icon" type="image/png" href="assets/images/moonvic-logo.png" />
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <!-- Navigation -->
-    <header>
-        <nav class="navbar">
-            <div class="logo">
-                <img src="assets/moonvic-logo.png" alt="MOONVIC Logo">
-            </div>
+<header>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="assets/images/moonvic-logo.png" alt="MOONVIC Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="tokenomics.html">Tokenomics</a></li>
+            <li><a href="ecosystem.html">Ecosystem</a></li>
+            <li><a href="roadmap.html">Roadmap</a></li>
+            <li><a href="how-to-buy.html">How to Buy</a></li>
+            <li><a href="faq.html" class="active">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+</header>
 
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="tokenomics.html">Tokenomics</a></li>
-                <li><a href="ecosystem.html">Ecosystem</a></li>
-                <li><a href="roadmap.html">Roadmap</a></li>
-                <li><a href="how-to-buy.html">How to Buy</a></li>
-                <li><a href="faq.html" class="active">FAQ</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-
-            <div class="hamburger">
-                <span></span><span></span><span></span>
-            </div>
-        </nav>
-    </header>
-
-    <!-- PAGE HEADER -->
-    <section class="page-header">
-        <h1>Frequently Asked Questions</h1>
-        <p>Everything you need to know about MOONVIC.</p>
+<main>
+    <section class="page-hero">
+        <h1>FAQ</h1>
+        <p>Answers to the most common questions about MOONVIC.</p>
     </section>
 
-    <!-- FAQ CONTENT -->
     <section class="content-section">
-        <h2>What is MOONVIC?</h2>
+        <h2>Is MOONVIC a meme token?</h2>
         <p>
-            MOONVIC (MV) is a premium Ethereum-based token built for long-term value, cinematic branding, and a growing ecosystem of utilities.
+            MOONVIC has meme energy in its branding, but the intent is to build a real ecosystem
+            with tools, utilities, and a long-term brand.
         </p>
     </section>
 
     <section class="content-section">
-        <h2>What is the contract address?</h2>
+        <h2>Which network is MOONVIC on?</h2>
         <p>
-            The official MOONVIC contract address is:<br>
-            <strong>0x3c7462004dd99b680b3736982a965effc7d285aa</strong>
-        </p>
-        <a class="btn" href="https://etherscan.io/token/0x3c7462004dd99b680b3736982a965effc7d285aa" target="_blank">
-            View on Etherscan
-        </a>
-    </section>
-
-    <section class="content-section">
-        <h2>Is the supply fixed?</h2>
-        <p>
-            Yes — MOONVIC has a fixed supply of <strong>1,000,000,000 MV</strong>.  
-            No minting. No hidden mechanics.
+            MOONVIC is deployed on the Ethereum network as an ERC-20 token.
         </p>
     </section>
 
     <section class="content-section">
-        <h2>Is there a tax?</h2>
+        <h2>Is there a tax on buys or sells?</h2>
         <p>
-            MOONVIC uses a <strong>0% buy / 0% sell tax</strong> structure for maximum trading efficiency.
+            If you decide to implement taxes, you can describe them here. If not, you can state
+            that MOONVIC has 0% buy/sell tax.
         </p>
     </section>
 
     <section class="content-section">
-        <h2>Where can I buy MOONVIC?</h2>
+        <h2>Where can I see updates?</h2>
         <p>
-            You can buy MV on Uniswap using the official link below:
+            Official updates will be shared through the website and your chosen social channels
+            (X/Twitter, Telegram, Discord, etc.).
         </p>
-        <a class="btn" href="https://app.uniswap.org/swap?outputCurrency=0x3c7462004dd99b680b3736982a965effc7d285aa&chain=ethereum" target="_blank">
-            Buy on Uniswap
-        </a>
     </section>
+</main>
 
-    <section class="content-section">
-        <h2>How do I add MV to MetaMask?</h2>
-        <p>Click the button below to automatically import the token:</p>
-        <button class="btn" onclick="mvAddToMetaMask()">Add MV to MetaMask</button>
-    </section>
-
-    <section class="content-section">
-        <h2>Where can I see charts?</h2>
-        <p>
-            Visit the MOONVIC Ecosystem page for DexTools and DexScreener charts:
-        </p>
-        <a class="btn" href="ecosystem.html">Open Ecosystem</a>
-    </section>
-
-    <!-- FOOTER -->
-    <footer>
-        <p>© 2024 MOONVIC. All Rights Reserved.</p>
-    </footer>
-
-    <script>
-        const hamburger = document.querySelector('.hamburger');
-        const navLinks = document.querySelector('.nav-links');
-        hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
-
-        const MV_CONTRACT = "0x3c7462004dd99b680b3736982a965effc7d285aa";
-
-        async function mvAddToMetaMask() {
-            if (!window.ethereum) {
-                alert("MetaMask not detected.");
-                return;
-            }
-            try {
-                await window.ethereum.request({
-                    method: "wallet_watchAsset",
-                    params: {
-                        type: "ERC20",
-                        options: {
-                            address: MV_CONTRACT,
-                            symbol: "MV",
-                            decimals: 18,
-                        },
-                    },
-                });
-            } catch (e) {
-                console.error(e);
-            }
-        }
-    </script>
+<footer>
+    <p>© 2024 MOONVIC. All Rights Reserved.</p>
+</footer>
 
 </body>
 </html>
