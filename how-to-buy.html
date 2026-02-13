@@ -37,44 +37,46 @@
     <p>The Gold Standard of Web3 — Step-by-step guide for new and experienced users.</p>
 </section>
 
-<!-- ⭐ GLOWING LIVE STATS BOX (HEAVY NEON) -->
+<!-- ⭐ GLOWING STATS BOX WITH COMING SOON PLACEHOLDERS -->
 <section class="stats-box fade-in">
-    <h2 class="stats-title">Live MOONVIC Stats</h2>
+    <h2 class="stats-title">MOONVIC Live Stats</h2>
 
     <div class="stats-grid">
         <div class="stat-item">
             <span class="stat-label">Price</span>
-            <span id="mv-price" class="stat-value">$0.00</span>
+            <span class="stat-value">Coming Soon</span>
         </div>
 
         <div class="stat-item">
             <span class="stat-label">Market Cap</span>
-            <span id="mv-mcap" class="stat-value">$0</span>
+            <span class="stat-value">Coming Soon</span>
         </div>
 
         <div class="stat-item">
             <span class="stat-label">24h Volume</span>
-            <span id="mv-volume" class="stat-value">$0</span>
+            <span class="stat-value">Coming Soon</span>
         </div>
 
         <div class="stat-item">
             <span class="stat-label">Liquidity</span>
-            <span id="mv-liquidity" class="stat-value">$0</span>
+            <span class="stat-value">Coming Soon</span>
         </div>
 
         <div class="stat-item">
             <span class="stat-label">Holders</span>
-            <span id="mv-holders" class="stat-value">0</span>
+            <span class="stat-value">Coming Soon</span>
         </div>
 
         <div class="stat-item">
             <span class="stat-label">Contract</span>
-            <span class="stat-value contract-address">0x3c7462004dd99b680b3736982a965effc7d285aa</span>
+            <span class="stat-value">0x3c7462004dd99b680b3736982a965effc7d285aa</span>
         </div>
     </div>
 
-    <a class="buy-btn" href="https://dexscreener.com/ethereum/0x3c7462004dd99b680b3736982a965effc7d285aa" target="_blank">
-        Buy on DexScreener
+    <a class="buy-btn" 
+       href="https://app.uniswap.org/swap?outputCurrency=0x3c7462004dd99b680b3736982a965effc7d285aa" 
+       target="_blank">
+        Buy on Uniswap
     </a>
 </section>
 
@@ -86,11 +88,11 @@
     <h2>Step 2 — Add Ethereum</h2>
     <p>Purchase ETH on any exchange (Coinbase, Binance, Crypto.com) and transfer it to your wallet.</p>
 
-    <h2>Step 3 — Connect to DexScreener</h2>
-    <p>Click the “Buy on DexScreener” button above to open the MOONVIC trading pair.</p>
+    <h2>Step 3 — Connect to Uniswap</h2>
+    <p>Click the “Buy on Uniswap” button above to open the MOONVIC trading interface.</p>
 
     <h2>Step 4 — Swap ETH for MOONVIC</h2>
-    <p>Use the DexScreener swap interface to exchange ETH for MOONVIC instantly.</p>
+    <p>Use the Uniswap interface to exchange ETH for MOONVIC instantly.</p>
 
     <h2>Step 5 — You're In</h2>
     <p>Welcome to the MOONVIC ecosystem — the Gold Standard of Web3.</p>
@@ -107,26 +109,6 @@ function toggleMenu() {
     const nav = document.querySelector('.nav-links');
     nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
 }
-</script>
-
-<!-- ⭐ LIVE DATA SCRIPT -->
-<script>
-async function loadMoonvicStats() {
-    const url = "https://api.dexscreener.com/latest/dex/tokens/0x3c7462004dd99b680b3736982a965effc7d285aa";
-    const res = await fetch(url);
-    const data = await res.json();
-
-    const pair = data.pairs[0];
-
-    document.getElementById("mv-price").innerText = "$" + Number(pair.priceUsd).toFixed(8);
-    document.getElementById("mv-mcap").innerText = "$" + pair.fdv.toLocaleString();
-    document.getElementById("mv-volume").innerText = "$" + pair.volume.h24.toLocaleString();
-    document.getElementById("mv-liquidity").innerText = "$" + pair.liquidity.usd.toLocaleString();
-    document.getElementById("mv-holders").innerText = pair.txns.h24.toLocaleString();
-}
-
-loadMoonvicStats();
-setInterval(loadMoonvicStats, 15000);
 </script>
 
 </body>
