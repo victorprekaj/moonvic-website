@@ -3,42 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MOONVIC Roadmap — The Journey Ahead</title>
+    <title>MOONVIC Roadmap</title>
 
-    <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/moonvic-logo.png" />
-    <link rel="preload" href="assets/moonvic-logo.png" as="image">
-
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Explore the official MOONVIC roadmap — a cinematic, ambitious, and strategic vision for the future of MVIC and the Web3 ecosystem.">
-    <meta name="keywords" content="MOONVIC, MVIC, roadmap, crypto roadmap, Web3, blockchain, future plans, token development">
-    <meta name="author" content="MOONVIC Team">
-
-    <!-- OpenGraph -->
-    <meta property="og:title" content="MOONVIC Roadmap — The Journey Ahead" />
-    <meta property="og:description" content="A bold, structured, and cinematic roadmap outlining the future of MOONVIC (MVIC)." />
-    <meta property="og:image" content="https://victorprekaj.github.io/moonvic-website/assets/moonvic-og.png" />
-    <meta property="og:url" content="https://victorprekaj.github.io/moonvic-website/roadmap.html" />
-    <meta property="og:type" content="website" />
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="MOONVIC Roadmap — The Journey Ahead" />
-    <meta name="twitter:description" content="A bold, structured, and cinematic roadmap outlining the future of MOONVIC (MVIC)." />
-    <meta name="twitter:image" content="https://victorprekaj.github.io/moonvic-website/assets/moonvic-og.png" />
-
-    <!-- JSON-LD Schema -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "CreativeWork",
-      "name": "MOONVIC Roadmap",
-      "description": "A structured and ambitious roadmap outlining the future of MOONVIC (MVIC).",
-      "url": "https://victorprekaj.github.io/moonvic-website/roadmap.html"
-    }
-    </script>
-
-    <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -48,48 +15,85 @@
     <header>
         <nav class="navbar">
             <div class="logo">
-                <img src="assets/moonvic-logo.png" alt="MOONVIC Logo" loading="lazy">
+                <img src="assets/moonvic-logo.png" alt="MOONVIC Logo">
             </div>
+
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="tokenomics.html">Tokenomics</a></li>
+                <li><a href="ecosystem.html">Ecosystem</a></li>
                 <li><a href="roadmap.html" class="active">Roadmap</a></li>
                 <li><a href="how-to-buy.html">How to Buy</a></li>
                 <li><a href="faq.html">FAQ</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
 
-            <!-- Mobile Menu -->
             <div class="hamburger">
                 <span></span><span></span><span></span>
             </div>
         </nav>
     </header>
 
-    <!-- PAGE BANNER -->
-    <section class="page-banner" style="background-image: url('assets/images/banner-roadmap.jpg');">
-        <div class="banner-overlay"></div>
-        <h1 class="banner-title">MOONVIC Roadmap</h1>
-        <p class="banner-subtitle">A cinematic journey of ambition, innovation, and long‑term vision.</p>
+    <!-- PAGE HEADER -->
+    <section class="page-header">
+        <h1>Roadmap</h1>
+        <p>The journey of MOONVIC — past, present, and future.</p>
     </section>
 
-    <!-- Roadmap Content -->
-    <section class="roadmap-page fade-in">
-
+    <!-- ROADMAP CONTENT -->
+    <section class="content-section">
         <h2>Phase 1 — Foundation</h2>
-        <p>
-            The beginning of the MOONVIC universe.  
-            A phase focused on stability, identity, and establishing the core pillars of the project.
-        </p>
-        <ul class="roadmap-list">
-            <li><img src="assets/images/icon-phase-gold.svg" class="roadmap-icon"> Token creation and Ethereum mainnet deployment</li>
-            <li><img src="assets/images/icon-phase-gold.svg" class="roadmap-icon"> Brand identity development (black‑and‑gold cinematic aesthetic)</li>
-            <li><img src="assets/images/icon-phase-gold.svg" class="roadmap-icon"> Website launch with premium multi‑page structure</li>
-            <li><img src="assets/images/icon-phase-gold.svg" class="roadmap-icon"> Initial community formation</li>
-            <li><img src="assets/images/icon-phase-gold.svg" class="roadmap-icon"> Smart contract verification</li>
+        <ul>
+            <li>Token creation & contract deployment</li>
+            <li>Brand identity & cinematic design</li>
+            <li>Website launch</li>
+            <li>Social channels established</li>
         </ul>
+    </section>
 
+    <section class="content-section">
         <h2>Phase 2 — Expansion</h2>
-        <p>
-            With the foundation set, MOONVIC expands outward — building momentum, visibility, and trust.
+        <ul>
+            <li>Tokenomics & documentation finalized</li>
+            <li>MOONVIC Ecosystem page launch</li>
+            <li>Community growth initiatives</li>
+            <li>Marketing rollout</li>
+        </ul>
+    </section>
+
+    <section class="content-section">
+        <h2>Phase 3 — Utility</h2>
+        <ul>
+            <li>Live price widgets & integrations</li>
+            <li>Chart embeds (DexTools & DexScreener)</li>
+            <li>MetaMask integration</li>
+            <li>Future utility development</li>
+        </ul>
+    </section>
+
+    <section class="content-section">
+        <h2>Phase 4 — Scaling</h2>
+        <ul>
+            <li>Partnerships & collaborations</li>
+            <li>Listings & exposure</li>
+            <li>Advanced ecosystem tools</li>
+            <li>Long-term expansion roadmap</li>
+        </ul>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2024 MOONVIC. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+
+</body>
+</html>
