@@ -9,21 +9,20 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
-        /* CINEMATIC HERO RESET */
+        /* CINEMATIC GALAXY HERO */
         .hero {
             position: relative;
             height: 100vh;
             width: 100%;
-            background: #000;
+            background: url("assets/galaxy-bg.jpg") center/cover no-repeat;
             display: flex;
             justify-content: center;
             align-items: center;
-            overflow: hidden;
             text-align: center;
-            padding: 0;
+            overflow: hidden;
         }
 
-        /* NEON CYAN TECH GLOW */
+        /* Cyan glow behind text */
         .hero::before {
             content: "";
             position: absolute;
@@ -34,16 +33,10 @@
             z-index: 1;
         }
 
+        /* Text content */
         .hero-content {
             position: relative;
             z-index: 2;
-        }
-
-        .hero-icon {
-            width: 160px;
-            height: 160px;
-            margin-bottom: 20px;
-            filter: drop-shadow(0 0 25px rgba(0,255,255,0.6));
         }
 
         .hero-title {
@@ -52,6 +45,7 @@
             color: white;
             margin: 0;
             letter-spacing: 2px;
+            text-shadow: 0 0 20px rgba(0,255,255,0.4);
         }
 
         .hero-subtitle {
@@ -109,17 +103,16 @@
         </nav>
     </header>
 
-    <!-- NEW CINEMATIC HERO -->
+    <!-- CINEMATIC GALAXY HERO -->
     <section class="hero">
         <div class="hero-content">
-            <img src="assets/moonvic-logo.png" alt="MOONVIC Logo" class="hero-icon">
             <h1 class="hero-title">MOONVIC</h1>
             <p class="hero-subtitle">The Gold Standard of Web3</p>
             <a href="how-to-buy.html" class="hero-button">How to Buy</a>
         </div>
     </section>
 
-    <!-- ECOSYSTEM PREVIEW (KEPT CLEAN BELOW HERO) -->
+    <!-- ECOSYSTEM PREVIEW -->
     <section class="mv-ecosystem-preview fade-in">
         <h2>MOONVIC Ecosystem</h2>
         <p>Explore the live Web3 hub powering MV on Ethereum.</p>
