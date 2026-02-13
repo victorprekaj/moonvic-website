@@ -4,81 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About MOONVIC</title>
-
-    <link rel="icon" type="image/png" href="assets/moonvic-logo.png" />
+    <link rel="icon" type="image/png" href="assets/images/moonvic-logo.png" />
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <!-- Navigation -->
-    <header>
-        <nav class="navbar">
-            <div class="logo">
-                <img src="assets/moonvic-logo.png" alt="MOONVIC Logo">
-            </div>
+<header>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="assets/images/moonvic-logo.png" alt="MOONVIC Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="tokenomics.html">Tokenomics</a></li>
+            <li><a href="ecosystem.html">Ecosystem</a></li>
+            <li><a href="roadmap.html">Roadmap</a></li>
+            <li><a href="how-to-buy.html">How to Buy</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+</header>
 
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html" class="active">About</a></li>
-                <li><a href="tokenomics.html">Tokenomics</a></li>
-                <li><a href="ecosystem.html">Ecosystem</a></li>
-                <li><a href="roadmap.html">Roadmap</a></li>
-                <li><a href="how-to-buy.html">How to Buy</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-
-            <div class="hamburger">
-                <span></span><span></span><span></span>
-            </div>
-        </nav>
-    </header>
-
-    <!-- ABOUT PAGE CONTENT -->
-    <section class="page-header">
+<main>
+    <section class="page-hero">
         <h1>About MOONVIC</h1>
-        <p>The Gold Standard of Web3.</p>
+        <p>The Gold Standard of Web3 on Ethereum.</p>
     </section>
 
     <section class="content-section">
-        <h2>Our Mission</h2>
+        <h2>What is MOONVIC?</h2>
         <p>
-            MOONVIC (MV) is a premium Ethereum-based token built for ambition, innovation, and long-term value.
-            Our mission is to empower Web3 builders, investors, and innovators with a token that represents
-            excellence, trust, and forward momentum.
+            MOONVIC is a premium Ethereum-based token built for those who move differently in Web3.
+            It’s designed to be more than a meme and more than a narrative — it’s a foundation for
+            tools, utilities, and an ecosystem that rewards conviction and early belief.
+        </p>
+    </section>
+
+    <section class="content-section">
+        <h2>Vision</h2>
+        <p>
+            The vision behind MOONVIC is simple: create a clean, cinematic, and powerful brand that
+            feels like a blue-chip from day one. Every decision — from visuals to utilities — is
+            built to feel intentional, premium, and long-term.
         </p>
     </section>
 
     <section class="content-section">
         <h2>Why MOONVIC?</h2>
-        <p>
-            MOONVIC stands apart through its cinematic branding, transparent tokenomics, and a growing ecosystem
-            designed to support real utility. From decentralized trading to future integrations, MV is built to
-            evolve with the Web3 landscape.
-        </p>
+        <ul>
+            <li><strong>Premium Branding:</strong> A distinct, cinematic identity in a noisy market.</li>
+            <li><strong>Utility-Driven:</strong> Built to power tools, dashboards, and Web3 experiences.</li>
+            <li><strong>Community-Focused:</strong> Designed for holders who value clarity and execution.</li>
+        </ul>
     </section>
+</main>
 
-    <section class="content-section">
-        <h2>Built for the Future</h2>
-        <p>
-            With a strong foundation and a clear roadmap, MOONVIC is positioned to become a recognizable force
-            in the crypto space. Our commitment to quality, transparency, and innovation drives everything we do.
-        </p>
-    </section>
-
-    <!-- FOOTER -->
-    <footer>
-        <p>© 2024 MOONVIC. All Rights Reserved.</p>
-    </footer>
-
-    <script>
-        const hamburger = document.querySelector('.hamburger');
-        const navLinks = document.querySelector('.nav-links');
-        hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
-    </script>
+<footer>
+    <p>© 2024 MOONVIC. All Rights Reserved.</p>
+</footer>
 
 </body>
 </html>
