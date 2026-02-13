@@ -9,12 +9,12 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
-        /* CINEMATIC GALAXY HERO */
+        /* HERO SECTION USING YOUR EXISTING IMAGE */
         .hero {
             position: relative;
             height: 100vh;
             width: 100%;
-            background: url("assets/images/galaxy-bg.jpg") center/cover no-repeat;
+            background: url("assets/images/hero-moonvic-cinematic.jpg") center/cover no-repeat;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -22,18 +22,6 @@
             overflow: hidden;
         }
 
-        /* Cyan glow behind text */
-        .hero::before {
-            content: "";
-            position: absolute;
-            width: 600px;
-            height: 600px;
-            background: radial-gradient(circle, rgba(0,255,255,0.25) 0%, rgba(0,255,255,0) 70%);
-            filter: blur(80px);
-            z-index: 1;
-        }
-
-        /* Text content */
         .hero-content {
             position: relative;
             z-index: 2;
@@ -70,7 +58,6 @@
             color: black;
         }
 
-        /* CLEAN SECTION SPACING */
         section {
             padding: 80px 20px;
         }
@@ -103,7 +90,7 @@
         </nav>
     </header>
 
-    <!-- CINEMATIC GALAXY HERO -->
+    <!-- HERO -->
     <section class="hero">
         <div class="hero-content">
             <h1 class="hero-title">MOONVIC</h1>
