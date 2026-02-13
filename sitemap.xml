@@ -2,43 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-    <loc>https://yourdomain.com/</loc>
+    <loc>https://victorprekaj.github.io/moonvic-website/</loc>
   </url>
 
   <url>
-    <loc>https://yourdomain.com/about.html</loc>
+    <loc>https://victorprekaj.github.io/moonvic-website/about.html</loc>
   </url>
 
   <url>
-    <loc>https://yourdomain.com/tokenomics.html</loc>
+    <loc>https://victorprekaj.github.io/moonvic-website/tokenomics.html</loc>
   </url>
 
   <url>
-    <loc>https://yourdomain.com/roadmap.html</loc>
+    <loc>https://victorprekaj.github.io/moonvic-website/ecosystem.html</loc>
   </url>
 
   <url>
-    <loc>https://yourdomain.com/how-to-buy.html</loc>
+    <loc>https://victorprekaj.github.io/moonvic-website/roadmap.html</loc>
   </url>
 
   <url>
-    <loc>https://yourdomain.com/faq.html</loc>
+    <loc>https://victorprekaj.github.io/moonvic-website/how-to-buy.html</loc>
   </url>
 
   <url>
-    <loc>https://yourdomain.com/contact.html</loc>
+    <loc>https://victorprekaj.github.io/moonvic-website/faq.html</loc>
   </url>
 
   <url>
-    <loc>https://yourdomain.com/terms.html</loc>
+    <loc>https://victorprekaj.github.io/moonvic-website/contact.html</loc>
   </url>
 
   <url>
-    <loc>https://yourdomain.com/privacy.html</loc>
+    <loc>https://victorprekaj.github.io/moonvic-website/privacy.html</loc>
   </url>
 
   <url>
-    <loc>https://yourdomain.com/404.html</loc>
+    <loc>https://victorprekaj.github.io/moonvic-website/terms.html</loc>
+  </url>
+
+  <url>
+    <loc>https://victorprekaj.github.io/moonvic-website/disclaimer.html</loc>
+  </url>
+
+  <url>
+    <loc>https://victorprekaj.github.io/moonvic-website/404.html</loc>
   </url>
 
 </urlset>
