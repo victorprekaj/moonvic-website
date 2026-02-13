@@ -4,134 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>How to Buy MOONVIC</title>
-
-    <link rel="icon" type="image/png" href="assets/moonvic-logo.png" />
+    <link rel="icon" type="image/png" href="assets/images/moonvic-logo.png" />
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <!-- Navigation -->
-    <header>
-        <nav class="navbar">
-            <div class="logo">
-                <img src="assets/moonvic-logo.png" alt="MOONVIC Logo">
-            </div>
-
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="tokenomics.html">Tokenomics</a></li>
-                <li><a href="ecosystem.html">Ecosystem</a></li>
-                <li><a href="roadmap.html">Roadmap</a></li>
-                <li><a href="how-to-buy.html" class="active">How to Buy</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-
-            <div class="hamburger">
-                <span></span><span></span><span></span>
-            </div>
-        </nav>
-    </header>
-
-    <!-- PAGE HEADER -->
-    <section class="page-header">
-        <h1>How to Buy MOONVIC</h1>
-        <p>Simple steps to purchase MV on Ethereum.</p>
-    </section>
-
-    <!-- BUYING GUIDE -->
-    <section class="content-section">
-        <h2>Step 1 — Install MetaMask</h2>
-        <p>
-            Download the MetaMask wallet extension or mobile app. This will allow you to store ETH and interact with decentralized exchanges.
-        </p>
-        <a class="btn" href="https://metamask.io/" target="_blank">Download MetaMask</a>
-    </section>
-
-    <section class="content-section">
-        <h2>Step 2 — Add ETH to Your Wallet</h2>
-        <p>
-            Purchase ETH through MetaMask, Coinbase, Binance, or any exchange of your choice.  
-            Transfer it to your MetaMask wallet.
-        </p>
-    </section>
-
-    <section class="content-section">
-        <h2>Step 3 — Visit Uniswap</h2>
-        <p>
-            Use the official Uniswap link below to avoid scams.
-        </p>
-        <a class="btn" href="https://app.uniswap.org/swap?outputCurrency=0x3c7462004dd99b680b3736982a965effc7d285aa&chain=ethereum" target="_blank">
-            Buy MOONVIC on Uniswap
-        </a>
-    </section>
-
-    <section class="content-section">
-        <h2>Step 4 — Import the Token</h2>
-        <p>
-            If MOONVIC does not appear automatically, import it using the contract address below:
-        </p>
-
-        <div class="contract-box">
-            <strong>Contract Address:</strong><br>
-            0x3c7462004dd99b680b3736982a965effc7d285aa
+<header>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="assets/images/moonvic-logo.png" alt="MOONVIC Logo">
         </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="tokenomics.html">Tokenomics</a></li>
+            <li><a href="ecosystem.html">Ecosystem</a></li>
+            <li><a href="roadmap.html">Roadmap</a></li>
+            <li><a href="how-to-buy.html" class="active">How to Buy</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+</header>
 
-        <button class="btn" onclick="mvAddToMetaMask()">Add MV to MetaMask</button>
+<main>
+    <section class="page-hero">
+        <h1>How to Buy MOONVIC</h1>
+        <p>Step-by-step for new and experienced users.</p>
     </section>
 
     <section class="content-section">
-        <h2>Step 5 — Swap ETH for MV</h2>
+        <h2>Step 1 — Get a Wallet</h2>
         <p>
-            Enter the amount of ETH you want to swap, review the transaction, and confirm it in MetaMask.
+            Install a Web3 wallet like MetaMask, Trust Wallet, or another Ethereum-compatible wallet.
+            Make sure you safely back up your seed phrase.
         </p>
     </section>
 
     <section class="content-section">
-        <h2>You're Done!</h2>
+        <h2>Step 2 — Fund with ETH</h2>
         <p>
-            You now hold MOONVIC (MV). Welcome to the ecosystem.
+            Buy ETH on a centralized exchange or within your wallet, then send it to your Web3 wallet
+            address on the Ethereum network.
         </p>
     </section>
 
-    <!-- FOOTER -->
-    <footer>
-        <p>© 2024 MOONVIC. All Rights Reserved.</p>
-    </footer>
+    <section class="content-section">
+        <h2>Step 3 — Connect to a DEX</h2>
+        <p>
+            Open a decentralized exchange (DEX) like Uniswap, connect your wallet, and ensure you are
+            on the Ethereum network.
+        </p>
+    </section>
 
-    <script>
-        const hamburger = document.querySelector('.hamburger');
-        const navLinks = document.querySelector('.nav-links');
-        hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
+    <section class="content-section">
+        <h2>Step 4 — Swap ETH for MOONVIC (MV)</h2>
+        <p>
+            Paste the official MOONVIC contract address, select MV, and swap your desired amount of ETH.
+            Always double-check the contract address before confirming.
+        </p>
+    </section>
 
-        const MV_CONTRACT = "0x3c7462004dd99b680b3736982a965effc7d285aa";
+    <section class="content-section">
+        <h2>Step 5 — Add Token to Wallet</h2>
+        <p>
+            Add the MOONVIC contract address to your wallet’s custom tokens so your MV balance appears
+            correctly.
+        </p>
+    </section>
+</main>
 
-        async function mvAddToMetaMask() {
-            if (!window.ethereum) {
-                alert("MetaMask not detected.");
-                return;
-            }
-            try {
-                await window.ethereum.request({
-                    method: "wallet_watchAsset",
-                    params: {
-                        type: "ERC20",
-                        options: {
-                            address: MV_CONTRACT,
-                            symbol: "MV",
-                            decimals: 18,
-                        },
-                    },
-                });
-            } catch (e) {
-                console.error(e);
-            }
-        }
-    </script>
+<footer>
+    <p>© 2024 MOONVIC. All Rights Reserved.</p>
+</footer>
 
 </body>
 </html>
