@@ -3,44 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MOONVIC Tokenomics — Engineered for Long‑Term Value</title>
+    <title>MOONVIC Tokenomics</title>
 
-    <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/moonvic-logo.png" />
-    <link rel="preload" href="assets/moonvic-logo.png" as="image">
-
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Explore the official tokenomics of MOONVIC (MVIC). A premium Ethereum-based token engineered for sustainability, clarity, and long-term value.">
-    <meta name="keywords" content="MOONVIC, MVIC, tokenomics, crypto supply, Ethereum token, Web3, blockchain, decentralized finance">
-    <meta name="author" content="MOONVIC Team">
-
-    <!-- OpenGraph -->
-    <meta property="og:title" content="MOONVIC Tokenomics — Engineered for Long‑Term Value" />
-    <meta property="og:description" content="Discover the structured, transparent, and sustainable tokenomics behind MOONVIC (MVIC)." />
-    <meta property="og:image" content="https://victorprekaj.github.io/moonvic-website/assets/moonvic-og.png" />
-    <meta property="og:url" content="https://victorprekaj.github.io/moonvic-website/tokenomics.html" />
-    <meta property="og:type" content="website" />
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="MOONVIC Tokenomics — Engineered for Long‑Term Value" />
-    <meta name="twitter:description" content="Discover the structured, transparent, and sustainable tokenomics behind MOONVIC (MVIC)." />
-    <meta name="twitter:image" content="https://victorprekaj.github.io/moonvic-website/assets/moonvic-og.png" />
-
-    <!-- JSON-LD Schema -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Cryptocurrency",
-      "name": "MOONVIC",
-      "symbol": "MVIC",
-      "description": "MOONVIC (MVIC) is a premium Ethereum-based token engineered for ambition, innovation, and long-term value.",
-      "url": "https://victorprekaj.github.io/moonvic-website/tokenomics.html",
-      "logo": "https://victorprekaj.github.io/moonvic-website/assets/moonvic-logo.png"
-    }
-    </script>
-
-    <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -50,40 +15,80 @@
     <header>
         <nav class="navbar">
             <div class="logo">
-                <img src="assets/moonvic-logo.png" alt="MOONVIC Logo" loading="lazy">
+                <img src="assets/moonvic-logo.png" alt="MOONVIC Logo">
             </div>
+
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="tokenomics.html" class="active">Tokenomics</a></li>
+                <li><a href="ecosystem.html">Ecosystem</a></li>
                 <li><a href="roadmap.html">Roadmap</a></li>
                 <li><a href="how-to-buy.html">How to Buy</a></li>
                 <li><a href="faq.html">FAQ</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
 
-            <!-- Mobile Menu -->
             <div class="hamburger">
                 <span></span><span></span><span></span>
             </div>
         </nav>
     </header>
 
-    <!-- PAGE BANNER -->
-    <section class="page-banner" style="background-image: url('assets/images/banner-tokenomics.jpg');">
-        <div class="banner-overlay"></div>
-        <h1 class="banner-title">MOONVIC Tokenomics</h1>
-        <p class="banner-subtitle">Structured. Transparent. Engineered for long‑term value.</p>
+    <!-- PAGE HEADER -->
+    <section class="page-header">
+        <h1>Tokenomics</h1>
+        <p>Transparent. Fair. Built for long-term value.</p>
     </section>
 
-    <!-- Tokenomics Content -->
-    <section class="tokenomics-page fade-in">
-
+    <!-- TOKENOMICS CONTENT -->
+    <section class="content-section">
         <h2>Total Supply</h2>
-        <p>
-            MOONVIC (MVIC) is minted with a fixed, non‑inflationary supply designed to protect long‑term value and ensure scarcity.
-        </p>
+        <p><strong>1,000,000,000 MV</strong> (fixed supply, no minting)</p>
+    </section>
 
-        <div class="tokenomics-box">
-            <img src="assets/images/icon-supply-gold.svg" class="tokenomics-icon" alt="Supply Icon">
-            <h3>
+    <section class="content-section">
+        <h2>Distribution</h2>
+        <ul>
+            <li><strong>Liquidity Pool:</strong> 80%</li>
+            <li><strong>Marketing & Growth:</strong> 10%</li>
+            <li><strong>Team Allocation:</strong> 5%</li>
+            <li><strong>Reserve & Future Utility:</strong> 5%</li>
+        </ul>
+    </section>
+
+    <section class="content-section">
+        <h2>Contract Address</h2>
+        <p>
+            <strong>0x3c7462004dd99b680b3736982a965effc7d285aa</strong>
+        </p>
+        <a class="btn" href="https://etherscan.io/token/0x3c7462004dd99b680b3736982a965effc7d285aa" target="_blank">
+            View on Etherscan
+        </a>
+    </section>
+
+    <section class="content-section">
+        <h2>Tax Structure</h2>
+        <p>MOONVIC uses a <strong>0% buy / 0% sell tax</strong> structure for maximum trading efficiency.</p>
+    </section>
+
+    <section class="content-section">
+        <h2>Liquidity</h2>
+        <p>Liquidity is locked to ensure long-term stability and trust.</p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2024 MOONVIC. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+
+</body>
+</html>
