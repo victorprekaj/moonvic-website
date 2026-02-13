@@ -4,91 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MOONVIC Tokenomics</title>
-
-    <link rel="icon" type="image/png" href="assets/moonvic-logo.png" />
+    <link rel="icon" type="image/png" href="assets/images/moonvic-logo.png" />
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <!-- Navigation -->
-    <header>
-        <nav class="navbar">
-            <div class="logo">
-                <img src="assets/moonvic-logo.png" alt="MOONVIC Logo">
-            </div>
+<header>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="assets/images/moonvic-logo.png" alt="MOONVIC Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="tokenomics.html" class="active">Tokenomics</a></li>
+            <li><a href="ecosystem.html">Ecosystem</a></li>
+            <li><a href="roadmap.html">Roadmap</a></li>
+            <li><a href="how-to-buy.html">How to Buy</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+</header>
 
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="tokenomics.html" class="active">Tokenomics</a></li>
-                <li><a href="ecosystem.html">Ecosystem</a></li>
-                <li><a href="roadmap.html">Roadmap</a></li>
-                <li><a href="how-to-buy.html">How to Buy</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-
-            <div class="hamburger">
-                <span></span><span></span><span></span>
-            </div>
-        </nav>
-    </header>
-
-    <!-- PAGE HEADER -->
-    <section class="page-header">
+<main>
+    <section class="page-hero">
         <h1>Tokenomics</h1>
-        <p>Transparent. Fair. Built for long-term value.</p>
-    </section>
-
-    <!-- TOKENOMICS CONTENT -->
-    <section class="content-section">
-        <h2>Total Supply</h2>
-        <p><strong>1,000,000,000 MV</strong> (fixed supply, no minting)</p>
+        <p>Clear, simple, and built for longevity.</p>
     </section>
 
     <section class="content-section">
-        <h2>Distribution</h2>
+        <h2>Core Details</h2>
         <ul>
-            <li><strong>Liquidity Pool:</strong> 80%</li>
-            <li><strong>Marketing & Growth:</strong> 10%</li>
-            <li><strong>Team Allocation:</strong> 5%</li>
-            <li><strong>Reserve & Future Utility:</strong> 5%</li>
+            <li><strong>Network:</strong> Ethereum</li>
+            <li><strong>Token Symbol:</strong> MV</li>
+            <li><strong>Decimals:</strong> 18</li>
+            <li><strong>Standard:</strong> ERC-20</li>
         </ul>
     </section>
 
     <section class="content-section">
-        <h2>Contract Address</h2>
+        <h2>Supply</h2>
         <p>
-            <strong>0x3c7462004dd99b680b3736982a965effc7d285aa</strong>
+            Total supply is fixed and fully transparent. No hidden mints, no stealth inflation,
+            and no surprise mechanics that dilute holders.
         </p>
-        <a class="btn" href="https://etherscan.io/token/0x3c7462004dd99b680b3736982a965effc7d285aa" target="_blank">
-            View on Etherscan
-        </a>
+        <ul>
+            <li><strong>Total Supply:</strong> 1,000,000,000 MV</li>
+            <li><strong>Liquidity:</strong> Majority allocated to liquidity pool.</li>
+            <li><strong>Team & Development:</strong> Small allocation for long-term building.</li>
+            <li><strong>Marketing & Ecosystem:</strong> Reserved for growth and partnerships.</li>
+        </ul>
     </section>
 
     <section class="content-section">
-        <h2>Tax Structure</h2>
-        <p>MOONVIC uses a <strong>0% buy / 0% sell tax</strong> structure for maximum trading efficiency.</p>
+        <h2>Philosophy</h2>
+        <p>
+            MOONVIC tokenomics are designed to be simple and holder-aligned. No overcomplication,
+            no confusing mechanics — just a clean structure that supports real building.
+        </p>
     </section>
+</main>
 
-    <section class="content-section">
-        <h2>Liquidity</h2>
-        <p>Liquidity is locked to ensure long-term stability and trust.</p>
-    </section>
-
-    <!-- FOOTER -->
-    <footer>
-        <p>© 2024 MOONVIC. All Rights Reserved.</p>
-    </footer>
-
-    <script>
-        const hamburger = document.querySelector('.hamburger');
-        const navLinks = document.querySelector('.nav-links');
-        hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
-    </script>
+<footer>
+    <p>© 2024 MOONVIC. All Rights Reserved.</p>
+</footer>
 
 </body>
 </html>
