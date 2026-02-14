@@ -4,73 +4,124 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MOONVIC FAQ</title>
-    <link rel="icon" type="image/png" href="assets/images/moonvic-logo.png" />
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header>
-    <nav class="navbar">
-        <div class="logo">
-            <img src="assets/images/moonvic-logo.png" alt="MOONVIC Logo">
-        </div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="tokenomics.html">Tokenomics</a></li>
-            <li><a href="ecosystem.html">Ecosystem</a></li>
-            <li><a href="roadmap.html">Roadmap</a></li>
-            <li><a href="how-to-buy.html">How to Buy</a></li>
-            <li><a href="faq.html" class="active">FAQ</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <div class="hamburger">
-            <span></span><span></span><span></span>
-        </div>
-    </nav>
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="logo">
+        <a href="index.html"><img src="assets/images/moonvic-logo.png" alt="MOONVIC Logo"></a>
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="ecosystem.html">Ecosystem</a></li>
+        <li><a href="tokenomics.html">Tokenomics</a></li>
+        <li><a href="roadmap.html">Roadmap</a></li>
+        <li><a href="how-to-buy.html">How to Buy</a></li>
+        <li><a href="faq.html" class="active">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <div class="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+    </div>
 </header>
 
-<main>
-    <section class="page-hero">
-        <h1>FAQ</h1>
-        <p>Answers to the most common questions about MOONVIC.</p>
-    </section>
+<!-- HERO -->
+<section class="page-hero">
+    <h1>Frequently Asked Questions</h1>
+    <p>Everything you need to know about MOONVIC, all in one place.</p>
+</section>
 
-    <section class="content-section">
-        <h2>Is MOONVIC a meme token?</h2>
-        <p>
-            MOONVIC has meme energy in its branding, but the intent is to build a real ecosystem
-            with tools, utilities, and a long-term brand.
-        </p>
-    </section>
+<!-- FAQ SECTION -->
+<section class="faq-section fade-in">
 
-    <section class="content-section">
-        <h2>Which network is MOONVIC on?</h2>
-        <p>
-            MOONVIC is deployed on the Ethereum network as an ERC-20 token.
-        </p>
-    </section>
+    <div class="faq-container">
 
-    <section class="content-section">
-        <h2>Is there a tax on buys or sells?</h2>
-        <p>
-            If you decide to implement taxes, you can describe them here. If not, you can state
-            that MOONVIC has 0% buy/sell tax.
-        </p>
-    </section>
+        <!-- FAQ ITEM -->
+        <div class="faq-item glow-card">
+            <h3 onclick="toggleFAQ(this)">What is MOONVIC?</h3>
+            <p class="faq-answer">
+                MOONVIC is a premium Web3 project built around a clean ecosystem, zero‑tax tokenomics, and a long‑term vision. 
+                It combines AI, utilities, and a cinematic brand identity to create a modern crypto experience.
+            </p>
+        </div>
 
-    <section class="content-section">
-        <h2>Where can I see updates?</h2>
-        <p>
-            Official updates will be shared through the website and your chosen social channels
-            (X/Twitter, Telegram, Discord, etc.).
-        </p>
-    </section>
-</main>
+        <div class="faq-item glow-card">
+            <h3 onclick="toggleFAQ(this)">Is there a buy or sell tax?</h3>
+            <p class="faq-answer">
+                No. MOONVIC uses a 0% buy tax and 0% sell tax structure. This ensures transparency, fairness, and a frictionless trading experience for all holders.
+            </p>
+        </div>
 
+        <div class="faq-item glow-card">
+            <h3 onclick="toggleFAQ(this)">Is the contract renounced?</h3>
+            <p class="faq-answer">
+                No. The contract is not renounced. This allows the team to maintain flexibility for future upgrades, ecosystem expansion, and utility integration.
+            </p>
+        </div>
+
+        <div class="faq-item glow-card">
+            <h3 onclick="toggleFAQ(this)">Is liquidity locked?</h3>
+            <p class="faq-answer">
+                Liquidity status will be announced at launch. MOONVIC is built around transparency and long‑term trust, and liquidity security is a core priority.
+            </p>
+        </div>
+
+        <div class="faq-item glow-card">
+            <h3 onclick="toggleFAQ(this)">What utilities does MOONVIC offer?</h3>
+            <p class="faq-answer">
+                The ecosystem includes MOONVIC AI (Live), MOONVIC Swap, Staking Vaults, Launchpad, NFT Collection, and Rewards Hub. 
+                These utilities are designed to expand the project’s value and long‑term potential.
+            </p>
+        </div>
+
+        <div class="faq-item glow-card">
+            <h3 onclick="toggleFAQ(this)">How do I buy MOONVIC?</h3>
+            <p class="faq-answer">
+                You can buy MOONVIC through Uniswap. Visit the “How to Buy” page for a simple step‑by‑step guide and direct links to the official swap.
+            </p>
+        </div>
+
+        <div class="faq-item glow-card">
+            <h3 onclick="toggleFAQ(this)">What chain is MOONVIC on?</h3>
+            <p class="faq-answer">
+                MOONVIC is deployed on the Ethereum blockchain, ensuring security, reliability, and compatibility with the largest ecosystem in Web3.
+            </p>
+        </div>
+
+        <div class="faq-item glow-card">
+            <h3 onclick="toggleFAQ(this)">What makes MOONVIC different?</h3>
+            <p class="faq-answer">
+                MOONVIC stands out through its premium branding, zero‑tax structure, AI‑driven utility, and a clean, cinematic ecosystem designed for long‑term growth rather than hype.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
 <footer>
-    <p>© 2024 MOONVIC. All Rights Reserved.</p>
+    <p>© 2026 MOONVIC. All Rights Reserved.</p>
 </footer>
+
+<!-- FAQ SCRIPT -->
+<script>
+function toggleFAQ(element) {
+    const answer = element.nextElementSibling;
+    answer.style.display = answer.style.display === "block" ? "none" : "block";
+}
+
+function toggleMenu() {
+    const nav = document.querySelector('.nav-links');
+    nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+}
+</script>
 
 </body>
 </html>
