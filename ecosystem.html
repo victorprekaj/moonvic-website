@@ -4,69 +4,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MOONVIC Ecosystem</title>
-    <link rel="icon" type="image/png" href="assets/images/moonvic-logo.png" />
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header>
-    <nav class="navbar">
-        <div class="logo">
-            <img src="assets/images/moonvic-logo.png" alt="MOONVIC Logo">
-        </div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="tokenomics.html">Tokenomics</a></li>
-            <li><a href="ecosystem.html" class="active">Ecosystem</a></li>
-            <li><a href="roadmap.html">Roadmap</a></li>
-            <li><a href="how-to-buy.html">How to Buy</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <div class="hamburger">
-            <span></span><span></span><span></span>
-        </div>
-    </nav>
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="logo">
+        <a href="index.html"><img src="assets/images/moonvic-logo.png" alt="MOONVIC Logo"></a>
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="ecosystem.html" class="active">Ecosystem</a></li>
+        <li><a href="tokenomics.html">Tokenomics</a></li>
+        <li><a href="roadmap.html">Roadmap</a></li>
+        <li><a href="how-to-buy.html">How to Buy</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <div class="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+    </div>
 </header>
 
-<main>
-    <section class="page-hero">
-        <h1>MOONVIC Ecosystem</h1>
-        <p>The live hub of tools, utilities, and experiences powered by MV.</p>
-    </section>
+<!-- HERO -->
+<section class="page-hero">
+    <h1>The MOONVIC Ecosystem</h1>
+    <p>A complete suite of Web3 utilities powering the Gold Standard of crypto.</p>
+</section>
 
-    <section class="content-section">
-        <h2>Core Pillars</h2>
-        <ul>
-            <li><strong>Dashboard:</strong> A clean hub to track MV, charts, and key metrics.</li>
-            <li><strong>Tools:</strong> Utilities designed for traders, builders, and holders.</li>
-            <li><strong>Brand:</strong> A cinematic identity that stands out in Web3.</li>
-        </ul>
-    </section>
+<!-- ECOSYSTEM GRID -->
+<section class="ecosystem-section fade-in">
 
-    <section class="content-section">
-        <h2>Live & Planned Utilities</h2>
-        <ul>
-            <li><strong>Holder Dashboard:</strong> Portfolio and MV analytics.</li>
-            <li><strong>Alpha Tools:</strong> Watchlists, alerts, and curated insights.</li>
-            <li><strong>Brand Assets:</strong> Logos, banners, and media kit for partners.</li>
-            <li><strong>Future Integrations:</strong> Bots, widgets, and cross-project collabs.</li>
-        </ul>
-    </section>
+    <div class="ecosystem-grid">
 
-    <section class="content-section">
-        <h2>Built for Expansion</h2>
-        <p>
-            The MOONVIC ecosystem is designed to grow over time — new tools, new integrations,
-            and new ways for holders to benefit from being early and aligned with the brand.
-        </p>
-    </section>
-</main>
+        <!-- MOONVIC AI (LIVE) -->
+        <div class="eco-card glow-card">
+            <h3>MOONVIC AI Assistant</h3>
+            <span class="status-badge live">LIVE</span>
+            <p>Your intelligent Web3 companion — powering automation, insights, and next‑gen crypto interaction.</p>
+        </div>
 
+        <!-- SWAP -->
+        <div class="eco-card glow-card">
+            <h3>MOONVIC Swap</h3>
+            <span class="status-badge soon">Coming Soon</span>
+            <p>A fast, secure, and low‑fee decentralized exchange built for the MOONVIC ecosystem.</p>
+        </div>
+
+        <!-- STAKING -->
+        <div class="eco-card glow-card">
+            <h3>MOONVIC Staking Vaults</h3>
+            <span class="status-badge soon">Coming Soon</span>
+            <p>Stake MOONVIC and earn passive rewards through our premium staking vaults.</p>
+        </div>
+
+        <!-- LAUNCHPAD -->
+        <div class="eco-card glow-card">
+            <h3>MOONVIC Launchpad</h3>
+            <span class="status-badge soon">Coming Soon</span>
+            <p>Supporting new Web3 projects with a secure and transparent token launch platform.</p>
+        </div>
+
+        <!-- NFT COLLECTION -->
+        <div class="eco-card glow-card">
+            <h3>MOONVIC NFT Collection</h3>
+            <span class="status-badge soon">Coming Soon</span>
+            <p>A premium gold‑themed NFT series unlocking exclusive ecosystem benefits.</p>
+        </div>
+
+        <!-- REWARDS HUB -->
+        <div class="eco-card glow-card">
+            <h3>MOONVIC Rewards Hub</h3>
+            <span class="status-badge soon">Coming Soon</span>
+            <p>Earn rewards, airdrops, and loyalty bonuses for being part of the MOONVIC community.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
 <footer>
-    <p>© 2024 MOONVIC. All Rights Reserved.</p>
+    <p>© 2026 MOONVIC. All Rights Reserved.</p>
 </footer>
+
+<!-- MOBILE MENU SCRIPT -->
+<script>
+function toggleMenu() {
+    const nav = document.querySelector('.nav-links');
+    nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+}
+</script>
 
 </body>
 </html>
