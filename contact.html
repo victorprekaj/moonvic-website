@@ -4,73 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact MOONVIC</title>
-    <link rel="icon" type="image/png" href="assets/images/moonvic-logo.png" />
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header>
-    <nav class="navbar">
-        <div class="logo">
-            <img src="assets/images/moonvic-logo.png" alt="MOONVIC Logo">
-        </div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="tokenomics.html">Tokenomics</a></li>
-            <li><a href="ecosystem.html">Ecosystem</a></li>
-            <li><a href="roadmap.html">Roadmap</a></li>
-            <li><a href="how-to-buy.html">How to Buy</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="contact.html" class="active">Contact</a></li>
-        </ul>
-        <div class="hamburger">
-            <span></span><span></span><span></span>
-        </div>
-    </nav>
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="logo">
+        <a href="index.html"><img src="assets/images/moonvic-logo.png" alt="MOONVIC Logo"></a>
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="ecosystem.html">Ecosystem</a></li>
+        <li><a href="tokenomics.html">Tokenomics</a></li>
+        <li><a href="roadmap.html">Roadmap</a></li>
+        <li><a href="how-to-buy.html">How to Buy</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+
+    <div class="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+    </div>
 </header>
 
-<main>
-    <section class="page-hero">
-        <h1>Contact</h1>
-        <p>Get in touch with the MOONVIC team.</p>
-    </section>
+<!-- HERO -->
+<section class="page-hero">
+    <h1>Contact MOONVIC</h1>
+    <p>We’re here to support you and answer your questions.</p>
+</section>
 
-    <section class="content-section">
-        <h2>Contact Form</h2>
-        <form class="contact-form">
-            <div class="form-group">
-                <label for="name">Name</label>
-                <input id="name" type="text" placeholder="Your name">
-            </div>
+<!-- CONTACT SECTION -->
+<section class="contact-section fade-in">
 
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input id="email" type="email" placeholder="you@example.com">
-            </div>
+    <div class="contact-container glow-card">
+        <h2>Get in Touch</h2>
+        <p>
+            Whether you have questions about the project, partnerships, or general inquiries, 
+            the MOONVIC team is ready to assist. We aim to respond as quickly and professionally 
+            as possible.
+        </p>
 
-            <div class="form-group">
-                <label for="message">Message</label>
-                <textarea id="message" rows="5" placeholder="Your message"></textarea>
-            </div>
+        <div class="contact-details">
+            <p><strong>Email:</strong> contact@moonvic.io</p>
+            <p><strong>Official Website:</strong> moonvic.io</p>
+        </div>
 
-            <button type="submit" class="btn">Send Message</button>
-        </form>
-    </section>
+        <h3>Social Channels</h3>
+        <p>Join our community and stay updated:</p>
 
-    <section class="content-section">
-        <h2>Other Channels</h2>
-        <ul>
-            <li><strong>Email:</strong> youremail@domain.com</li>
-            <li><strong>Twitter / X:</strong> @yourhandle</li>
-            <li><strong>Telegram:</strong> Your Telegram link</li>
+        <ul class="social-list">
+            <li>Twitter (X) — Coming Soon</li>
+            <li>Telegram — Coming Soon</li>
+            <li>Discord — Coming Soon</li>
         </ul>
-    </section>
-</main>
+    </div>
 
+</section>
+
+<!-- FOOTER -->
 <footer>
-    <p>© 2024 MOONVIC. All Rights Reserved.</p>
+    <p>© 2026 MOONVIC. All Rights Reserved.</p>
 </footer>
+
+<!-- MOBILE MENU SCRIPT -->
+<script>
+function toggleMenu() {
+    const nav = document.querySelector('.nav-links');
+    nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+}
+</script>
 
 </body>
 </html>
