@@ -4,77 +4,120 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MOONVIC Roadmap</title>
-    <link rel="icon" type="image/png" href="assets/images/moonvic-logo.png" />
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header>
-    <nav class="navbar">
-        <div class="logo">
-            <img src="assets/images/moonvic-logo.png" alt="MOONVIC Logo">
-        </div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="tokenomics.html">Tokenomics</a></li>
-            <li><a href="ecosystem.html">Ecosystem</a></li>
-            <li><a href="roadmap.html" class="active">Roadmap</a></li>
-            <li><a href="how-to-buy.html">How to Buy</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <div class="hamburger">
-            <span></span><span></span><span></span>
-        </div>
-    </nav>
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="logo">
+        <a href="index.html"><img src="assets/images/moonvic-logo.png" alt="MOONVIC Logo"></a>
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="ecosystem.html">Ecosystem</a></li>
+        <li><a href="tokenomics.html">Tokenomics</a></li>
+        <li><a href="roadmap.html" class="active">Roadmap</a></li>
+        <li><a href="how-to-buy.html">How to Buy</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <div class="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+    </div>
 </header>
 
-<main>
-    <section class="page-hero">
-        <h1>Roadmap</h1>
-        <p>Clear phases. Real execution.</p>
-    </section>
+<!-- HERO -->
+<section class="page-hero">
+    <h1>MOONVIC Roadmap</h1>
+    <p>A clear vision for long‑term growth and ecosystem expansion.</p>
+</section>
 
-    <section class="content-section">
-        <h2>Phase 1 — Foundation</h2>
-        <ul>
-            <li>Token launch on Ethereum</li>
-            <li>Branding, website, and core visuals</li>
-            <li>Initial community formation</li>
-        </ul>
-    </section>
+<!-- ROADMAP SECTION -->
+<section class="roadmap-section fade-in">
 
-    <section class="content-section">
-        <h2>Phase 2 — Ecosystem Build</h2>
-        <ul>
-            <li>Launch of MOONVIC dashboard</li>
-            <li>First wave of utilities and tools</li>
-            <li>Partnerships and integrations</li>
-        </ul>
-    </section>
+    <div class="roadmap-container">
 
-    <section class="content-section">
-        <h2>Phase 3 — Expansion</h2>
-        <ul>
-            <li>Advanced tools and analytics</li>
-            <li>Deeper ecosystem collaborations</li>
-            <li>Scaling brand presence across Web3</li>
-        </ul>
-    </section>
+        <!-- PHASE 1 -->
+        <div class="roadmap-card glow-card">
+            <h3>Phase 1 — Foundation</h3>
+            <span class="status-badge live">Completed</span>
+            <ul>
+                <li>Token Deployment</li>
+                <li>Website Launch</li>
+                <li>Brand Identity Creation</li>
+                <li>Core Documentation</li>
+            </ul>
+        </div>
 
-    <section class="content-section">
-        <h2>Phase 4 — Long-Term Growth</h2>
-        <p>
-            Continued development, ecosystem refinement, and expansion into new verticals — always
-            with a focus on quality, clarity, and long-term value for holders.
-        </p>
-    </section>
-</main>
+        <!-- PHASE 2 -->
+        <div class="roadmap-card glow-card">
+            <h3>Phase 2 — Ecosystem Build</h3>
+            <span class="status-badge progress">In Progress</span>
+            <ul>
+                <li>MOONVIC AI Assistant (Live)</li>
+                <li>Ecosystem Page Launch</li>
+                <li>Tokenomics Page Upgrade</li>
+                <li>Community Growth</li>
+            </ul>
+        </div>
 
+        <!-- PHASE 3 -->
+        <div class="roadmap-card glow-card">
+            <h3>Phase 3 — Utility Expansion</h3>
+            <span class="status-badge soon">Coming Soon</span>
+            <ul>
+                <li>MOONVIC Swap</li>
+                <li>Staking Vaults</li>
+                <li>Rewards Hub</li>
+                <li>Marketing Push</li>
+            </ul>
+        </div>
+
+        <!-- PHASE 4 -->
+        <div class="roadmap-card glow-card">
+            <h3>Phase 4 — Platform Growth</h3>
+            <span class="status-badge soon">Coming Soon</span>
+            <ul>
+                <li>MOONVIC Launchpad</li>
+                <li>NFT Collection</li>
+                <li>Partnership Integrations</li>
+                <li>Expanded Utility Rollout</li>
+            </ul>
+        </div>
+
+        <!-- PHASE 5 -->
+        <div class="roadmap-card glow-card">
+            <h3>Phase 5 — Long‑Term Vision</h3>
+            <span class="status-badge soon">Coming Soon</span>
+            <ul>
+                <li>MOONVIC Governance</li>
+                <li>Mobile App Exploration</li>
+                <li>Cross‑Chain Expansion</li>
+                <li>Global Ecosystem Scaling</li>
+            </ul>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
 <footer>
-    <p>© 2024 MOONVIC. All Rights Reserved.</p>
+    <p>© 2026 MOONVIC. All Rights Reserved.</p>
 </footer>
+
+<!-- MOBILE MENU SCRIPT -->
+<script>
+function toggleMenu() {
+    const nav = document.querySelector('.nav-links');
+    nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+}
+</script>
 
 </body>
 </html>
