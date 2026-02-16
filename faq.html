@@ -3,125 +3,162 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MOONVIC FAQ</title>
+    <title>FAQ — MOONVIC</title>
+
+    <!-- ICON LIBRARY -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- MAIN CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- NAVBAR -->
-<header class="navbar">
-    <div class="logo">
-        <a href="index.html"><img src="assets/images/moonvic-logo.png" alt="MOONVIC Logo"></a>
-    </div>
+<!-- ================= HEADER ================= -->
+<header>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/images/moonvic-logo.png" alt="MOONVIC Logo">
+            </a>
+        </div>
 
-    <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="ecosystem.html">Ecosystem</a></li>
-        <li><a href="tokenomics.html">Tokenomics</a></li>
-        <li><a href="roadmap.html">Roadmap</a></li>
-        <li><a href="how-to-buy.html">How to Buy</a></li>
-        <li><a href="faq.html" class="active">FAQ</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="tokenomics.html">Tokenomics</a></li>
+            <li><a href="roadmap.html">Roadmap</a></li>
+            <li><a href="ecosystem.html">Ecosystem</a></li>
+            <li><a href="how-to-buy.html">How to Buy</a></li>
+            <li><a href="faq.html" class="active">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
 
-    <div class="hamburger" onclick="toggleMenu()">
-        <span></span><span></span><span></span>
+    <!-- ⭐ SOCIAL ICONS (NEON CYAN GLOW) ⭐ -->
+    <div class="social-icons-header">
+        <a href="https://x.com/moonvicofficial" target="_blank" class="icon twitter">
+            <i class="fab fa-twitter"></i> Twitter
+        </a>
+
+        <a href="https://etherscan.io/token/0x3c7462004dd99b680b3736982a965effc7d285aa" target="_blank" class="icon etherscan">
+            <i class="fas fa-search"></i> Etherscan
+        </a>
+
+        <a href="#" onclick="navigator.clipboard.writeText('0x3c7462004dd99b680b3736982a965effc7d285aa')" class="icon contract">
+            <i class="fas fa-copy"></i> Contract
+        </a>
+
+        <a href="https://www.dextools.io/app/en/ether/pair-explorer/0x3c7462004dd99b680b3736982a965effc7d285aa" target="_blank" class="icon dextools">
+            <i class="fas fa-chart-line"></i> DexTools
+        </a>
+
+        <a href="https://t.me/moonvic" target="_blank" class="icon telegram">
+            <i class="fab fa-telegram"></i> Telegram
+        </a>
+
+        <a href="https://discord.gg/moonvic" target="_blank" class="icon discord">
+            <i class="fab fa-discord"></i> Discord
+        </a>
     </div>
 </header>
+<!-- =============== END HEADER =============== -->
 
-<!-- HERO -->
-<section class="page-hero">
-    <h1>Frequently Asked Questions</h1>
-    <p>Everything you need to know about MOONVIC, all in one place.</p>
-</section>
 
-<!-- FAQ SECTION -->
-<section class="faq-section fade-in">
+<!-- ================= FAQ SECTION ================= -->
+<section class="faq-page">
+    <div class="container">
+        <h1>Frequently Asked Questions</h1>
 
-    <div class="faq-container">
-
-        <!-- FAQ ITEM -->
-        <div class="faq-item glow-card">
-            <h3 onclick="toggleFAQ(this)">What is MOONVIC?</h3>
-            <p class="faq-answer">
-                MOONVIC is a premium Web3 project built around a clean ecosystem, zero‑tax tokenomics, and a long‑term vision. 
-                It combines AI, utilities, and a cinematic brand identity to create a modern crypto experience.
+        <div class="faq-item">
+            <h2>What is MOONVIC?</h2>
+            <p>
+                MOONVIC is a zero‑tax Web3 ecosystem built for speed, transparency, and real utility. 
+                It focuses on delivering high‑performance tools and a premium brand experience.
             </p>
         </div>
 
-        <div class="faq-item glow-card">
-            <h3 onclick="toggleFAQ(this)">Is there a buy or sell tax?</h3>
-            <p class="faq-answer">
-                No. MOONVIC uses a 0% buy tax and 0% sell tax structure. This ensures transparency, fairness, and a frictionless trading experience for all holders.
+        <div class="faq-item">
+            <h2>Is there a buy or sell tax?</h2>
+            <p>
+                No. MOONVIC is 100% zero‑tax — no buy tax, no sell tax, no hidden fees.
             </p>
         </div>
 
-        <div class="faq-item glow-card">
-            <h3 onclick="toggleFAQ(this)">Is the contract renounced?</h3>
-            <p class="faq-answer">
-                No. The contract is not renounced. This allows the team to maintain flexibility for future upgrades, ecosystem expansion, and utility integration.
+        <div class="faq-item">
+            <h2>What is the contract address?</h2>
+            <p class="contract-address">
+                0x3c7462004dd99b680b3736982a965effc7d285aa
+            </p>
+            <button onclick="navigator.clipboard.writeText('0x3c7462004dd99b680b3736982a965effc7d285aa')" class="btn-primary">
+                Copy Address
+            </button>
+        </div>
+
+        <div class="faq-item">
+            <h2>Is liquidity locked?</h2>
+            <p>
+                Yes. Liquidity is locked to ensure long‑term stability and trust.
             </p>
         </div>
 
-        <div class="faq-item glow-card">
-            <h3 onclick="toggleFAQ(this)">Is liquidity locked?</h3>
-            <p class="faq-answer">
-                Liquidity status will be announced at launch. MOONVIC is built around transparency and long‑term trust, and liquidity security is a core priority.
+        <div class="faq-item">
+            <h2>Is ownership renounced?</h2>
+            <p>
+                Yes. Ownership is renounced — MOONVIC is fully decentralized.
             </p>
         </div>
 
-        <div class="faq-item glow-card">
-            <h3 onclick="toggleFAQ(this)">What utilities does MOONVIC offer?</h3>
-            <p class="faq-answer">
-                The ecosystem includes MOONVIC AI (Live), MOONVIC Swap, Staking Vaults, Launchpad, NFT Collection, and Rewards Hub. 
-                These utilities are designed to expand the project’s value and long‑term potential.
+        <div class="faq-item">
+            <h2>Where can I buy MOONVIC?</h2>
+            <p>
+                You can buy MOONVIC on Uniswap by entering the official contract address.
             </p>
         </div>
 
-        <div class="faq-item glow-card">
-            <h3 onclick="toggleFAQ(this)">How do I buy MOONVIC?</h3>
-            <p class="faq-answer">
-                You can buy MOONVIC through Uniswap. Visit the “How to Buy” page for a simple step‑by‑step guide and direct links to the official swap.
-            </p>
-        </div>
-
-        <div class="faq-item glow-card">
-            <h3 onclick="toggleFAQ(this)">What chain is MOONVIC on?</h3>
-            <p class="faq-answer">
-                MOONVIC is deployed on the Ethereum blockchain, ensuring security, reliability, and compatibility with the largest ecosystem in Web3.
-            </p>
-        </div>
-
-        <div class="faq-item glow-card">
-            <h3 onclick="toggleFAQ(this)">What makes MOONVIC different?</h3>
-            <p class="faq-answer">
-                MOONVIC stands out through its premium branding, zero‑tax structure, AI‑driven utility, and a clean, cinematic ecosystem designed for long‑term growth rather than hype.
+        <div class="faq-item">
+            <h2>Where can I find updates?</h2>
+            <p>
+                Follow the official MOONVIC Twitter and Telegram for real‑time updates.
             </p>
         </div>
 
     </div>
-
 </section>
+<!-- =============== END FAQ SECTION =============== -->
 
-<!-- FOOTER -->
+
+<!-- ================= FOOTER ================= -->
 <footer>
-    <p>© 2026 MOONVIC. All Rights Reserved.</p>
+    <p>© 2026 MOONVIC — All Rights Reserved.</p>
+
+    <div class="footer-social">
+        <a href="https://x.com/moonvicofficial" target="_blank" class="icon twitter">
+            <i class="fab fa-twitter"></i>
+        </a>
+
+        <a href="https://etherscan.io/token/0x3c7462004dd99b680b3736982a965effc7d285aa" target="_blank" class="icon etherscan">
+            <i class="fas fa-search"></i>
+        </a>
+
+        <a href="#" onclick="navigator.clipboard.writeText('0x3c7462004dd99b680b3736982a965effc7d285aa')" class="icon contract">
+            <i class="fas fa-copy"></i>
+        </a>
+
+        <a href="https://www.dextools.io/app/en/ether/pair-explorer/0x3c7462004dd99b680b3736982a965effc7d285aa" target="_blank" class="icon dextools">
+            <i class="fas fa-chart-line"></i>
+        </a>
+
+        <a href="https://t.me/moonvic" target="_blank" class="icon telegram">
+            <i class="fab fa-telegram"></i>
+        </a>
+
+        <a href="https://discord.gg/moonvic" target="_blank" class="icon discord">
+            <i class="fab fa-discord"></i>
+        </a>
+    </div>
 </footer>
-
-<!-- FAQ SCRIPT -->
-<script>
-function toggleFAQ(element) {
-    const answer = element.nextElementSibling;
-    answer.style.display = answer.style.display === "block" ? "none" : "block";
-}
-
-function toggleMenu() {
-    const nav = document.querySelector('.nav-links');
-    nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
-}
-</script>
+<!-- =============== END FOOTER =============== -->
 
 </body>
 </html>
