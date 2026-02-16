@@ -3,113 +3,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>How to Buy MOONVIC</title>
+    <title>How to Buy — MOONVIC</title>
+
+    <!-- ICON LIBRARY -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- MAIN CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- NAVBAR -->
-<header class="navbar">
-    <div class="logo">
-        <a href="index.html"><img src="assets/images/moonvic-logo.png" alt="MOONVIC Logo"></a>
-    </div>
+<!-- ================= HEADER ================= -->
+<header>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/images/moonvic-logo.png" alt="MOONVIC Logo">
+            </a>
+        </div>
 
-    <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="ecosystem.html">Ecosystem</a></li>
-        <li><a href="tokenomics.html">Tokenomics</a></li>
-        <li><a href="roadmap.html">Roadmap</a></li>
-        <li><a href="how-to-buy.html" class="active">How to Buy</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="tokenomics.html">Tokenomics</a></li>
+            <li><a href="roadmap.html">Roadmap</a></li>
+            <li><a href="ecosystem.html">Ecosystem</a></li>
+            <li><a href="how-to-buy.html" class="active">How to Buy</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
 
-    <div class="hamburger" onclick="toggleMenu()">
-        <span></span><span></span><span></span>
+    <!-- ⭐ SOCIAL ICONS (NEON CYAN GLOW) ⭐ -->
+    <div class="social-icons-header">
+        <a href="https://x.com/moonvicofficial" target="_blank" class="icon twitter">
+            <i class="fab fa-twitter"></i> Twitter
+        </a>
+
+        <a href="https://etherscan.io/token/0x3c7462004dd99b680b3736982a965effc7d285aa" target="_blank" class="icon etherscan">
+            <i class="fas fa-search"></i> Etherscan
+        </a>
+
+        <a href="#" onclick="navigator.clipboard.writeText('0x3c7462004dd99b680b3736982a965effc7d285aa')" class="icon contract">
+            <i class="fas fa-copy"></i> Contract
+        </a>
+
+        <a href="https://www.dextools.io/app/en/ether/pair-explorer/0x3c7462004dd99b680b3736982a965effc7d285aa" target="_blank" class="icon dextools">
+            <i class="fas fa-chart-line"></i> DexTools
+        </a>
+
+        <a href="https://t.me/moonvic" target="_blank" class="icon telegram">
+            <i class="fab fa-telegram"></i> Telegram
+        </a>
+
+        <a href="https://discord.gg/moonvic" target="_blank" class="icon discord">
+            <i class="fab fa-discord"></i> Discord
+        </a>
     </div>
 </header>
+<!-- =============== END HEADER =============== -->
 
-<!-- HERO -->
-<section class="page-hero">
-    <h1>How to Buy MOONVIC</h1>
-    <p>The Gold Standard of Web3 — Step-by-step guide for new and experienced users.</p>
-</section>
 
-<!-- ⭐ GLOWING STATS BOX WITH COMING SOON PLACEHOLDERS -->
-<section class="stats-box fade-in">
-    <h2 class="stats-title">MOONVIC Live Stats</h2>
+<!-- ================= HOW TO BUY SECTION ================= -->
+<section class="how-to-buy-page">
+    <div class="container">
+        <h1>How to Buy MOONVIC</h1>
+        <p>
+            Buying MOONVIC is simple, fast, and secure. Follow the steps below to get started.
+        </p>
 
-    <div class="stats-grid">
-        <div class="stat-item">
-            <span class="stat-label">Price</span>
-            <span class="stat-value">Coming Soon</span>
+        <!-- ⭐ PLACEHOLDER FOR THE GLOWING STATS BOX YOU REQUESTED EARLIER ⭐ -->
+        <div class="stats-box-placeholder">
+            <!-- We will insert the glowing stats box here after all pages are done -->
         </div>
 
-        <div class="stat-item">
-            <span class="stat-label">Market Cap</span>
-            <span class="stat-value">Coming Soon</span>
-        </div>
+        <div class="buy-steps">
 
-        <div class="stat-item">
-            <span class="stat-label">24h Volume</span>
-            <span class="stat-value">Coming Soon</span>
-        </div>
+            <div class="step-box">
+                <h2>Step 1 — Install a Wallet</h2>
+                <p>
+                    Download MetaMask or any Ethereum‑compatible wallet on your browser or mobile device.
+                </p>
+            </div>
 
-        <div class="stat-item">
-            <span class="stat-label">Liquidity</span>
-            <span class="stat-value">Coming Soon</span>
-        </div>
+            <div class="step-box">
+                <h2>Step 2 — Add ETH</h2>
+                <p>
+                    Purchase ETH on an exchange (Coinbase, Binance, etc.) and transfer it to your wallet.
+                </p>
+            </div>
 
-        <div class="stat-item">
-            <span class="stat-label">Holders</span>
-            <span class="stat-value">Coming Soon</span>
-        </div>
+            <div class="step-box">
+                <h2>Step 3 — Connect to Uniswap</h2>
+                <p>
+                    Visit Uniswap and connect your wallet to begin swapping ETH for MOONVIC.
+                </p>
+            </div>
 
-        <div class="stat-item">
-            <span class="stat-label">Contract</span>
-            <span class="stat-value">0x3c7462004dd99b680b3736982a965effc7d285aa</span>
+            <div class="step-box">
+                <h2>Step 4 — Enter the Contract Address</h2>
+                <p class="contract-address">
+                    0x3c7462004dd99b680b3736982a965effc7d285aa
+                </p>
+                <button onclick="navigator.clipboard.writeText('0x3c7462004dd99b680b3736982a965effc7d285aa')" class="btn-primary">
+                    Copy Address
+                </button>
+            </div>
+
+            <div class="step-box">
+                <h2>Step 5 — Swap ETH for MOONVIC</h2>
+                <p>
+                    Set your slippage to 0% (MOONVIC is zero‑tax) and confirm the swap.
+                </p>
+            </div>
+
+            <div class="step-box">
+                <h2>Step 6 — You're In</h2>
+                <p>
+                    Welcome to the MOONVIC ecosystem — you're officially part of the movement.
+                </p>
+            </div>
+
         </div>
     </div>
-
-    <a class="buy-btn" 
-       href="https://app.uniswap.org/swap?outputCurrency=0x3c7462004dd99b680b3736982a965effc7d285aa" 
-       target="_blank">
-        Buy on Uniswap
-    </a>
 </section>
+<!-- =============== END HOW TO BUY SECTION =============== -->
 
-<!-- CONTENT SECTION -->
-<section class="content-section">
-    <h2>Step 1 — Get a Wallet</h2>
-    <p>Download MetaMask, Trust Wallet, or Coinbase Wallet to store and manage your MOONVIC tokens.</p>
 
-    <h2>Step 2 — Add Ethereum</h2>
-    <p>Purchase ETH on any exchange (Coinbase, Binance, Crypto.com) and transfer it to your wallet.</p>
-
-    <h2>Step 3 — Connect to Uniswap</h2>
-    <p>Click the “Buy on Uniswap” button above to open the MOONVIC trading interface.</p>
-
-    <h2>Step 4 — Swap ETH for MOONVIC</h2>
-    <p>Use the Uniswap interface to exchange ETH for MOONVIC instantly.</p>
-
-    <h2>Step 5 — You're In</h2>
-    <p>Welcome to the MOONVIC ecosystem — the Gold Standard of Web3.</p>
-</section>
-
-<!-- FOOTER -->
+<!-- ================= FOOTER ================= -->
 <footer>
-    <p>© 2026 MOONVIC. All Rights Reserved.</p>
-</footer>
+    <p>© 2026 MOONVIC — All Rights Reserved.</p>
 
-<!-- MOBILE MENU SCRIPT -->
-<script>
-function toggleMenu() {
-    const nav = document.querySelector('.nav-links');
-    nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
-}
-</script>
+    <div class="footer-social">
+        <a href="https://x.com/moonvicofficial" target="_blank" class="icon twitter">
+            <i class="fab fa-twitter"></i>
+        </a>
+
+        <a href="https://etherscan.io/token/0x3c7462004dd99b680b3736982a965effc7d285aa" target="_blank" class="icon etherscan">
+            <i class="fas fa-search"></i>
+        </a>
+
+        <a href="#" onclick="navigator.clipboard.writeText('0x3c7462004dd99b680b3736982a965effc7d285aa')" class="icon contract">
+            <i class="fas fa-copy"></i>
+        </a>
+
+        <a href="https://www.dextools.io/app/en/ether/pair-explorer/0x3c7462004dd99b680b3736982a965effc7d285aa" target="_blank" class="icon dextools">
+            <i class="fas fa-chart-line"></i>
+        </a>
+
+        <a href="https://t.me/moonvic" target="_blank" class="icon telegram">
+            <i class="fab fa-telegram"></i>
+        </a>
+
+        <a href="https://discord.gg/moonvic" target="_blank" class="icon discord">
+            <i class="fab fa-discord"></i>
+        </a>
+    </div>
+</footer>
+<!-- =============== END FOOTER =============== -->
 
 </body>
 </html>
