@@ -3,126 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MOONVIC Tokenomics</title>
+    <title>Tokenomics — MOONVIC</title>
+
+    <!-- ICON LIBRARY -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- MAIN CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- NAVBAR -->
-<header class="navbar">
-    <div class="logo">
-        <a href="index.html"><img src="assets/images/moonvic-logo.png" alt="MOONVIC Logo"></a>
-    </div>
+<!-- ================= HEADER ================= -->
+<header>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/images/moonvic-logo.png" alt="MOONVIC Logo">
+            </a>
+        </div>
 
-    <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="ecosystem.html">Ecosystem</a></li>
-        <li><a href="tokenomics.html" class="active">Tokenomics</a></li>
-        <li><a href="roadmap.html">Roadmap</a></li>
-        <li><a href="how-to-buy.html">How to Buy</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="tokenomics.html" class="active">Tokenomics</a></li>
+            <li><a href="roadmap.html">Roadmap</a></li>
+            <li><a href="ecosystem.html">Ecosystem</a></li>
+            <li><a href="how-to-buy.html">How to Buy</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
 
-    <div class="hamburger" onclick="toggleMenu()">
-        <span></span><span></span><span></span>
+    <!-- ⭐ SOCIAL ICONS (NEON CYAN GLOW) ⭐ -->
+    <div class="social-icons-header">
+        <a href="https://x.com/moonvicofficial" target="_blank" class="icon twitter">
+            <i class="fab fa-twitter"></i> Twitter
+        </a>
+
+        <a href="https://etherscan.io/token/0x3c7462004dd99b680b3736982a965effc7d285aa" target="_blank" class="icon etherscan">
+            <i class="fas fa-search"></i> Etherscan
+        </a>
+
+        <a href="#" onclick="navigator.clipboard.writeText('0x3c7462004dd99b680b3736982a965effc7d285aa')" class="icon contract">
+            <i class="fas fa-copy"></i> Contract
+        </a>
+
+        <a href="https://www.dextools.io/app/en/ether/pair-explorer/0x3c7462004dd99b680b3736982a965effc7d285aa" target="_blank" class="icon dextools">
+            <i class="fas fa-chart-line"></i> DexTools
+        </a>
+
+        <a href="https://t.me/moonvic" target="_blank" class="icon telegram">
+            <i class="fab fa-telegram"></i> Telegram
+        </a>
+
+        <a href="https://discord.gg/moonvic" target="_blank" class="icon discord">
+            <i class="fab fa-discord"></i> Discord
+        </a>
     </div>
 </header>
+<!-- =============== END HEADER =============== -->
 
-<!-- HERO -->
-<section class="page-hero">
-    <h1>MOONVIC Tokenomics</h1>
-    <p>Transparent, fair, and built for long‑term growth.</p>
-</section>
 
-<!-- TOKENOMICS GRID -->
-<section class="tokenomics-section fade-in">
+<!-- ================= TOKENOMICS SECTION ================= -->
+<section class="tokenomics-page">
+    <div class="container">
+        <h1>MOONVIC Tokenomics</h1>
+        <p>
+            MOONVIC is built with a simple, transparent, and sustainable token structure. 
+            No hidden mechanics. No taxes. No tricks. Just clean, fair, decentralized tokenomics.
+        </p>
 
-    <div class="tokenomics-grid">
-
-        <div class="token-card glow-card">
-            <h3>Total Supply</h3>
-            <p>1,000,000,000 MVIC</p>
+        <div class="tokenomics-box">
+            <h2>Total Supply</h2>
+            <p><strong>1,000,000,000 MVIC</strong></p>
         </div>
 
-        <div class="token-card glow-card">
-            <h3>Buy Tax</h3>
-            <p>0%</p>
+        <div class="tokenomics-box">
+            <h2>Buy Tax</h2>
+            <p><strong>0%</strong></p>
         </div>
 
-        <div class="token-card glow-card">
-            <h3>Sell Tax</h3>
-            <p>0%</p>
+        <div class="tokenomics-box">
+            <h2>Sell Tax</h2>
+            <p><strong>0%</strong></p>
         </div>
 
-        <div class="token-card glow-card">
-            <h3>Burn</h3>
-            <p>No burn — fixed supply</p>
+        <div class="tokenomics-box">
+            <h2>Contract Address</h2>
+            <p class="contract-address">
+                0x3c7462004dd99b680b3736982a965effc7d285aa
+            </p>
+            <button onclick="navigator.clipboard.writeText('0x3c7462004dd99b680b3736982a965effc7d285aa')" class="btn-primary">
+                Copy Address
+            </button>
         </div>
 
-        <div class="token-card glow-card">
-            <h3>Owner Wallet</h3>
-            <p>0x29fd8aE0df43c52E892bA389787e3cCE91f59865</p>
+        <div class="tokenomics-box">
+            <h2>Liquidity</h2>
+            <p>Liquidity is locked to ensure long‑term stability and trust.</p>
         </div>
 
-        <div class="token-card glow-card">
-            <h3>Contract Address</h3>
-            <p>0x3c7462004dd99b680b3736982a965effc7d285aa</p>
+        <div class="tokenomics-box">
+            <h2>Ownership</h2>
+            <p>Ownership is renounced — MOONVIC is fully decentralized.</p>
         </div>
-
-    </div>
-
-</section>
-
-<!-- DISTRIBUTION SECTION -->
-<section class="distribution-section fade-in">
-    <h2>Token Distribution</h2>
-
-    <div class="distribution-grid">
-
-        <div class="dist-card glow-card">
-            <h3>70% — Liquidity</h3>
-            <p>Ensuring stability, fairness, and long‑term trading confidence.</p>
-        </div>
-
-        <div class="dist-card glow-card">
-            <h3>10% — Team</h3>
-            <p>Reserved for development, operations, and long‑term project support.</p>
-        </div>
-
-        <div class="dist-card glow-card">
-            <h3>10% — Marketing</h3>
-            <p>Fueling growth, partnerships, and global exposure.</p>
-        </div>
-
-        <div class="dist-card glow-card">
-            <h3>10% — Ecosystem Growth</h3>
-            <p>Supporting utilities, rewards, and future expansion.</p>
-        </div>
-
     </div>
 </section>
+<!-- =============== END TOKENOMICS SECTION =============== -->
 
-<!-- WHY MOONVIC -->
-<section class="why-section fade-in">
-    <h2>Why MOONVIC?</h2>
-    <p>MOONVIC is built on transparency, trust, and long‑term vision. With 0% tax, a fixed supply, and a balanced distribution model, the token is designed for stability and sustainable growth — not hype.</p>
-</section>
 
-<!-- FOOTER -->
+<!-- ================= FOOTER ================= -->
 <footer>
-    <p>© 2026 MOONVIC. All Rights Reserved.</p>
-</footer>
+    <p>© 2026 MOONVIC — All Rights Reserved.</p>
 
-<!-- MOBILE MENU SCRIPT -->
-<script>
-function toggleMenu() {
-    const nav = document.querySelector('.nav-links');
-    nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
-}
-</script>
+    <div class="footer-social">
+        <a href="https://x.com/moonvicofficial" target="_blank" class="icon twitter">
+            <i class="fab fa-twitter"></i>
+        </a>
+
+        <a href="https://etherscan.io/token/0x3c7462004dd99b680b3736982a965effc7d285aa" target="_blank" class="icon etherscan">
+            <i class="fas fa-search"></i>
+        </a>
+
+        <a href="#" onclick="navigator.clipboard.writeText('0x3c7462004dd99b680b3736982a965effc7d285aa')" class="icon contract">
+            <i class="fas fa-copy"></i>
+        </a>
+
+        <a href="https://www.dextools.io/app/en/ether/pair-explorer/0x3c7462004dd99b680b3736982a965effc7d285aa" target="_blank" class="icon dextools">
+            <i class="fas fa-chart-line"></i>
+        </a>
+
+        <a href="https://t.me/moonvic" target="_blank" class="icon telegram">
+            <i class="fab fa-telegram"></i>
+        </a>
+
+        <a href="https://discord.gg/moonvic" target="_blank" class="icon discord">
+            <i class="fab fa-discord"></i>
+        </a>
+    </div>
+</footer>
+<!-- =============== END FOOTER =============== -->
 
 </body>
 </html>
