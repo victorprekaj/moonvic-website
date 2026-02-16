@@ -3,121 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MOONVIC Roadmap</title>
+    <title>Roadmap — MOONVIC</title>
+
+    <!-- ICON LIBRARY -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- MAIN CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- NAVBAR -->
-<header class="navbar">
-    <div class="logo">
-        <a href="index.html"><img src="assets/images/moonvic-logo.png" alt="MOONVIC Logo"></a>
-    </div>
+<!-- ================= HEADER ================= -->
+<header>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/images/moonvic-logo.png" alt="MOONVIC Logo">
+            </a>
+        </div>
 
-    <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="ecosystem.html">Ecosystem</a></li>
-        <li><a href="tokenomics.html">Tokenomics</a></li>
-        <li><a href="roadmap.html" class="active">Roadmap</a></li>
-        <li><a href="how-to-buy.html">How to Buy</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="tokenomics.html">Tokenomics</a></li>
+            <li><a href="roadmap.html" class="active">Roadmap</a></li>
+            <li><a href="ecosystem.html">Ecosystem</a></li>
+            <li><a href="how-to-buy.html">How to Buy</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
 
-    <div class="hamburger" onclick="toggleMenu()">
-        <span></span><span></span><span></span>
+    <!-- ⭐ SOCIAL ICONS (NEON CYAN GLOW) ⭐ -->
+    <div class="social-icons-header">
+        <a href="https://x.com/moonvicofficial" target="_blank" class="icon twitter">
+            <i class="fab fa-twitter"></i> Twitter
+        </a>
+
+        <a href="https://etherscan.io/token/0x3c7462004dd99b680b3736982a965effc7d285aa" target="_blank" class="icon etherscan">
+            <i class="fas fa-search"></i> Etherscan
+        </a>
+
+        <a href="#" onclick="navigator.clipboard.writeText('0x3c7462004dd99b680b3736982a965effc7d285aa')" class="icon contract">
+            <i class="fas fa-copy"></i> Contract
+        </a>
+
+        <a href="https://www.dextools.io/app/en/ether/pair-explorer/0x3c7462004dd99b680b3736982a965effc7d285aa" target="_blank" class="icon dextools">
+            <i class="fas fa-chart-line"></i> DexTools
+        </a>
+
+        <a href="https://t.me/moonvic" target="_blank" class="icon telegram">
+            <i class="fab fa-telegram"></i> Telegram
+        </a>
+
+        <a href="https://discord.gg/moonvic" target="_blank" class="icon discord">
+            <i class="fab fa-discord"></i> Discord
+        </a>
     </div>
 </header>
+<!-- =============== END HEADER =============== -->
 
-<!-- HERO -->
-<section class="page-hero">
-    <h1>MOONVIC Roadmap</h1>
-    <p>A clear vision for long‑term growth and ecosystem expansion.</p>
-</section>
 
-<!-- ROADMAP SECTION -->
-<section class="roadmap-section fade-in">
+<!-- ================= ROADMAP SECTION ================= -->
+<section class="roadmap-page">
+    <div class="container">
+        <h1>MOONVIC Roadmap</h1>
+        <p>
+            The MOONVIC roadmap outlines our long‑term vision and the milestones that will shape 
+            the future of the ecosystem. Every phase is designed with precision, transparency, and 
+            a commitment to delivering real utility.
+        </p>
 
-    <div class="roadmap-container">
+        <div class="roadmap-timeline">
 
-        <!-- PHASE 1 -->
-        <div class="roadmap-card glow-card">
-            <h3>Phase 1 — Foundation</h3>
-            <span class="status-badge live">Completed</span>
-            <ul>
-                <li>Token Deployment</li>
-                <li>Website Launch</li>
-                <li>Brand Identity Creation</li>
-                <li>Core Documentation</li>
-            </ul>
+            <div class="roadmap-item">
+                <h2>Phase 1 — Launch & Foundation</h2>
+                <ul>
+                    <li>Token Deployment</li>
+                    <li>Website Launch</li>
+                    <li>Brand Identity & Socials</li>
+                    <li>Contract Verification</li>
+                    <li>Liquidity Lock</li>
+                </ul>
+            </div>
+
+            <div class="roadmap-item">
+                <h2>Phase 2 — Growth & Expansion</h2>
+                <ul>
+                    <li>Marketing Push</li>
+                    <li>Community Building</li>
+                    <li>Listings on Trackers</li>
+                    <li>Partnership Development</li>
+                    <li>Utility Planning</li>
+                </ul>
+            </div>
+
+            <div class="roadmap-item">
+                <h2>Phase 3 — Ecosystem Utilities</h2>
+                <ul>
+                    <li>MOONVIC Tools</li>
+                    <li>Integrations</li>
+                    <li>Platform Expansion</li>
+                    <li>Advanced Features</li>
+                </ul>
+            </div>
+
+            <div class="roadmap-item">
+                <h2>Phase 4 — Long‑Term Vision</h2>
+                <ul>
+                    <li>Scaling the Ecosystem</li>
+                    <li>New Utility Releases</li>
+                    <li>Global Community Growth</li>
+                    <li>Continuous Innovation</li>
+                </ul>
+            </div>
+
         </div>
-
-        <!-- PHASE 2 -->
-        <div class="roadmap-card glow-card">
-            <h3>Phase 2 — Ecosystem Build</h3>
-            <span class="status-badge progress">In Progress</span>
-            <ul>
-                <li>MOONVIC AI Assistant (Live)</li>
-                <li>Ecosystem Page Launch</li>
-                <li>Tokenomics Page Upgrade</li>
-                <li>Community Growth</li>
-            </ul>
-        </div>
-
-        <!-- PHASE 3 -->
-        <div class="roadmap-card glow-card">
-            <h3>Phase 3 — Utility Expansion</h3>
-            <span class="status-badge soon">Coming Soon</span>
-            <ul>
-                <li>MOONVIC Swap</li>
-                <li>Staking Vaults</li>
-                <li>Rewards Hub</li>
-                <li>Marketing Push</li>
-            </ul>
-        </div>
-
-        <!-- PHASE 4 -->
-        <div class="roadmap-card glow-card">
-            <h3>Phase 4 — Platform Growth</h3>
-            <span class="status-badge soon">Coming Soon</span>
-            <ul>
-                <li>MOONVIC Launchpad</li>
-                <li>NFT Collection</li>
-                <li>Partnership Integrations</li>
-                <li>Expanded Utility Rollout</li>
-            </ul>
-        </div>
-
-        <!-- PHASE 5 -->
-        <div class="roadmap-card glow-card">
-            <h3>Phase 5 — Long‑Term Vision</h3>
-            <span class="status-badge soon">Coming Soon</span>
-            <ul>
-                <li>MOONVIC Governance</li>
-                <li>Mobile App Exploration</li>
-                <li>Cross‑Chain Expansion</li>
-                <li>Global Ecosystem Scaling</li>
-            </ul>
-        </div>
-
     </div>
-
 </section>
+<!-- =============== END ROADMAP SECTION =============== -->
 
-<!-- FOOTER -->
+
+<!-- ================= FOOTER ================= -->
 <footer>
-    <p>© 2026 MOONVIC. All Rights Reserved.</p>
-</footer>
+    <p>© 2026 MOONVIC — All Rights Reserved.</p>
 
-<!-- MOBILE MENU SCRIPT -->
-<script>
-function toggleMenu() {
-    const nav = document.querySelector('.nav-links');
-    nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
-}
-</script>
+    <div class="footer-social">
+        <a href="https://x.com/moonvicofficial" target="_blank" class="icon twitter">
+            <i class="fab fa-twitter"></i>
+        </a>
+
+        <a href="https://etherscan.io/token/0x3c7462004dd99b680b3736982a965effc7d285aa" target="_blank" class="icon etherscan">
+            <i class="fas fa-search"></i>
+        </a>
+
+        <a href="#" onclick="navigator.clipboard.writeText('0x3c7462004dd99b680b3736982a965effc7d285aa')" class="icon contract">
+            <i class="fas fa-copy"></i>
+        </a>
+
+        <a href="https://www.dextools.io/app/en/ether/pair-explorer/0x3c7462004dd99b680b3736982a965effc7d285aa" target="_blank" class="icon dextools">
+            <i class="fas fa-chart-line"></i>
+        </a>
+
+        <a href="https://t.me/moonvic" target="_blank" class="icon telegram">
+            <i class="fab fa-telegram"></i>
+        </a>
+
+        <a href="https://discord.gg/moonvic" target="_blank" class="icon discord">
+            <i class="fab fa-discord"></i>
+        </a>
+    </div>
+</footer>
+<!-- =============== END FOOTER =============== -->
 
 </body>
 </html>
