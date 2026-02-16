@@ -3,80 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact MOONVIC</title>
+    <title>Contact — MOONVIC</title>
+
+    <!-- ICON LIBRARY -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- MAIN CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- NAVBAR -->
-<header class="navbar">
-    <div class="logo">
-        <a href="index.html"><img src="assets/images/moonvic-logo.png" alt="MOONVIC Logo"></a>
-    </div>
-
-    <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="ecosystem.html">Ecosystem</a></li>
-        <li><a href="tokenomics.html">Tokenomics</a></li>
-        <li><a href="roadmap.html">Roadmap</a></li>
-        <li><a href="how-to-buy.html">How to Buy</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
-    </ul>
-
-    <div class="hamburger" onclick="toggleMenu()">
-        <span></span><span></span><span></span>
-    </div>
-</header>
-
-<!-- HERO -->
-<section class="page-hero">
-    <h1>Contact MOONVIC</h1>
-    <p>We’re here to support you and answer your questions.</p>
-</section>
-
-<!-- CONTACT SECTION -->
-<section class="contact-section fade-in">
-
-    <div class="contact-container glow-card">
-        <h2>Get in Touch</h2>
-        <p>
-            Whether you have questions about the project, partnerships, or general inquiries, 
-            the MOONVIC team is ready to assist. We aim to respond as quickly and professionally 
-            as possible.
-        </p>
-
-        <div class="contact-details">
-            <p><strong>Email:</strong> contact@moonvic.io</p>
-            <p><strong>Official Website:</strong> moonvic.io</p>
+<!-- ================= HEADER ================= -->
+<header>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/images/moonvic-logo.png" alt="MOONVIC Logo">
+            </a>
         </div>
 
-        <h3>Social Channels</h3>
-        <p>Join our community and stay updated:</p>
-
-        <ul class="social-list">
-            <li>Twitter (X) — Coming Soon</li>
-            <li>Telegram — Coming Soon</li>
-            <li>Discord — Coming Soon</li>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="tokenomics.html">Tokenomics</a></li>
+            <li><a href="roadmap.html">Roadmap</a></li>
+            <li><a href="ecosystem.html">Ecosystem</a></li>
+            <li><a href="how-to-buy.html">How to Buy</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
         </ul>
+    </nav>
+
+    <!-- ⭐ SOCIAL ICONS (NEON CYAN GLOW) ⭐ -->
+    <div class="social-icons-header">
+        <a href="https://x.com/moonvicofficial" target="_blank" class="icon twitter">
+            <i class="fab fa-twitter"></i> Twitter
+        </a>
+
+        <a href="https://etherscan.io/token/0x3c7462004dd99b680b3736982a965effc7d285aa" target="_blank" class="icon etherscan">
+            <i class="fas fa-search"></i> Etherscan
+        </a>
+
+        <a href="#" onclick="navigator.clipboard.writeText('0x3c7462004dd99b680b3736982a965effc7d285aa')" class="icon contract">
+            <i class="fas fa-copy"></i> Contract
+        </a>
+
+        <a href="https://www.dextools.io/app/en/ether/pair-explorer/0x3c7462004dd99b680b3736982a965effc7d285aa" target="_blank" class="icon dextools">
+            <i class="fas fa-chart-line"></i> DexTools
+        </a>
+
+        <a href="https://t.me/moonvic" target="_blank" class="icon telegram">
+            <i class="fab fa-telegram"></i> Telegram
+        </a>
+
+        <a href="https://discord.gg/moonvic" target="_blank" class="icon discord">
+            <i class="fab fa-discord"></i> Discord
+        </a>
     </div>
+</header>
+<!-- =============== END HEADER =============== -->
 
+
+<!-- ================= CONTACT SECTION ================= -->
+<section class="contact-page">
+    <div class="container">
+        <h1>Contact MOONVIC</h1>
+        <p>
+            For business inquiries, partnerships, collaborations, or media requests, reach out using the official contact information below.
+        </p>
+
+        <div class="contact-box">
+            <h2>Email</h2>
+            <p class="contact-email">contact@moonvic.io</p>
+            <button onclick="navigator.clipboard.writeText('contact@moonvic.io')" class="btn-primary">
+                Copy Email
+            </button>
+        </div>
+
+        <div class="contact-box">
+            <h2>Social Channels</h2>
+            <p>Stay connected with the MOONVIC community:</p>
+
+            <div class="contact-social">
+                <a href="https://x.com/moonvicofficial" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+                <a href="https://t.me/moonvic" target="_blank"><i class="fab fa-telegram"></i> Telegram</a>
+                <a href="https://discord.gg/moonvic" target="_blank"><i class="fab fa-discord"></i> Discord</a>
+            </div>
+        </div>
+
+        <div class="contact-box">
+            <h2>Contract Address</h2>
+            <p class="contract-address">
+                0x3c7462004dd99b680b3736982a965effc7d285aa
+            </p>
+            <button onclick="navigator.clipboard.writeText('0x3c7462004dd99b680b3736982a965effc7d285aa')" class="btn-primary">
+                Copy Address
+            </button>
+        </div>
+    </div>
 </section>
+<!-- =============== END CONTACT SECTION =============== -->
 
-<!-- FOOTER -->
+
+<!-- ================= FOOTER ================= -->
 <footer>
-    <p>© 2026 MOONVIC. All Rights Reserved.</p>
-</footer>
+    <p>© 2026 MOONVIC — All Rights Reserved.</p>
 
-<!-- MOBILE MENU SCRIPT -->
-<script>
-function toggleMenu() {
-    const nav = document.querySelector('.nav-links');
-    nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
-}
-</script>
+    <div class="footer-social">
+        <a href="https://x.com/moonvicofficial" target="_blank" class="icon twitter">
+            <i class="fab fa-twitter"></i>
+        </a>
+
+        <a href="https://etherscan.io/token/0x3c7462004dd99b680b3736982a965effc7d285aa" target="_blank" class="icon etherscan">
+            <i class="fas fa-search"></i>
+        </a>
+
+        <a href="#" onclick="navigator.clipboard.writeText('0x3c7462004dd99b680b3736982a965effc7d285aa')" class="icon contract">
+            <i class="fas fa-copy"></i>
+        </a>
+
+        <a href="https://www.dextools.io/app/en/ether/pair-explorer/0x3c7462004dd99b680b3736982a965effc7d285aa" target="_blank" class="icon dextools">
+            <i class="fas fa-chart-line"></i>
+        </a>
+
+        <a href="https://t.me/moonvic" target="_blank" class="icon telegram">
+            <i class="fab fa-telegram"></i>
+        </a>
+
+        <a href="https://discord.gg/moonvic" target="_blank" class="icon discord">
+            <i class="fab fa-discord"></i>
+        </a>
+    </div>
+</footer>
+<!-- =============== END FOOTER =============== -->
 
 </body>
 </html>
