@@ -3,134 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MOONVIC — The Gold Standard of Web3</title>
+    <title>MOONVIC — The Zero‑Tax Web3 Ecosystem</title>
 
-    <link rel="icon" type="image/png" href="assets/images/moonvic-logo.png" />
+    <!-- ICON LIBRARY -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- MAIN CSS -->
     <link rel="stylesheet" href="style.css">
-
-    <style>
-        /* HERO SECTION USING YOUR EXISTING IMAGE */
-        .hero {
-            position: relative;
-            height: 100vh;
-            width: 100%;
-            background: url("assets/images/hero-moonvic-cinematic.jpg") center/cover no-repeat;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            overflow: hidden;
-        }
-
-        .hero-content {
-            position: relative;
-            z-index: 2;
-        }
-
-        .hero-title {
-            font-size: 4rem;
-            font-weight: 800;
-            color: white;
-            margin: 0;
-            letter-spacing: 2px;
-            text-shadow: 0 0 20px rgba(0,255,255,0.4);
-        }
-
-        .hero-subtitle {
-            font-size: 1.4rem;
-            color: #00eaff;
-            margin-top: 10px;
-            margin-bottom: 30px;
-        }
-
-        .hero-button {
-            padding: 14px 32px;
-            background: #00eaff;
-            color: #000;
-            font-weight: 700;
-            border-radius: 6px;
-            text-decoration: none;
-            transition: 0.2s;
-        }
-
-        .hero-button:hover {
-            background: white;
-            color: black;
-        }
-
-        section {
-            padding: 80px 20px;
-        }
-    </style>
 </head>
 
 <body>
 
-    <!-- NAVIGATION -->
-    <header>
-        <nav class="navbar">
-            <div class="logo">
+<!-- ================= HEADER ================= -->
+<header>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
                 <img src="assets/images/moonvic-logo.png" alt="MOONVIC Logo">
-            </div>
-
-            <ul class="nav-links">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="tokenomics.html">Tokenomics</a></li>
-                <li><a href="ecosystem.html">Ecosystem</a></li>
-                <li><a href="roadmap.html">Roadmap</a></li>
-                <li><a href="how-to-buy.html">How to Buy</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-
-            <div class="hamburger">
-                <span></span><span></span><span></span>
-            </div>
-        </nav>
-    </header>
-
-    <!-- HERO -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1 class="hero-title">MOONVIC</h1>
-            <p class="hero-subtitle">The Gold Standard of Web3</p>
-            <a href="how-to-buy.html" class="hero-button">How to Buy</a>
+            </a>
         </div>
-    </section>
 
-    <!-- ECOSYSTEM PREVIEW -->
-    <section class="mv-ecosystem-preview fade-in">
-        <h2>MOONVIC Ecosystem</h2>
-        <p>Explore the live Web3 hub powering MV on Ethereum.</p>
-        <a href="ecosystem.html" class="btn">View Ecosystem</a>
-    </section>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="tokenomics.html">Tokenomics</a></li>
+            <li><a href="roadmap.html">Roadmap</a></li>
+            <li><a href="ecosystem.html">Ecosystem</a></li>
+            <li><a href="how-to-buy.html">How to Buy</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
 
-    <!-- ABOUT -->
-    <section class="about fade-in">
-        <h2>What is MOONVIC?</h2>
-        <p>MOONVIC is a premium Ethereum-based token designed to empower the next generation of Web3 builders, investors, and innovators.</p>
-        <a href="about.html" class="btn">Learn More</a>
-    </section>
+    <!-- ⭐ SOCIAL ICONS (NEON CYAN GLOW) ⭐ -->
+    <div class="social-icons-header">
+        <a href="https://x.com/moonvicofficial" target="_blank" class="icon twitter">
+            <i class="fab fa-twitter"></i> Twitter
+        </a>
 
-    <!-- TOKENOMICS -->
-    <section class="tokenomics-preview fade-in">
-        <h2>Tokenomics</h2>
-        <p>Explore the supply, distribution, and long-term sustainability of MOONVIC.</p>
-        <a href="tokenomics.html" class="btn">View Tokenomics</a>
-    </section>
+        <a href="https://etherscan.io/token/0x3c7462004dd99b680b3736982a965effc7d285aa" target="_blank" class="icon etherscan">
+            <i class="fas fa-search"></i> Etherscan
+        </a>
 
-    <!-- ROADMAP -->
-    <section class="roadmap-preview fade-in">
-        <h2>Roadmap</h2>
-        <p>See the future of MOONVIC and the milestones ahead.</p>
-        <a href="roadmap.html" class="btn">View Roadmap</a>
-    </section>
+        <a href="#" onclick="navigator.clipboard.writeText('0x3c7462004dd99b680b3736982a965effc7d285aa')" class="icon contract">
+            <i class="fas fa-copy"></i> Contract
+        </a>
 
-    <!-- FOOTER -->
-    <footer>
-        <p>© 2024 MOONVIC. All Rights Reserved.</p>
-    </footer>
+        <a href="https://www.dextools.io/app/en/ether/pair-explorer/0x3c7462004dd99b680b3736982a965effc7d285aa" target="_blank" class="icon dextools">
+            <i class="fas fa-chart-line"></i> DexTools
+        </a>
+
+        <a href="https://t.me/moonvic" target="_blank" class="icon telegram">
+            <i class="fab fa-telegram"></i> Telegram
+        </a>
+
+        <a href="https://discord.gg/moonvic" target="_blank" class="icon discord">
+            <i class="fab fa-discord"></i> Discord
+        </a>
+    </div>
+</header>
+<!-- =============== END HEADER =============== -->
+
+
+<!-- ================= HERO SECTION ================= -->
+<section class="hero">
+    <img src="assets/images/galaxy-bg.jpg" class="hero-bg" alt="Galaxy Background">
+
+    <div class="hero-content">
+        <h1>Welcome to <span>MOONVIC</span></h1>
+        <p>The Zero‑Tax Web3 Ecosystem Built for Speed, Transparency, and Real Utility.</p>
+
+        <a href="how-to-buy.html" class="btn-primary">How to Buy</a>
+        <a href="ecosystem.html" class="btn-secondary">Explore Ecosystem</a>
+    </div>
+</section>
+<!-- =============== END HERO SECTION =============== -->
+
+
+<!-- ================= FEATURES ================= -->
+<section class="features">
+    <h2>Why MOONVIC?</h2>
+
+    <div class="feature-grid">
+        <div class="feature-box">
+            <i class="fas fa-bolt"></i>
+            <h3>Zero Tax</h3>
+            <p>Trade freely with no buy or sell taxes — ever.</p>
+        </div>
+
+        <div class="feature-box">
+            <i class="fas fa-lock"></i>
+            <h3>Secure & Transparent</h3>
+            <p>Fully verified contract and open development.</p>
+        </div>
+
+        <div class="feature-box">
+            <i class="fas fa-rocket"></i>
+            <h3>Fast Ecosystem Growth</h3>
+            <p>New utilities, integrations, and expansions coming rapidly.</p>
+        </div>
+    </div>
+</section>
+<!-- =============== END FEATURES =============== -->
+
+
+<!-- ================= CALL TO ACTION ================= -->
+<section class="cta">
+    <h2>Join the MOONVIC Movement</h2>
+    <p>Be part of a Web3 ecosystem built for the future.</p>
+    <a href="https://t.me/moonvic" target="_blank" class="btn-primary">Join Telegram</a>
+</section>
+<!-- =============== END CTA =============== -->
+
+
+<!-- ================= FOOTER ================= -->
+<footer>
+    <p>© 2026 MOONVIC — All Rights Reserved.</p>
+
+    <div class="footer-social">
+        <a href="https://x.com/moonvicofficial" target="_blank" class="icon twitter">
+            <i class="fab fa-twitter"></i>
+        </a>
+
+        <a href="https://etherscan.io/token/0x3c7462004dd99b680b3736982a965effc7d285aa" target="_blank" class="icon etherscan">
+            <i class="fas fa-search"></i>
+        </a>
+
+        <a href="#" onclick="navigator.clipboard.writeText('0x3c7462004dd99b680b3736982a965effc7d285aa')" class="icon contract">
+            <i class="fas fa-copy"></i>
+        </a>
+
+        <a href="https://www.dextools.io/app/en/ether/pair-explorer/0x3c7462004dd99b680b3736982a965effc7d285aa" target="_blank" class="icon dextools">
+            <i class="fas fa-chart-line"></i>
+        </a>
+
+        <a href="https://t.me/moonvic" target="_blank" class="icon telegram">
+            <i class="fab fa-telegram"></i>
+        </a>
+
+        <a href="https://discord.gg/moonvic" target="_blank" class="icon discord">
+            <i class="fab fa-discord"></i>
+        </a>
+    </div>
+</footer>
+<!-- =============== END FOOTER =============== -->
 
 </body>
 </html>
