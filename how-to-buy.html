@@ -1,167 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>How to Buy — MOONVIC</title>
 
-    <!-- ICON LIBRARY -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap" rel="stylesheet">
 
-    <!-- MAIN CSS -->
-    <link rel="stylesheet" href="style.css">
+    <style>
+        /* GLOBAL RESET */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            background: #000;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        /* NAVBAR */
+        nav {
+            width: 100%;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.7);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(6px);
+        }
+
+        nav .logo {
+            font-size: 28px;
+            font-weight: 900;
+        }
+
+        nav .logo .gold {
+            color: #f5c15c;
+            text-shadow: 0 0 10px #f5c15c;
+        }
+
+        nav .logo .blue {
+            color: #00aaff;
+            text-shadow: 0 0 10px #00aaff;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.25s ease;
+        }
+
+        nav ul li a:hover {
+            color: #00aaff;
+            text-shadow: 0 0 10px #00aaff;
+        }
+
+        /* HOW TO BUY SECTION */
+        .how-to-buy {
+            padding: 120px 40px;
+            text-align: center;
+        }
+
+        .how-to-buy h1 {
+            font-size: 50px;
+            font-weight: 900;
+            color: #f5c15c;
+            text-shadow: 0 0 15px #f5c15c;
+            margin-bottom: 60px;
+        }
+
+        .steps {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .step-card {
+            width: 300px;
+            padding: 40px 25px;
+            background: rgba(0, 0, 0, 0.6);
+            border: 2px solid #f5c15c;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(245, 193, 92, 0.3);
+            transition: 0.3s ease;
+        }
+
+        .step-card:hover {
+            box-shadow: 0 0 30px rgba(0, 170, 255, 0.6);
+            transform: translateY(-5px);
+        }
+
+        .step-icon {
+            font-size: 60px;
+            color: #00aaff;
+            text-shadow: 0 0 15px #00aaff;
+            margin-bottom: 20px;
+        }
+
+        .step-title {
+            font-size: 24px;
+            font-weight: 700;
+            color: #6ecbff;
+            text-shadow: 0 0 10px #6ecbff;
+            margin-bottom: 10px;
+        }
+
+        .step-desc {
+            font-size: 16px;
+            color: #ccc;
+            line-height: 1.5;
+        }
+
+        /* FOOTER */
+        footer {
+            margin-top: 120px;
+            padding: 40px;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.7);
+            border-top: 1px solid #222;
+        }
+
+        footer p {
+            color: #888;
+            font-size: 14px;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .steps {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-<!-- ================= HEADER ================= -->
-<header>
-    <nav class="navbar">
+    <!-- NAVBAR -->
+    <nav>
         <div class="logo">
-            <a href="index.html">
-                <img src="assets/images/moonvic-logo.png" alt="MOONVIC Logo">
-            </a>
+            <span class="gold">MOON</span><span class="blue">VIC</span>
         </div>
 
-        <ul class="nav-links">
+        <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="how-to-buy.html">How to Buy</a></li>
+            <li><a href="ecosystem.html">Ecosystem</a></li>
             <li><a href="tokenomics.html">Tokenomics</a></li>
             <li><a href="roadmap.html">Roadmap</a></li>
-            <li><a href="ecosystem.html">Ecosystem</a></li>
-            <li><a href="how-to-buy.html" class="active">How to Buy</a></li>
             <li><a href="faq.html">FAQ</a></li>
-            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 
-    <!-- ⭐ SOCIAL ICONS (NEON CYAN GLOW) ⭐ -->
-    <div class="social-icons-header">
-        <a href="https://x.com/moonvicofficial" target="_blank" class="icon twitter">
-            <i class="fab fa-twitter"></i> Twitter
-        </a>
+    <!-- HOW TO BUY SECTION -->
+    <section class="how-to-buy">
+        <h1>HOW TO BUY</h1>
 
-        <a href="https://etherscan.io/token/0x3c7462004dd99b680b3736982a965effc7d285aa" target="_blank" class="icon etherscan">
-            <i class="fas fa-search"></i> Etherscan
-        </a>
+        <div class="steps">
 
-        <a href="#" onclick="navigator.clipboard.writeText('0x3c7462004dd99b680b3736982a965effc7d285aa')" class="icon contract">
-            <i class="fas fa-copy"></i> Contract
-        </a>
-
-        <a href="https://www.dextools.io/app/en/ether/pair-explorer/0x3c7462004dd99b680b3736982a965effc7d285aa" target="_blank" class="icon dextools">
-            <i class="fas fa-chart-line"></i> DexTools
-        </a>
-
-        <a href="https://t.me/moonvic" target="_blank" class="icon telegram">
-            <i class="fab fa-telegram"></i> Telegram
-        </a>
-
-        <a href="https://discord.gg/moonvic" target="_blank" class="icon discord">
-            <i class="fab fa-discord"></i> Discord
-        </a>
-    </div>
-</header>
-<!-- =============== END HEADER =============== -->
-
-
-<!-- ================= HOW TO BUY SECTION ================= -->
-<section class="how-to-buy-page">
-    <div class="container">
-        <h1>How to Buy MOONVIC</h1>
-        <p>
-            Buying MOONVIC is simple, fast, and secure. Follow the steps below to get started.
-        </p>
-
-        <!-- ⭐ PLACEHOLDER FOR THE GLOWING STATS BOX YOU REQUESTED EARLIER ⭐ -->
-        <div class="stats-box-placeholder">
-            <!-- We will insert the glowing stats box here after all pages are done -->
-        </div>
-
-        <div class="buy-steps">
-
-            <div class="step-box">
-                <h2>Step 1 — Install a Wallet</h2>
-                <p>
-                    Download MetaMask or any Ethereum‑compatible wallet on your browser or mobile device.
-                </p>
+            <!-- STEP 1 -->
+            <div class="step-card">
+                <div class="step-icon">👛</div>
+                <div class="step-title">Create a Wallet</div>
+                <div class="step-desc">
+                    Download MetaMask or any Web3 wallet to get started.
+                </div>
             </div>
 
-            <div class="step-box">
-                <h2>Step 2 — Add ETH</h2>
-                <p>
-                    Purchase ETH on an exchange (Coinbase, Binance, etc.) and transfer it to your wallet.
-                </p>
+            <!-- STEP 2 -->
+            <div class="step-card">
+                <div class="step-icon">⬡</div>
+                <div class="step-title">Buy ETH</div>
+                <div class="step-desc">
+                    Purchase ETH directly inside your wallet or through an exchange.
+                </div>
             </div>
 
-            <div class="step-box">
-                <h2>Step 3 — Connect to Uniswap</h2>
-                <p>
-                    Visit Uniswap and connect your wallet to begin swapping ETH for MOONVIC.
-                </p>
-            </div>
-
-            <div class="step-box">
-                <h2>Step 4 — Enter the Contract Address</h2>
-                <p class="contract-address">
-                    0x3c7462004dd99b680b3736982a965effc7d285aa
-                </p>
-                <button onclick="navigator.clipboard.writeText('0x3c7462004dd99b680b3736982a965effc7d285aa')" class="btn-primary">
-                    Copy Address
-                </button>
-            </div>
-
-            <div class="step-box">
-                <h2>Step 5 — Swap ETH for MOONVIC</h2>
-                <p>
-                    Set your slippage to 0% (MOONVIC is zero‑tax) and confirm the swap.
-                </p>
-            </div>
-
-            <div class="step-box">
-                <h2>Step 6 — You're In</h2>
-                <p>
-                    Welcome to the MOONVIC ecosystem — you're officially part of the movement.
-                </p>
+            <!-- STEP 3 -->
+            <div class="step-card">
+                <div class="step-icon">🔄</div>
+                <div class="step-title">Swap for MOONVIC</div>
+                <div class="step-desc">
+                    Use Uniswap or your preferred DEX to swap ETH for MOONVIC.
+                </div>
             </div>
 
         </div>
-    </div>
-</section>
-<!-- =============== END HOW TO BUY SECTION =============== -->
+    </section>
 
-
-<!-- ================= FOOTER ================= -->
-<footer>
-    <p>© 2026 MOONVIC — All Rights Reserved.</p>
-
-    <div class="footer-social">
-        <a href="https://x.com/moonvicofficial" target="_blank" class="icon twitter">
-            <i class="fab fa-twitter"></i>
-        </a>
-
-        <a href="https://etherscan.io/token/0x3c7462004dd99b680b3736982a965effc7d285aa" target="_blank" class="icon etherscan">
-            <i class="fas fa-search"></i>
-        </a>
-
-        <a href="#" onclick="navigator.clipboard.writeText('0x3c7462004dd99b680b3736982a965effc7d285aa')" class="icon contract">
-            <i class="fas fa-copy"></i>
-        </a>
-
-        <a href="https://www.dextools.io/app/en/ether/pair-explorer/0x3c7462004dd99b680b3736982a965effc7d285aa" target="_blank" class="icon dextools">
-            <i class="fas fa-chart-line"></i>
-        </a>
-
-        <a href="https://t.me/moonvic" target="_blank" class="icon telegram">
-            <i class="fab fa-telegram"></i>
-        </a>
-
-        <a href="https://discord.gg/moonvic" target="_blank" class="icon discord">
-            <i class="fab fa-discord"></i>
-        </a>
-    </div>
-</footer>
-<!-- =============== END FOOTER =============== -->
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 MOONVIC — All Rights Reserved.</p>
+    </footer>
 
 </body>
 </html>
