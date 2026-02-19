@@ -22,6 +22,7 @@
       overflow-x: hidden;
     }
 
+    /* NAVBAR */
     nav {
       width: 100%;
       padding: 20px 40px;
@@ -33,6 +34,7 @@
       top: 0;
       z-index: 100;
       backdrop-filter: blur(6px);
+      border-bottom: 1px solid #222;
     }
 
     nav .logo {
@@ -68,23 +70,27 @@
       text-shadow: 0 0 10px #00aaff;
     }
 
+    /* FAQ SECTION */
     .faq {
       padding: 120px 40px;
       max-width: 900px;
       margin: auto;
+      text-align: center;
     }
 
     .faq h1 {
-      font-size: 50px;
+      font-size: 64px;
       font-weight: 900;
-      color: #f5c15c;
-      text-shadow: 0 0 15px #f5c15c;
-      margin-bottom: 60px;
-      text-align: center;
+      background: linear-gradient(to right, #f5c15c, #00aaff);
+      -webkit-background-clip: text;
+      color: transparent;
+      text-shadow: 0 0 25px rgba(0, 170, 255, 0.4);
+      margin-bottom: 80px;
     }
 
     .question {
       margin-bottom: 60px;
+      text-align: left;
     }
 
     .q-title {
@@ -110,6 +116,7 @@
       box-shadow: 0 0 10px #000;
     }
 
+    /* FOOTER */
     footer {
       margin-top: 120px;
       padding: 40px;
@@ -204,3 +211,4 @@
 
 </body>
 </html>
+
