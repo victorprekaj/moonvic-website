@@ -1,162 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ecosystem — MOONVIC</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MOONVIC Ecosystem</title>
 
-    <!-- ICON LIBRARY -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap" rel="stylesheet">
 
-    <!-- MAIN CSS -->
-    <link rel="stylesheet" href="style.css">
+    <style>
+        /* GLOBAL RESET */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            background: #000;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        /* NAVBAR */
+        nav {
+            width: 100%;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.7);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(6px);
+        }
+
+        nav .logo {
+            font-size: 28px;
+            font-weight: 900;
+        }
+
+        nav .logo .gold {
+            color: #f5c15c;
+            text-shadow: 0 0 10px #f5c15c;
+        }
+
+        nav .logo .blue {
+            color: #00aaff;
+            text-shadow: 0 0 10px #00aaff;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.25s ease;
+        }
+
+        nav ul li a:hover {
+            color: #00aaff;
+            text-shadow: 0 0 10px #00aaff;
+        }
+
+        /* FEATURED UTILITY */
+        .featured {
+            padding: 120px 40px 80px;
+            text-align: center;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .featured-icon {
+            font-size: 90px;
+            color: #00aaff;
+            text-shadow: 0 0 25px #00aaff;
+            margin-bottom: 25px;
+        }
+
+        .featured-title {
+            font-size: 60px;
+            font-weight: 900;
+            color: #f5c15c;
+            text-shadow: 0 0 20px #f5c15c;
+            margin-bottom: 20px;
+        }
+
+        .featured-desc {
+            font-size: 20px;
+            color: #6ecbff;
+            text-shadow: 0 0 12px #6ecbff;
+            line-height: 1.6;
+        }
+
+        /* ECOSYSTEM GRID */
+        .ecosystem-grid {
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+
+        .eco-card {
+            width: 300px;
+            padding: 40px 25px;
+            background: rgba(0, 0, 0, 0.6);
+            border: 2px solid #f5c15c;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(245, 193, 92, 0.3);
+            transition: 0.3s ease;
+            text-align: center;
+        }
+
+        .eco-card:hover {
+            box-shadow: 0 0 30px rgba(0, 170, 255, 0.6);
+            transform: translateY(-5px);
+        }
+
+        .eco-icon {
+            font-size: 60px;
+            color: #00aaff;
+            text-shadow: 0 0 15px #00aaff;
+            margin-bottom: 20px;
+        }
+
+        .eco-title {
+            font-size: 24px;
+            font-weight: 700;
+            color: #6ecbff;
+            text-shadow: 0 0 10px #6ecbff;
+            margin-bottom: 10px;
+        }
+
+        .eco-desc {
+            font-size: 16px;
+            color: #ccc;
+            line-height: 1.5;
+        }
+
+        /* FOOTER */
+        footer {
+            margin-top: 120px;
+            padding: 40px;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.7);
+            border-top: 1px solid #222;
+        }
+
+        footer p {
+            color: #888;
+            font-size: 14px;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .featured-title {
+                font-size: 42px;
+            }
+            .featured-desc {
+                font-size: 18px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-<!-- ================= HEADER ================= -->
-<header>
-    <nav class="navbar">
+    <!-- NAVBAR -->
+    <nav>
         <div class="logo">
-            <a href="index.html">
-                <img src="assets/images/moonvic-logo.png" alt="MOONVIC Logo">
-            </a>
+            <span class="gold">MOON</span><span class="blue">VIC</span>
         </div>
 
-        <ul class="nav-links">
+        <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="how-to-buy.html">How to Buy</a></li>
+            <li><a href="ecosystem.html">Ecosystem</a></li>
             <li><a href="tokenomics.html">Tokenomics</a></li>
             <li><a href="roadmap.html">Roadmap</a></li>
-            <li><a href="ecosystem.html" class="active">Ecosystem</a></li>
-            <li><a href="how-to-buy.html">How to Buy</a></li>
             <li><a href="faq.html">FAQ</a></li>
-            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 
-    <!-- ⭐ SOCIAL ICONS (NEON CYAN GLOW) ⭐ -->
-    <div class="social-icons-header">
-        <a href="https://x.com/moonvicofficial" target="_blank" class="icon twitter">
-            <i class="fab fa-twitter"></i> Twitter
-        </a>
-
-        <a href="https://etherscan.io/token/0x3c7462004dd99b680b3736982a965effc7d285aa" target="_blank" class="icon etherscan">
-            <i class="fas fa-search"></i> Etherscan
-        </a>
-
-        <a href="#" onclick="navigator.clipboard.writeText('0x3c7462004dd99b680b3736982a965effc7d285aa')" class="icon contract">
-            <i class="fas fa-copy"></i> Contract
-        </a>
-
-        <a href="https://www.dextools.io/app/en/ether/pair-explorer/0x3c7462004dd99b680b3736982a965effc7d285aa" target="_blank" class="icon dextools">
-            <i class="fas fa-chart-line"></i> DexTools
-        </a>
-
-        <a href="https://t.me/moonvic" target="_blank" class="icon telegram">
-            <i class="fab fa-telegram"></i> Telegram
-        </a>
-
-        <a href="https://discord.gg/moonvic" target="_blank" class="icon discord">
-            <i class="fab fa-discord"></i> Discord
-        </a>
-    </div>
-</header>
-<!-- =============== END HEADER =============== -->
-
-
-<!-- ================= ECOSYSTEM SECTION ================= -->
-<section class="ecosystem-page">
-    <div class="container">
-        <h1>MOONVIC Ecosystem</h1>
-        <p>
-            The MOONVIC ecosystem is built to deliver real utility, long‑term value, and a premium 
-            Web3 experience. Below are the core components of the ecosystem — with more utilities 
-            launching as the project expands.
-        </p>
-
-        <div class="ecosystem-grid">
-
-            <!-- LIVE UTILITY -->
-            <div class="ecosystem-box live">
-                <h2>MOONVIC AI Assistant</h2>
-                <span class="status live">LIVE</span>
-                <p>
-                    Your intelligent Web3 companion — providing guidance, automation, and 
-                    real‑time support across the MOONVIC ecosystem.
-                </p>
-            </div>
-
-            <!-- COMING SOON UTILITIES -->
-            <div class="ecosystem-box coming-soon">
-                <h2>MOONVIC Tracker</h2>
-                <span class="status soon">COMING SOON</span>
-                <p>
-                    A clean, fast, and powerful tracker for charts, analytics, and real‑time token data.
-                </p>
-            </div>
-
-            <div class="ecosystem-box coming-soon">
-                <h2>MOONVIC Tools</h2>
-                <span class="status soon">COMING SOON</span>
-                <p>
-                    A suite of utilities designed to support traders, developers, and community members.
-                </p>
-            </div>
-
-            <div class="ecosystem-box coming-soon">
-                <h2>MOONVIC Hub</h2>
-                <span class="status soon">COMING SOON</span>
-                <p>
-                    A central dashboard for all MOONVIC utilities, integrations, and ecosystem features.
-                </p>
-            </div>
-
-            <div class="ecosystem-box coming-soon">
-                <h2>MOONVIC Integrations</h2>
-                <span class="status soon">COMING SOON</span>
-                <p>
-                    Expanding the ecosystem through partnerships, API connections, and cross‑platform tools.
-                </p>
-            </div>
-
+    <!-- FEATURED UTILITY -->
+    <section class="featured">
+        <div class="featured-icon">⚡</div>
+        <div class="featured-title">MOONVIC AI Terminal</div>
+        <div class="featured-desc">
+            A next‑generation AI‑powered analytics and automation hub designed to give MOONVIC holders 
+            real‑time insights, trading tools, ecosystem data, and intelligent automation — all in one 
+            cinematic, Web3‑native interface.
         </div>
-    </div>
-</section>
-<!-- =============== END ECOSYSTEM SECTION =============== -->
+    </section>
 
+    <!-- ECOSYSTEM GRID -->
+    <section class="ecosystem-grid">
 
-<!-- ================= FOOTER ================= -->
-<footer>
-    <p>© 2026 MOONVIC — All Rights Reserved.</p>
+        <div class="eco-card">
+            <div class="eco-icon">📊</div>
+            <div class="eco-title">Analytics Dashboard</div>
+            <div class="eco-desc">Real‑time charts, metrics, and ecosystem data powered by AI.</div>
+        </div>
 
-    <div class="footer-social">
-        <a href="https://x.com/moonvicofficial" target="_blank" class="icon twitter">
-            <i class="fab fa-twitter"></i>
-        </a>
+        <div class="eco-card">
+            <div class="eco-icon">🤖</div>
+            <div class="eco-title">AI Trading Tools</div>
+            <div class="eco-desc">Smart alerts, automated strategies, and predictive insights.</div>
+        </div>
 
-        <a href="https://etherscan.io/token/0x3c7462004dd99b680b3736982a965effc7d285aa" target="_blank" class="icon etherscan">
-            <i class="fas fa-search"></i>
-        </a>
+        <div class="eco-card">
+            <div class="eco-icon">🛡️</div>
+            <div class="eco-title">Security Scanner</div>
+            <div class="eco-desc">AI‑driven contract scanning and wallet safety monitoring.</div>
+        </div>
 
-        <a href="#" onclick="navigator.clipboard.writeText('0x3c7462004dd99b680b3736982a965effc7d285aa')" class="icon contract">
-            <i class="fas fa-copy"></i>
-        </a>
+        <div class="eco-card">
+            <div class="eco-icon">🚀</div>
+            <div class="eco-title">Launchpad Access</div>
+            <div class="eco-desc">Exclusive early access to vetted Web3 projects.</div>
+        </div>
 
-        <a href="https://www.dextools.io/app/en/ether/pair-explorer/0x3c7462004dd99b680b3736982a965effc7d285aa" target="_blank" class="icon dextools">
-            <i class="fas fa-chart-line"></i>
-        </a>
+        <div class="eco-card">
+            <div class="eco-icon">🎁</div>
+            <div class="eco-title">Rewards Hub</div>
+            <div class="eco-desc">Earn ecosystem rewards through participation and holding.</div>
+        </div>
 
-        <a href="https://t.me/moonvic" target="_blank" class="icon telegram">
-            <i class="fab fa-telegram"></i>
-        </a>
+        <div class="eco-card">
+            <div class="eco-icon">🌐</div>
+            <div class="eco-title">DEX Aggregator</div>
+            <div class="eco-desc">Find the best swap rates across multiple decentralized exchanges.</div>
+        </div>
 
-        <a href="https://discord.gg/moonvic" target="_blank" class="icon discord">
-            <i class="fab fa-discord"></i>
-        </a>
-    </div>
-</footer>
-<!-- =============== END FOOTER =============== -->
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 MOONVIC — All Rights Reserved.</p>
+    </footer>
 
 </body>
 </html>
