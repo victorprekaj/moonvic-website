@@ -23,7 +23,7 @@
             align-items: center;
             position: absolute;
             top: 0;
-            z-index: 10;
+            z-index: 20;
         }
 
         .navbar img {
@@ -59,6 +59,29 @@
             text-align: center;
 
             padding: 0 20px;
+            position: relative;
+        }
+
+        /* DARK OVERLAY (THE FIX) */
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.55);
+            backdrop-filter: blur(2px);
+            z-index: 1;
+        }
+
+        /* HERO CONTENT */
+        .hero h1,
+        .hero h2,
+        .hero p,
+        .hero-buttons {
+            position: relative;
+            z-index: 2;
         }
 
         .hero h1 {
@@ -148,9 +171,7 @@
     <!-- HERO SECTION -->
     <section class="hero">
         <h1>WELCOME TO</h1>
-
         <h2>MOONVIC</h2>
-
         <p>The Zero‑Tax Web3 Ecosystem Built for Speed, Transparency, and Real Utility</p>
 
         <div class="hero-buttons">
@@ -166,4 +187,6 @@
 
 </body>
 </html>
+
+
 
