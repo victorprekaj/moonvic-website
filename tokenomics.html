@@ -22,6 +22,7 @@
       overflow-x: hidden;
     }
 
+    /* NAVBAR */
     nav {
       width: 100%;
       padding: 20px 40px;
@@ -33,6 +34,7 @@
       top: 0;
       z-index: 100;
       backdrop-filter: blur(6px);
+      border-bottom: 1px solid #222;
     }
 
     nav .logo {
@@ -68,15 +70,26 @@
       text-shadow: 0 0 10px #00aaff;
     }
 
+    /* TOKENOMICS SECTION */
     .tokenomics {
       padding: 120px 40px;
       max-width: 900px;
       margin: auto;
+      text-align: center;
+    }
+
+    .tokenomics h1 {
+      font-size: 64px;
+      font-weight: 900;
+      background: linear-gradient(to right, #f5c15c, #00aaff);
+      -webkit-background-clip: text;
+      color: transparent;
+      text-shadow: 0 0 25px rgba(0, 170, 255, 0.4);
+      margin-bottom: 80px;
     }
 
     .section {
       margin-bottom: 80px;
-      text-align: center;
     }
 
     .section-title {
@@ -103,6 +116,7 @@
       box-shadow: 0 0 10px #f5c15c;
     }
 
+    /* FOOTER */
     footer {
       margin-top: 120px;
       padding: 40px;
@@ -117,6 +131,10 @@
     }
 
     @media (max-width: 768px) {
+      .tokenomics h1 {
+        font-size: 36px;
+      }
+
       .section-title {
         font-size: 28px;
       }
@@ -148,6 +166,7 @@
 
   <!-- TOKENOMICS SECTION -->
   <section class="tokenomics">
+    <h1>TOKENOMICS</h1>
 
     <div class="section">
       <div class="section-title">Total Supply</div>
@@ -194,3 +213,4 @@
 
 </body>
 </html>
+
