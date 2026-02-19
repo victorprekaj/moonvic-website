@@ -1,152 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>How to Buy — MOONVIC</title>
 
-    <!-- GOOGLE FONTS -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap" rel="stylesheet">
-
     <style>
-        /* GLOBAL RESET */
-        * {
+        body {
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-            font-family: 'Montserrat', sans-serif;
-        }
-
-        body {
             background: #000;
+            font-family: Arial, sans-serif;
             color: #fff;
-            overflow-x: hidden;
         }
 
         /* NAVBAR */
-        nav {
+        .navbar {
             width: 100%;
             padding: 20px 40px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background: rgba(0, 0, 0, 0.7);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            backdrop-filter: blur(6px);
+            background: #000;
+            border-bottom: 1px solid #222;
         }
 
-        nav .logo {
-            font-size: 28px;
-            font-weight: 900;
+        .navbar img {
+            height: 55px;
         }
 
-        nav .logo .gold {
-            color: #f5c15c;
-            text-shadow: 0 0 10px #f5c15c;
-        }
-
-        nav .logo .blue {
-            color: #00aaff;
-            text-shadow: 0 0 10px #00aaff;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 30px;
-        }
-
-        nav ul li a {
+        .nav-links a {
+            margin-left: 30px;
             color: #fff;
             text-decoration: none;
+            font-size: 18px;
             font-weight: 600;
-            transition: 0.25s ease;
+            transition: 0.3s;
         }
 
-        nav ul li a:hover {
-            color: #00aaff;
-            text-shadow: 0 0 10px #00aaff;
+        .nav-links a:hover {
+            color: #00c8ff;
         }
 
-        /* HOW TO BUY SECTION */
-        .how-to-buy {
-            padding: 120px 40px;
+        /* PAGE HEADER */
+        .page-header {
             text-align: center;
+            padding: 80px 20px 40px;
         }
 
-        .how-to-buy h1 {
-            font-size: 50px;
+        .page-header h1 {
+            font-size: 64px;
             font-weight: 900;
-            color: #f5c15c;
-            text-shadow: 0 0 15px #f5c15c;
-            margin-bottom: 60px;
+            background: linear-gradient(to right, #d4af37, #00c8ff);
+            -webkit-background-clip: text;
+            color: transparent;
+            text-shadow: 0 0 25px rgba(0,200,255,0.4);
         }
 
-        .steps {
+        .page-header p {
+            font-size: 22px;
+            color: #caaaff;
+            max-width: 800px;
+            margin: 20px auto 0;
+        }
+
+        /* STEPS */
+        .steps-wrapper {
             display: flex;
-            justify-content: center;
+            flex-direction: column;
+            align-items: center;
             gap: 40px;
-            flex-wrap: wrap;
+            padding: 40px 20px 80px;
         }
 
-        .step-card {
-            width: 300px;
-            padding: 40px 25px;
-            background: rgba(0, 0, 0, 0.6);
-            border: 2px solid #f5c15c;
+        .step-box {
+            width: 90%;
+            max-width: 900px;
+            background: #0d0d0d;
+            border: 1px solid #222;
             border-radius: 12px;
-            box-shadow: 0 0 20px rgba(245, 193, 92, 0.3);
-            transition: 0.3s ease;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 0 25px rgba(0, 200, 255, 0.15);
         }
 
-        .step-card:hover {
-            box-shadow: 0 0 30px rgba(0, 170, 255, 0.6);
-            transform: translateY(-5px);
-        }
-
-        .step-icon {
-            font-size: 60px;
-            color: #00aaff;
-            text-shadow: 0 0 15px #00aaff;
-            margin-bottom: 20px;
-        }
-
-        .step-title {
-            font-size: 24px;
-            font-weight: 700;
-            color: #6ecbff;
-            text-shadow: 0 0 10px #6ecbff;
+        .step-box h2 {
+            font-size: 36px;
+            font-weight: 800;
             margin-bottom: 10px;
+            color: #ffd86b;
         }
 
-        .step-desc {
-            font-size: 16px;
-            color: #ccc;
-            line-height: 1.5;
+        .step-box p {
+            font-size: 20px;
+            color: #caaaff;
         }
 
         /* FOOTER */
         footer {
-            margin-top: 120px;
-            padding: 40px;
+            width: 100%;
+            padding: 40px 0;
             text-align: center;
-            background: rgba(0, 0, 0, 0.7);
-            border-top: 1px solid #222;
-        }
-
-        footer p {
             color: #888;
-            font-size: 14px;
-        }
-
-        /* RESPONSIVE */
-        @media (max-width: 768px) {
-            .steps {
-                flex-direction: column;
-                align-items: center;
-            }
+            font-size: 16px;
+            background: #000;
+            border-top: 1px solid #222;
         }
     </style>
 </head>
@@ -154,61 +112,49 @@
 <body>
 
     <!-- NAVBAR -->
-    <nav>
-        <div class="logo">
-            <span class="gold">MOON</span><span class="blue">VIC</span>
+    <div class="navbar">
+        <img src="assets/images/moonvic-logo.png" alt="MOONVIC Logo">
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="how-to-buy.html">How to Buy</a>
+            <a href="ecosystem.html">Ecosystem</a>
+            <a href="roadmap.html">Roadmap</a>
+            <a href="tokenomics.html">Tokenomics</a>
+            <a href="contact.html">Contact</a>
         </div>
+    </div>
 
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="how-to-buy.html">How to Buy</a></li>
-            <li><a href="ecosystem.html">Ecosystem</a></li>
-            <li><a href="tokenomics.html">Tokenomics</a></li>
-            <li><a href="roadmap.html">Roadmap</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-        </ul>
-    </nav>
-
-    <!-- HOW TO BUY SECTION -->
-    <section class="how-to-buy">
+    <!-- PAGE HEADER -->
+    <div class="page-header">
         <h1>HOW TO BUY</h1>
+        <p>Follow these simple steps to get your MOONVIC tokens safely and quickly.</p>
+    </div>
 
-        <div class="steps">
+    <!-- STEPS -->
+    <div class="steps-wrapper">
 
-            <!-- STEP 1 -->
-            <div class="step-card">
-                <div class="step-icon">👛</div>
-                <div class="step-title">Create a Wallet</div>
-                <div class="step-desc">
-                    Download MetaMask or any Web3 wallet to get started.
-                </div>
-            </div>
-
-            <!-- STEP 2 -->
-            <div class="step-card">
-                <div class="step-icon">⬡</div>
-                <div class="step-title">Buy ETH</div>
-                <div class="step-desc">
-                    Purchase ETH directly inside your wallet or through an exchange.
-                </div>
-            </div>
-
-            <!-- STEP 3 -->
-            <div class="step-card">
-                <div class="step-icon">🔄</div>
-                <div class="step-title">Swap for MOONVIC</div>
-                <div class="step-desc">
-                    Use Uniswap or your preferred DEX to swap ETH for MOONVIC.
-                </div>
-            </div>
-
+        <div class="step-box">
+            <h2>Step 1 — Create a Wallet</h2>
+            <p>Download MetaMask or Trust Wallet to store your MOONVIC tokens securely.</p>
         </div>
-    </section>
+
+        <div class="step-box">
+            <h2>Step 2 — Buy ETH</h2>
+            <p>Purchase Ethereum (ETH) on any major exchange such as Coinbase, Binance, or Kraken.</p>
+        </div>
+
+        <div class="step-box">
+            <h2>Step 3 — Swap for MOONVIC</h2>
+            <p>Use Uniswap to swap your ETH for MOONVIC using our official contract address.</p>
+        </div>
+
+    </div>
 
     <!-- FOOTER -->
     <footer>
-        <p>© 2026 MOONVIC — All Rights Reserved.</p>
+        © 2026 MOONVIC — All Rights Reserved
     </footer>
 
 </body>
 </html>
+
