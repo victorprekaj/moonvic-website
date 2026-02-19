@@ -3,66 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MOONVIC – Home</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <title>MOONVIC — Zero‑Tax Web3 Ecosystem</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #000;
+            font-family: Arial, sans-serif;
+            color: #fff;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            width: 100%;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: absolute;
+            top: 0;
+            z-index: 10;
+        }
+
+        .navbar img {
+            height: 55px;
+        }
+
+        .nav-links a {
+            margin-left: 30px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #00c8ff;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            width: 100%;
+            height: 100vh;
+            background-image: url('assets/images/hero-moonvic.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: 64px;
+            font-weight: 800;
+            color: #ffffff;
+            text-shadow: 0 0 25px rgba(255,255,255,0.6);
+            margin-bottom: 10px;
+        }
+
+        .hero h2 {
+            font-size: 90px;
+            font-weight: 900;
+            background: linear-gradient(to right, #d4af37, #00c8ff);
+            -webkit-background-clip: text;
+            color: transparent;
+            text-shadow: 0 0 25px rgba(0,200,255,0.4);
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 22px;
+            color: #caaaff;
+            text-shadow: 0 0 15px rgba(150,100,255,0.5);
+            max-width: 900px;
+            margin-bottom: 40px;
+        }
+
+        .hero-buttons a {
+            padding: 14px 32px;
+            border-radius: 8px;
+            font-size: 20px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .btn-buy {
+            border: 2px solid #ffd86b;
+            color: #ffd86b;
+            margin-right: 20px;
+        }
+
+        .btn-buy:hover {
+            background: #ffd86b;
+            color: #000;
+        }
+
+        .btn-explore {
+            border: 2px solid #6bbcff;
+            color: #6bbcff;
+        }
+
+        .btn-explore:hover {
+            background: #6bbcff;
+            color: #000;
+        }
+
+        /* FOOTER */
+        footer {
+            width: 100%;
+            padding: 40px 0;
+            text-align: center;
+            color: #888;
+            font-size: 16px;
+            background: #000;
+            border-top: 1px solid #222;
+        }
+    </style>
 </head>
 
 <body>
 
-<!-- NAVBAR -->
-<header>
-    <nav class="navbar">
-        <div class="logo">MOONVIC</div>
-        <ul class="nav-links">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="how-to-buy.html">How to Buy</a></li>
-            <li><a href="ecosystem.html">Ecosystem</a></li>
-            <li><a href="tokenomics.html">Tokenomics</a></li>
-            <li><a href="roadmap.html">Roadmap</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="ai-founder.html">AI Founder</a></li>
-        </ul>
-    </nav>
-</header>
-
-<!-- HERO SECTION -->
-<section class="hero-section" style="background-image: url('assets/images/galaxy-bg.jpg');">
-    <div class="hero-content">
-        <h1 class="glow-gold">WELCOME TO MOONVIC</h1>
-        <p class="glow-blue">
-            The zero‑tax Web3 ecosystem built for speed, transparency, and real utility.
-        </p>
-        <a href="how-to-buy.html" class="cta-button">Buy MOONVIC</a>
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <img src="assets/images/moonvic-logo.png" alt="MOONVIC Logo">
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="how-to-buy.html">How to Buy</a>
+            <a href="ecosystem.html">Ecosystem</a>
+            <a href="roadmap.html">Roadmap</a>
+            <a href="tokenomics.html">Tokenomics</a>
+            <a href="contact.html">Contact</a>
+        </div>
     </div>
-</section>
 
-<!-- ABOUT SECTION -->
-<section class="content-section">
-    <h2 class="glow-gold">What is MOONVIC?</h2>
-    <p>
-        MOONVIC is a next‑generation Web3 ecosystem designed for founders, builders, and investors who value 
-        transparency, speed, and real utility. With zero taxes, premium branding, and a growing suite of tools, 
-        MOONVIC is built to last.
-    </p>
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <h1>WELCOME TO</h1>
 
-    <h2 class="glow-gold">Why Zero Tax?</h2>
-    <p>
-        Zero tax means freedom. It means no friction, no penalties, and no barriers to growth. 
-        MOONVIC is engineered for clean trading, long‑term holders, and real adoption.
-    </p>
+        <h2>MOONVIC</h2>
 
-    <h2 class="glow-gold">Ecosystem Vision</h2>
-    <p>
-        The MOONVIC ecosystem will expand into staking, governance, analytics, cross‑chain tools, 
-        and AI‑powered utilities — all built with precision and founder‑level discipline.
-    </p>
-</section>
+        <p>The Zero‑Tax Web3 Ecosystem Built for Speed, Transparency, and Real Utility</p>
 
-<footer>
-    <p>© 2026 MOONVIC — Built by Victor Prekaj with AI</p>
-</footer>
+        <div class="hero-buttons">
+            <a href="how-to-buy.html" class="btn-buy">How to Buy</a>
+            <a href="ecosystem.html" class="btn-explore">Explore Ecosystem</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2026 MOONVIC — All Rights Reserved
+    </footer>
 
 </body>
 </html>
+
