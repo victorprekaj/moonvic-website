@@ -8,7 +8,6 @@
     <!-- Global site styles -->
     <link rel="stylesheet" href="assets/css/style.css" />
 
-    <!-- Page-specific hero + feature styling -->
     <style>
         body {
             margin: 0;
@@ -18,29 +17,52 @@
             color: #00aaff;
         }
 
+        /* HEADER */
+        .site-header {
+            width: 100%;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: black;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 999;
+        }
+
+        .logo img {
+            height: 55px;
+        }
+
+        .main-nav a {
+            margin-left: 28px;
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: #00aaff;
+            text-decoration: none;
+            text-shadow: 0 0 10px #00aaff;
+        }
+
+        .main-nav a.nav-cta {
+            color: #ffd700;
+            text-shadow: 0 0 12px #ffd700;
+        }
+
+        main {
+            padding-top: 120px;
+        }
+
         /* HERO SECTION */
         .hero {
-            background: url('assets/images/hero-moonvic.png.png') no-repeat center center/cover;
+            background: black;
             min-height: 100vh;
-            position: relative;
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
-        }
-
-        .hero-overlay {
-            position: absolute;
-            inset: 0;
-            background: rgba(0, 0, 0, 0.55);
-        }
-
-        .hero-inner {
-            position: relative;
-            z-index: 2;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 140px 20px 120px;
+            padding: 60px 20px;
         }
 
         .welcome-text {
@@ -91,24 +113,16 @@
             box-shadow: 0 0 20px #ffd700;
         }
 
-        .btn-gold:hover {
-            box-shadow: 0 0 35px #ffd700;
-        }
-
         .btn-blue {
             background: #00aaff;
             color: black;
             box-shadow: 0 0 20px #00aaff;
         }
 
-        .btn-blue:hover {
-            box-shadow: 0 0 35px #00aaff;
-        }
-
-        /* FEATURE CARDS */
+        /* FEATURES */
         .features-section {
             padding: 80px 20px 100px;
-            background: radial-gradient(circle at top, rgba(0, 170, 255, 0.15), transparent 55%);
+            background: black;
         }
 
         .features {
@@ -127,67 +141,62 @@
             width: 300px;
             text-align: center;
             backdrop-filter: blur(6px);
-            color: #00aaff;
             font-size: 1.2rem;
             font-weight: 700;
-            text-shadow: 0 0 15px currentColor;
         }
 
         .gold-glow { color: #ffd700; text-shadow: 0 0 20px #ffd700; }
         .blue-glow { color: #00aaff; text-shadow: 0 0 20px #00aaff; }
         .purple-glow { color: #7f5cff; text-shadow: 0 0 20px #7f5cff; }
 
-        main {
-            display: block;
+        /* FOOTER */
+        .site-footer {
+            text-align: center;
+            padding: 40px 0;
+            color: #00aaff;
+            font-size: 1rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            margin-top: 60px;
         }
     </style>
 </head>
 
 <body>
 
-    <!-- SITE HEADER / NAV -->
+    <!-- HEADER WITH LOGO -->
     <header class="site-header">
-        <div class="container nav-container">
-            <div class="logo">
-                <a href="index.html">MOONVIC</a>
-            </div>
-            <nav class="main-nav">
-                <a href="index.html">Home</a>
-                <a href="ecosystem.html">Ecosystem</a>
-                <a href="roadmap.html">Roadmap</a>
-                <a href="tokenomics.html">Tokenomics</a>
-                <a href="faq.html">FAQ</a>
-                <a href="contact.html">Contact</a>
-                <a href="how-to-buy.html" class="nav-cta">How to Buy</a>
-            </nav>
+        <div class="logo">
+            <img src="assets/images/moonvic-logo.png" alt="MOONVIC Logo">
         </div>
+
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="ecosystem.html">Ecosystem</a>
+            <a href="roadmap.html">Roadmap</a>
+            <a href="tokenomics.html">Tokenomics</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">Contact</a>
+            <a href="how-to-buy.html" class="nav-cta">How to Buy</a>
+        </nav>
     </header>
 
     <main>
 
-        <!-- HERO SECTION -->
+        <!-- HERO -->
         <section class="hero">
-            <div class="hero-overlay"></div>
-
-            <div class="hero-inner">
+            <div>
                 <div class="welcome-text">WELCOME TO</div>
-
                 <div class="moonvic-title">MOONVIC</div>
-
                 <div class="subtitle">The Zero‑Tax Web3 Ecosystem Built for Utility</div>
 
                 <div class="hero-buttons">
-                    <a href="how-to-buy.html">
-                        <button class="btn btn-gold">HOW TO BUY</button>
-                    </a>
-                    <a href="ecosystem.html">
-                        <button class="btn btn-blue">EXPLORE ECOSYSTEM</button>
-                    </a>
+                    <a href="how-to-buy.html"><button class="btn btn-gold">HOW TO BUY</button></a>
+                    <a href="ecosystem.html"><button class="btn btn-blue">EXPLORE ECOSYSTEM</button></a>
                 </div>
             </div>
         </section>
 
-        <!-- FEATURE CARDS -->
+        <!-- FEATURES -->
         <section class="features-section">
             <div class="features">
                 <div class="feature-card gold-glow">ZERO TAX</div>
@@ -200,11 +209,10 @@
 
     <!-- FOOTER -->
     <footer class="site-footer">
-        <div class="container footer-container">
-            <p>© 2026 MOONVIC. All rights reserved.</p>
-        </div>
+        © 2026 MOONVIC. All rights reserved.
     </footer>
 
 </body>
 </html>
+
 
