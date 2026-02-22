@@ -3,17 +3,191 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact – MOONVIC</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Contact — MOONVIC</title>
+
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            background: #000;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        /* NAVBAR */
+        nav {
+            width: 100%;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(0,0,0,0.7);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid #222;
+            backdrop-filter: blur(6px);
+        }
+
+        nav .logo {
+            font-size: 28px;
+            font-weight: 900;
+        }
+
+        nav .logo .gold {
+            color: #f5c15c;
+            text-shadow: 0 0 10px #f5c15c;
+        }
+
+        nav .logo .blue {
+            color: #00aaff;
+            text-shadow: 0 0 10px #00aaff;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.25s ease;
+        }
+
+        nav ul li a:hover {
+            color: #00aaff;
+            text-shadow: 0 0 10px #00aaff;
+        }
+
+        /* PAGE HEADER */
+        .page-header {
+            text-align: center;
+            padding: 100px 20px 40px;
+        }
+
+        .page-header h1 {
+            font-size: 58px;
+            font-weight: 900;
+            background: linear-gradient(to right, #f5c15c, #00c8ff);
+            -webkit-background-clip: text;
+            color: transparent;
+            text-shadow: 0 0 25px rgba(0,200,255,0.4);
+        }
+
+        .page-header p {
+            font-size: 20px;
+            color: #caaaff;
+            max-width: 800px;
+            margin: 20px auto 0;
+        }
+
+        /* CONTACT FORM */
+        .contact-wrapper {
+            max-width: 900px;
+            margin: 60px auto;
+            padding: 40px;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid #222;
+            border-radius: 12px;
+            backdrop-filter: blur(6px);
+        }
+
+        .contact-wrapper label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #ffd86b;
+        }
+
+        .contact-wrapper input,
+        .contact-wrapper textarea {
+            width: 100%;
+            padding: 14px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            border: 1px solid #333;
+            background: #0d0d0d;
+            color: #fff;
+            font-size: 16px;
+        }
+
+        .contact-wrapper button {
+            width: 100%;
+            padding: 16px;
+            font-size: 18px;
+            font-weight: 700;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            background: linear-gradient(to right, #ffd86b, #00c8ff);
+            color: #000;
+            box-shadow: 0 0 20px rgba(0,200,255,0.4);
+            transition: 0.25s ease;
+        }
+
+        .contact-wrapper button:hover {
+            transform: scale(1.03);
+            box-shadow: 0 0 30px rgba(0,200,255,0.6);
+        }
+
+        /* OFFICIAL LINKS */
+        .official-links {
+            max-width: 900px;
+            margin: 60px auto;
+            text-align: center;
+        }
+
+        .official-links h2 {
+            font-size: 32px;
+            font-weight: 800;
+            color: #ffd86b;
+            text-shadow: 0 0 12px #ffd86b;
+            margin-bottom: 20px;
+        }
+
+        .official-links ul {
+            list-style: none;
+            font-size: 18px;
+            color: #caaaff;
+            line-height: 2;
+        }
+
+        /* FOOTER */
+        footer {
+            margin-top: 120px;
+            padding: 40px;
+            text-align: center;
+            background: rgba(0,0,0,0.7);
+            border-top: 1px solid #222;
+        }
+
+        footer p {
+            color: #888;
+            font-size: 14px;
+        }
+    </style>
 </head>
 
 <body>
 
-<!-- NAVBAR -->
-<header>
-    <nav class="navbar">
-        <div class="logo">MOONVIC</div>
-        <ul class="nav-links">
+    <!-- NAVBAR -->
+    <nav>
+        <div class="logo">
+            <span class="gold">MOON</span><span class="blue">VIC</span>
+        </div>
+
+        <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="how-to-buy.html">How to Buy</a></li>
             <li><a href="ecosystem.html">Ecosystem</a></li>
@@ -25,26 +199,15 @@
             <li><a href="ai-founder.html">AI Founder</a></li>
         </ul>
     </nav>
-</header>
 
-<!-- HERO -->
-<section class="hero-section" style="background-image: url('assets/images/galaxy-bg.jpg');">
-    <div class="hero-content">
-        <h1 class="glow-gold">CONTACT MOONVIC</h1>
-        <p class="glow-blue">Reach out to the founder, the team, or the ecosystem.</p>
+    <!-- PAGE HEADER -->
+    <div class="page-header">
+        <h1>CONTACT MOONVIC</h1>
+        <p>Reach out to the founder, the team, or the ecosystem. Every message is reviewed with care and intention.</p>
     </div>
-</section>
 
-<!-- CONTACT SECTION -->
-<section class="content-section">
-
-    <h2 class="glow-gold">Get in Touch</h2>
-    <p>
-        Whether you're a holder, a builder, a collaborator, or someone exploring the MOONVIC ecosystem,
-        you can reach out using the form below. Every message is reviewed with care and intention.
-    </p>
-
-    <div class="contact-form">
+    <!-- CONTACT FORM -->
+    <div class="contact-wrapper">
         <form action="#" method="POST">
             <label for="name">Your Name</label>
             <input type="text" id="name" name="name" placeholder="Enter your name" required>
@@ -55,24 +218,24 @@
             <label for="message">Your Message</label>
             <textarea id="message" name="message" rows="6" placeholder="Write your message..." required></textarea>
 
-            <button type="submit" class="cta-button">Send Message</button>
+            <button type="submit">Send Message</button>
         </form>
     </div>
 
-    <h2 class="glow-gold">Official Links</h2>
-    <ul>
-        <li>Website: <strong>moonvic.com</strong></li>
-        <li>Contract Address: <strong>0x3c7462004dd99b680b3736982a965effc7d285aa</strong></li>
-        <li>Owner Wallet: <strong>0x29fd8aE0df43c52E892bA389787e3cCE91f59865</strong></li>
-    </ul>
+    <!-- OFFICIAL LINKS -->
+    <div class="official-links">
+        <h2>Official Links</h2>
+        <ul>
+            <li>Website: <strong>moonvic.com</strong></li>
+            <li>Contract Address: <strong>0x3c7462004dd99b680b3736982a965effc7d285aa</strong></li>
+            <li>Owner Wallet: <strong>0x29fd8aE0df43c52E892bA389787e3cCE91f59865</strong></li>
+        </ul>
+    </div>
 
-</section>
-
-<!-- FOOTER -->
-<footer>
-    <p>© 2026 MOONVIC — Built by Victor Prekaj with AI</p>
-</footer>
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 MOONVIC — Built by Victor Prekaj with AI</p>
+    </footer>
 
 </body>
 </html>
-
