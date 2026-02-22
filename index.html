@@ -1,3 +1,4 @@
+📄 index.html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -54,100 +55,87 @@
             padding-top: 120px;
         }
 
-        /* HERO SECTION */
+        /* HERO SECTION (CINEMATIC) */
         .hero {
-            background: black;
+            position: relative;
+            background-image: url('assets/images/galaxy-bg.jpg.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
             min-height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
             padding: 60px 20px;
+            color: white;
+            overflow: hidden;
         }
 
-        .welcome-text {
-            font-size: 2.2rem;
-            font-weight: 700;
-            color: #7f5cff;
-            text-shadow: 0 0 15px #7f5cff, 0 0 30px #00aaff;
+        .hero::before {
+            content: "";
+            position: absolute;
+            left: -120px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 380px;
+            height: 380px;
+            background: radial-gradient(circle, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.1) 60%, transparent 100%);
+            border-radius: 50%;
+            filter: blur(20px);
+            opacity: 0.8;
         }
 
-        .moonvic-title {
-            font-size: 5rem;
-            font-weight: 900;
-            margin: 20px 0;
-            background: linear-gradient(to right, #ffd700, #00aaff);
-            -webkit-background-clip: text;
-            color: transparent;
-            text-shadow: 0 0 25px #ffd700, 0 0 45px #00aaff;
+        .hero h1 {
+            font-size: 3.2rem;
+            font-weight: 800;
+            color: #ffffff;
+            text-shadow:
+                0 0 12px #00c8ff,
+                0 0 22px #00c8ff,
+                0 0 32px #ffd700,
+                0 0 52px #ffd700;
         }
 
-        .subtitle {
-            font-size: 1.4rem;
-            margin-top: 10px;
-            color: #7f5cff;
-            text-shadow: 0 0 15px #7f5cff, 0 0 25px #00aaff;
+        .hero p {
+            font-size: 1.3rem;
+            margin-top: 15px;
+            color: #e6e6e6;
+            text-shadow:
+                0 0 8px #00c8ff,
+                0 0 18px #ffd700;
         }
 
         .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
             margin-top: 35px;
-            display: flex;
-            justify-content: center;
-            gap: 25px;
-            flex-wrap: wrap;
         }
 
-        .btn {
+        .hero-buttons a {
             padding: 14px 32px;
-            font-size: 1.1rem;
-            border-radius: 8px;
-            border: none;
-            cursor: pointer;
+            border-radius: 10px;
             font-weight: 700;
-            transition: 0.3s;
-        }
-
-        .btn-gold {
-            background: #ffd700;
+            text-decoration: none;
             color: black;
-            box-shadow: 0 0 20px #ffd700;
+            background: linear-gradient(90deg, #ffd700, #ffea8a);
+            box-shadow: 0 0 18px rgba(255, 215, 0, 0.6);
+            transition: 0.2s;
         }
 
-        .btn-blue {
-            background: #00aaff;
-            color: black;
-            box-shadow: 0 0 20px #00aaff;
+        .hero-buttons a:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 28px rgba(255, 215, 0, 0.9);
         }
 
-        /* FEATURES */
-        .features-section {
-            padding: 80px 20px 100px;
-            background: black;
-        }
-
-        .features {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
+        /* SECTION WRAPPER */
+        .section-container {
+            max-width: 1200px;
             margin: 0 auto;
-            max-width: 1100px;
-            flex-wrap: wrap;
-        }
-
-        .feature-card {
-            background: rgba(0, 0, 0, 0.45);
-            padding: 30px;
-            border-radius: 12px;
-            width: 300px;
+            padding: 60px 20px;
             text-align: center;
-            backdrop-filter: blur(6px);
-            font-size: 1.2rem;
-            font-weight: 700;
         }
-
-        .gold-glow { color: #ffd700; text-shadow: 0 0 20px #ffd700; }
-        .blue-glow { color: #00aaff; text-shadow: 0 0 20px #00aaff; }
-        .purple-glow { color: #7f5cff; text-shadow: 0 0 20px #7f5cff; }
 
         /* FOOTER */
         .site-footer {
@@ -163,7 +151,7 @@
 
 <body>
 
-    <!-- HEADER WITH LOGO -->
+    <!-- HEADER -->
     <header class="site-header">
         <div class="logo">
             <img src="assets/images/moonvic-logo.png" alt="MOONVIC Logo">
@@ -185,24 +173,48 @@
         <!-- HERO -->
         <section class="hero">
             <div>
-                <div class="welcome-text">WELCOME TO</div>
-                <div class="moonvic-title">MOONVIC</div>
-                <div class="subtitle">The Zero‑Tax Web3 Ecosystem Built for Utility</div>
+                <h1>MOONVIC: A Zero‑Tax Web3 Ecosystem Built for Real Utility.</h1>
+                <p>Transparent. Disciplined. Designed for long‑term growth. Built with intention — not hype.</p>
 
                 <div class="hero-buttons">
-                    <a href="how-to-buy.html"><button class="btn btn-gold">HOW TO BUY</button></a>
-                    <a href="ecosystem.html"><button class="btn btn-blue">EXPLORE ECOSYSTEM</button></a>
+                    <a href="how-to-buy.html">How to Buy</a>
+                    <a href="ecosystem.html">Explore Ecosystem</a>
                 </div>
             </div>
         </section>
 
-        <!-- FEATURES -->
-        <section class="features-section">
-            <div class="features">
-                <div class="feature-card gold-glow">ZERO TAX</div>
-                <div class="feature-card blue-glow">FAST TRANSACTIONS</div>
-                <div class="feature-card purple-glow">TRANSPARENT ECOSYSTEM</div>
-            </div>
+        <!-- ECOSYSTEM SUMMARY -->
+        <section class="section-container">
+            <h2>Ecosystem Overview</h2>
+            <p>
+                MOONVIC delivers a transparent, utility‑driven foundation built for real scalability.
+                Every component is designed to reinforce growth, sustainability, and trust.
+            </p>
+            <p>
+                • Zero‑tax token structure<br>
+                • Sustainable reinvestment loop<br>
+                • Clear roadmap with real milestones<br>
+                • AI‑powered workflow for rapid execution<br>
+                • Founder‑led discipline and transparency
+            </p>
+        </section>
+
+        <!-- ROADMAP SUMMARY -->
+        <section class="section-container">
+            <h2>Roadmap Summary</h2>
+            <p>A structured, intentional roadmap built for long‑term expansion — not short‑term noise.</p>
+            <p>
+                • Phase 1: Foundation<br>
+                • Phase 2: Ecosystem Expansion<br>
+                • Phase 3: Utility Deployment<br>
+                • Phase 4: Scaling & Partnerships
+            </p>
+        </section>
+
+        <!-- FOUNDER STATEMENT -->
+        <section class="section-container">
+            <h2>Founder Statement</h2>
+            <p>MOONVIC is built with discipline, clarity, and purpose — a project designed to last.</p>
         </section>
 
     </main>
@@ -214,5 +226,3 @@
 
 </body>
 </html>
-
-
