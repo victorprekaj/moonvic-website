@@ -70,35 +70,43 @@
       text-shadow: 0 0 10px #00aaff;
     }
 
-    /* ROADMAP SECTION */
-    .roadmap {
-      padding: 120px 40px;
-      max-width: 900px;
-      margin: auto;
+    /* PAGE TITLE */
+    .page-title {
       text-align: center;
+      font-size: 42px;
+      font-weight: 900;
+      margin-top: 120px;
+      margin-bottom: 10px;
+      color: #f5c15c;
+      text-shadow: 0 0 15px #f5c15c;
     }
 
-    .roadmap h1 {
-      font-size: 64px;
-      font-weight: 900;
-      background: linear-gradient(to right, #f5c15c, #00aaff);
-      -webkit-background-clip: text;
-      color: transparent;
-      text-shadow: 0 0 25px rgba(0, 170, 255, 0.4);
+    .page-subtitle {
+      text-align: center;
+      font-size: 18px;
+      color: #ccc;
       margin-bottom: 60px;
+    }
+
+    /* ROADMAP SECTION */
+    .roadmap {
+      padding: 40px;
+      max-width: 900px;
+      margin: 0 auto 80px;
+      position: relative;
     }
 
     .phase {
-      margin-bottom: 60px;
-      position: relative;
+      margin-bottom: 50px;
       padding-left: 40px;
+      position: relative;
     }
 
     .phase::before {
       content: '';
       position: absolute;
       left: -11px;
-      top: 0;
+      top: 5px;
       width: 20px;
       height: 20px;
       background: #00aaff;
@@ -107,15 +115,15 @@
     }
 
     .phase-title {
-      font-size: 28px;
+      font-size: 26px;
       font-weight: 700;
       color: #f5c15c;
       text-shadow: 0 0 10px #f5c15c;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
     }
 
     .phase-desc {
-      font-size: 18px;
+      font-size: 17px;
       color: #6ecbff;
       text-shadow: 0 0 8px #6ecbff;
       line-height: 1.6;
@@ -136,8 +144,8 @@
     }
 
     @media (max-width: 768px) {
-      .roadmap h1 {
-        font-size: 36px;
+      .page-title {
+        font-size: 34px;
       }
 
       .phase-title {
@@ -145,7 +153,7 @@
       }
 
       .phase-desc {
-        font-size: 16px;
+        font-size: 15px;
       }
     }
   </style>
@@ -164,43 +172,53 @@
       <li><a href="how-to-buy.html">How to Buy</a></li>
       <li><a href="ecosystem.html">Ecosystem</a></li>
       <li><a href="tokenomics.html">Tokenomics</a></li>
-      <li><a href="roadmap.html">Roadmap</a></li>
+      <li><a href="roadmap.html" class="active">Roadmap</a></li>
       <li><a href="faq.html">FAQ</a></li>
     </ul>
   </nav>
 
+  <!-- PAGE TITLE -->
+  <h1 class="page-title">ROADMAP</h1>
+  <p class="page-subtitle">A disciplined, structured roadmap built for long‑term expansion.</p>
+
   <!-- ROADMAP SECTION -->
   <section class="roadmap">
-    <h1>ROADMAP</h1>
 
-    <div class="timeline">
-
-      <div class="phase">
-        <div class="phase-title">Phase 1 — Launch</div>
-        <div class="phase-desc">Token deployed, liquidity burned, website live, and community onboarding begins.</div>
+    <div class="phase">
+      <div class="phase-title">Phase 1 — Launch</div>
+      <div class="phase-desc">
+        Token deployed, liquidity burned, website launched, and community onboarding begins.
       </div>
-
-      <div class="phase">
-        <div class="phase-title">Phase 2 — Ecosystem Build</div>
-        <div class="phase-desc">AI Terminal, analytics dashboard, and utility suite development begins.</div>
-      </div>
-
-      <div class="phase">
-        <div class="phase-title">Phase 3 — Exchange Listings</div>
-        <div class="phase-desc">Apply for CEX listings, expand liquidity, and grow holder base.</div>
-      </div>
-
-      <div class="phase">
-        <div class="phase-title">Phase 4 — Governance & Staking</div>
-        <div class="phase-desc">Launch staking hub, governance protocol, and reward system.</div>
-      </div>
-
-      <div class="phase">
-        <div class="phase-title">Phase 5 — Expansion</div>
-        <div class="phase-desc">Partner integrations, cross‑chain expansion, and ecosystem scaling.</div>
-      </div>
-
     </div>
+
+    <div class="phase">
+      <div class="phase-title">Phase 2 — Ecosystem Build</div>
+      <div class="phase-desc">
+        Development of the MOONVIC AI Terminal, analytics dashboard, and utility suite.
+      </div>
+    </div>
+
+    <div class="phase">
+      <div class="phase-title">Phase 3 — Exchange Listings</div>
+      <div class="phase-desc">
+        Apply for CEX listings, expand liquidity, and grow the holder base.
+      </div>
+    </div>
+
+    <div class="phase">
+      <div class="phase-title">Phase 4 — Governance & Staking</div>
+      <div class="phase-desc">
+        Launch staking hub, governance protocol, and reward system.
+      </div>
+    </div>
+
+    <div class="phase">
+      <div class="phase-title">Phase 5 — Expansion</div>
+      <div class="phase-desc">
+        Partner integrations, cross‑chain expansion, and ecosystem scaling.
+      </div>
+    </div>
+
   </section>
 
   <!-- FOOTER -->
@@ -210,5 +228,3 @@
 
 </body>
 </html>
-
-
