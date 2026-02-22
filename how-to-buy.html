@@ -5,13 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>How to Buy — MOONVIC</title>
 
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+
     <style>
-        body {
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
             background: #000;
-            font-family: Arial, sans-serif;
             color: #fff;
+            overflow-x: hidden;
         }
 
         /* NAVBAR */
@@ -21,8 +29,12 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background: #000;
+            background: rgba(0,0,0,0.7);
             border-bottom: 1px solid #222;
+            backdrop-filter: blur(6px);
+            position: sticky;
+            top: 0;
+            z-index: 100;
         }
 
         .navbar img {
@@ -35,30 +47,31 @@
             text-decoration: none;
             font-size: 18px;
             font-weight: 600;
-            transition: 0.3s;
+            transition: 0.25s ease;
         }
 
         .nav-links a:hover {
             color: #00c8ff;
+            text-shadow: 0 0 10px #00c8ff;
         }
 
         /* PAGE HEADER */
         .page-header {
             text-align: center;
-            padding: 80px 20px 40px;
+            padding: 100px 20px 40px;
         }
 
         .page-header h1 {
-            font-size: 64px;
+            font-size: 58px;
             font-weight: 900;
-            background: linear-gradient(to right, #d4af37, #00c8ff);
+            background: linear-gradient(to right, #f5c15c, #00c8ff);
             -webkit-background-clip: text;
             color: transparent;
             text-shadow: 0 0 25px rgba(0,200,255,0.4);
         }
 
         .page-header p {
-            font-size: 22px;
+            font-size: 20px;
             color: #caaaff;
             max-width: 800px;
             margin: 20px auto 0;
@@ -76,24 +89,27 @@
         .step-box {
             width: 90%;
             max-width: 900px;
-            background: #0d0d0d;
+            background: rgba(255,255,255,0.05);
             border: 1px solid #222;
             border-radius: 12px;
             padding: 40px;
             text-align: center;
+            backdrop-filter: blur(6px);
             box-shadow: 0 0 25px rgba(0, 200, 255, 0.15);
         }
 
         .step-box h2 {
-            font-size: 36px;
+            font-size: 32px;
             font-weight: 800;
             margin-bottom: 10px;
             color: #ffd86b;
+            text-shadow: 0 0 10px #ffd86b;
         }
 
         .step-box p {
-            font-size: 20px;
+            font-size: 18px;
             color: #caaaff;
+            line-height: 1.6;
         }
 
         /* FOOTER */
@@ -103,7 +119,7 @@
             text-align: center;
             color: #888;
             font-size: 16px;
-            background: #000;
+            background: rgba(0,0,0,0.7);
             border-top: 1px solid #222;
         }
     </style>
@@ -116,10 +132,11 @@
         <img src="assets/images/moonvic-logo.png" alt="MOONVIC Logo">
         <div class="nav-links">
             <a href="index.html">Home</a>
-            <a href="how-to-buy.html">How to Buy</a>
+            <a href="how-to-buy.html" class="active">How to Buy</a>
             <a href="ecosystem.html">Ecosystem</a>
             <a href="roadmap.html">Roadmap</a>
             <a href="tokenomics.html">Tokenomics</a>
+            <a href="faq.html">FAQ</a>
             <a href="contact.html">Contact</a>
         </div>
     </div>
@@ -127,7 +144,7 @@
     <!-- PAGE HEADER -->
     <div class="page-header">
         <h1>HOW TO BUY</h1>
-        <p>Follow these simple steps to get your MOONVIC tokens safely and quickly.</p>
+        <p>Follow these simple steps to buy MOONVIC safely, quickly, and with zero tax.</p>
     </div>
 
     <!-- STEPS -->
@@ -140,12 +157,12 @@
 
         <div class="step-box">
             <h2>Step 2 — Buy ETH</h2>
-            <p>Purchase Ethereum (ETH) on any major exchange such as Coinbase, Binance, or Kraken.</p>
+            <p>Purchase Ethereum (ETH) on Coinbase, Binance, Kraken, or any major exchange.</p>
         </div>
 
         <div class="step-box">
-            <h2>Step 3 — Swap for MOONVIC</h2>
-            <p>Use Uniswap to swap your ETH for MOONVIC using our official contract address.</p>
+            <h2>Step 3 — Swap ETH for MOONVIC</h2>
+            <p>Use Uniswap to swap ETH for MOONVIC using the official contract address.</p>
         </div>
 
     </div>
@@ -157,4 +174,3 @@
 
 </body>
 </html>
-
