@@ -70,50 +70,64 @@
       text-shadow: 0 0 10px #00aaff;
     }
 
-    /* TOKENOMICS SECTION */
-    .tokenomics {
-      padding: 120px 40px;
-      max-width: 900px;
-      margin: auto;
+    /* PAGE TITLE */
+    .page-title {
       text-align: center;
-    }
-
-    .tokenomics h1 {
-      font-size: 64px;
+      font-size: 42px;
       font-weight: 900;
-      background: linear-gradient(to right, #f5c15c, #00aaff);
-      -webkit-background-clip: text;
-      color: transparent;
-      text-shadow: 0 0 25px rgba(0, 170, 255, 0.4);
-      margin-bottom: 80px;
+      margin-top: 120px;
+      margin-bottom: 10px;
+      color: #f5c15c;
+      text-shadow: 0 0 15px #f5c15c;
     }
 
-    .section {
-      margin-bottom: 80px;
+    .page-subtitle {
+      text-align: center;
+      font-size: 18px;
+      color: #ccc;
+      margin-bottom: 60px;
     }
 
-    .section-title {
-      font-size: 36px;
+    /* TOKENOMICS GRID */
+    .tokenomics-grid {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 40px;
+    }
+
+    .token-card {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 30px;
+      border-radius: 12px;
+      text-align: center;
+      border: 1px solid #111;
+      transition: 0.3s ease;
+      backdrop-filter: blur(6px);
+    }
+
+    .token-card:hover {
+      transform: translateY(-6px);
+      border-color: #00aaff;
+      box-shadow: 0 0 20px #00aaff55;
+    }
+
+    .token-title {
+      font-size: 20px;
       font-weight: 700;
       color: #f5c15c;
-      text-shadow: 0 0 12px #f5c15c;
-      margin-bottom: 20px;
-    }
-
-    .section-value {
-      font-size: 48px;
-      font-weight: 900;
-      color: #00aaff;
-      text-shadow: 0 0 20px #00aaff;
+      text-shadow: 0 0 10px #f5c15c;
       margin-bottom: 10px;
     }
 
-    .divider {
-      width: 80px;
-      height: 4px;
-      background: #f5c15c;
-      margin: 0 auto;
-      box-shadow: 0 0 10px #f5c15c;
+    .token-value {
+      font-size: 22px;
+      font-weight: 900;
+      color: #6ecbff;
+      text-shadow: 0 0 10px #6ecbff;
+      word-break: break-all;
     }
 
     /* FOOTER */
@@ -131,16 +145,8 @@
     }
 
     @media (max-width: 768px) {
-      .tokenomics h1 {
-        font-size: 36px;
-      }
-
-      .section-title {
-        font-size: 28px;
-      }
-
-      .section-value {
-        font-size: 36px;
+      .page-title {
+        font-size: 34px;
       }
     }
   </style>
@@ -158,50 +164,47 @@
       <li><a href="index.html">Home</a></li>
       <li><a href="how-to-buy.html">How to Buy</a></li>
       <li><a href="ecosystem.html">Ecosystem</a></li>
-      <li><a href="tokenomics.html">Tokenomics</a></li>
+      <li><a href="tokenomics.html" class="active">Tokenomics</a></li>
       <li><a href="roadmap.html">Roadmap</a></li>
       <li><a href="faq.html">FAQ</a></li>
     </ul>
   </nav>
 
-  <!-- TOKENOMICS SECTION -->
-  <section class="tokenomics">
-    <h1>TOKENOMICS</h1>
+  <!-- PAGE TITLE -->
+  <h1 class="page-title">TOKENOMICS</h1>
+  <p class="page-subtitle">Transparent. Zero‑tax. Built for long‑term sustainability.</p>
 
-    <div class="section">
-      <div class="section-title">Total Supply</div>
-      <div class="section-value">1,000,000,000 MVIC</div>
-      <div class="divider"></div>
+  <!-- TOKENOMICS GRID -->
+  <section class="tokenomics-grid">
+
+    <div class="token-card">
+      <div class="token-title">Total Supply</div>
+      <div class="token-value">1,000,000,000 MVIC</div>
     </div>
 
-    <div class="section">
-      <div class="section-title">Tax</div>
-      <div class="section-value">0%</div>
-      <div class="divider"></div>
+    <div class="token-card">
+      <div class="token-title">Tax</div>
+      <div class="token-value">0%</div>
     </div>
 
-    <div class="section">
-      <div class="section-title">Liquidity Burned</div>
-      <div class="section-value">100%</div>
-      <div class="divider"></div>
+    <div class="token-card">
+      <div class="token-title">Liquidity Burned</div>
+      <div class="token-value">100%</div>
     </div>
 
-    <div class="section">
-      <div class="section-title">Contract Address</div>
-      <div class="section-value">0x3c7462...85aa</div>
-      <div class="divider"></div>
+    <div class="token-card">
+      <div class="token-title">Contract Address</div>
+      <div class="token-value">0x3c7462004dd99b680b3736982a965effc7d285aa</div>
     </div>
 
-    <div class="section">
-      <div class="section-title">Deployment Hash</div>
-      <div class="section-value">0x95405e...10ffe</div>
-      <div class="divider"></div>
+    <div class="token-card">
+      <div class="token-title">Deployment Hash</div>
+      <div class="token-value">0x95405e668ab554dd2d5d1c2b85c0fab7ec3369d6366f53548a98ad3aaab10ffe</div>
     </div>
 
-    <div class="section">
-      <div class="section-title">Owner Wallet</div>
-      <div class="section-value">0x29fd8a...9865</div>
-      <div class="divider"></div>
+    <div class="token-card">
+      <div class="token-title">Owner Wallet</div>
+      <div class="token-value">0x29fd8aE0df43c52E892bA389787e3cCE91f59865</div>
     </div>
 
   </section>
@@ -213,4 +216,3 @@
 
 </body>
 </html>
-
