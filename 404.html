@@ -3,66 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Not Found - MOONVIC</title>
+    <title>404 — Page Not Found | MOONVIC</title>
 
-    <link rel="icon" type="image/png" href="assets/moonvic-logo.png" />
-    <link rel="stylesheet" href="style.css">
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            background: #000;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        /* NAVBAR */
+        nav {
+            width: 100%;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(0,0,0,0.7);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid #222;
+            backdrop-filter: blur(6px);
+        }
+
+        nav .logo {
+            font-size: 28px;
+            font-weight: 900;
+        }
+
+        nav .logo .gold {
+            color: #f5c15c;
+            text-shadow: 0 0 10px #f5c15c;
+        }
+
+        nav .logo .blue {
+            color: #00aaff;
+            text-shadow: 0 0 10px #00aaff;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.25s ease;
+        }
+
+        nav ul li a:hover {
+            color: #00aaff;
+            text-shadow: 0 0 10px #00aaff;
+        }
+
+        /* HERO */
+        .hero {
+            background-image: url('assets/images/galaxy-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 160px 20px 120px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 80px;
+            font-weight: 900;
+            background: linear-gradient(to right, #f5c15c, #00c8ff);
+            -webkit-background-clip: text;
+            color: transparent;
+            text-shadow: 0 0 30px rgba(0,200,255,0.4);
+        }
+
+        .hero p {
+            font-size: 22px;
+            color: #caaaff;
+            max-width: 800px;
+            margin: 20px auto 0;
+        }
+
+        /* BUTTON */
+        .cta-btn {
+            display: inline-block;
+            margin-top: 40px;
+            padding: 16px 40px;
+            font-size: 20px;
+            font-weight: 700;
+            border-radius: 10px;
+            background: linear-gradient(to right, #ffd86b, #00c8ff);
+            color: #000;
+            text-decoration: none;
+            box-shadow: 0 0 25px rgba(0,200,255,0.4);
+            transition: 0.25s ease;
+        }
+
+        .cta-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 35px rgba(0,200,255,0.6);
+        }
+
+        /* FOOTER */
+        footer {
+            margin-top: 120px;
+            padding: 40px;
+            text-align: center;
+            background: rgba(0,0,0,0.7);
+            border-top: 1px solid #222;
+        }
+
+        footer p {
+            color: #888;
+            font-size: 14px;
+        }
+    </style>
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <header>
-        <nav class="navbar">
-            <div class="logo">
-                <img src="assets/moonvic-logo.png" alt="MOONVIC Logo">
-            </div>
+    <!-- NAVBAR -->
+    <nav>
+        <div class="logo">
+            <span class="gold">MOON</span><span class="blue">VIC</span>
+        </div>
 
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="tokenomics.html">Tokenomics</a></li>
-                <li><a href="ecosystem.html">Ecosystem</a></li>
-                <li><a href="roadmap.html">Roadmap</a></li>
-                <li><a href="how-to-buy.html">How to Buy</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="how-to-buy.html">How to Buy</a></li>
+            <li><a href="ecosystem.html">Ecosystem</a></li>
+            <li><a href="tokenomics.html">Tokenomics</a></li>
+            <li><a href="roadmap.html">Roadmap</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="ai-founder.html">AI Founder</a></li>
+        </ul>
+    </nav>
 
-            <div class="hamburger">
-                <span></span><span></span><span></span>
-            </div>
-        </nav>
-    </header>
+    <!-- HERO -->
+    <section class="hero">
+        <h1>404</h1>
+        <p>The page you're looking for drifted into deep space.  
+           But the MOONVIC ecosystem is still right here.</p>
 
-    <!-- PAGE HEADER -->
-    <section class="page-header">
-        <h1>404 — Page Not Found</h1>
-        <p>The page you're looking for doesn't exist or has been moved.</p>
-    </section>
-
-    <!-- CONTENT -->
-    <section class="content-section">
-        <p>
-            Don’t worry — you’re still in the MOONVIC universe.  
-            Use the navigation above to return to a valid page.
-        </p>
-
-        <a class="btn" href="index.html">Return Home</a>
+        <a href="index.html" class="cta-btn">Return Home</a>
     </section>
 
     <!-- FOOTER -->
     <footer>
-        <p>© 2024 MOONVIC. All Rights Reserved.</p>
+        <p>© 2026 MOONVIC — Built by Victor Prekaj with AI</p>
     </footer>
-
-    <script>
-        const hamburger = document.querySelector('.hamburger');
-        const navLinks = document.querySelector('.nav-links');
-        hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
-    </script>
 
 </body>
 </html>
