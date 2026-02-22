@@ -70,26 +70,49 @@
             text-shadow: 0 0 10px #00aaff;
         }
 
+        /* PAGE TITLE */
+        .page-title {
+            text-align: center;
+            font-size: 42px;
+            font-weight: 900;
+            margin-top: 120px;
+            margin-bottom: 10px;
+            color: #f5c15c;
+            text-shadow: 0 0 15px #f5c15c;
+        }
+
+        .page-subtitle {
+            text-align: center;
+            font-size: 18px;
+            color: #ccc;
+            margin-bottom: 60px;
+        }
+
         /* FEATURED UTILITY */
         .featured {
-            padding: 120px 40px 80px;
-            text-shadow: 0 0 15px #00aaff;
-            margin-bottom: 20px;
+            padding: 40px;
+            text-align: center;
+            margin-bottom: 40px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 12px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            backdrop-filter: blur(6px);
         }
 
         .featured-title {
-            font-size: 42px;
+            font-size: 32px;
             font-weight: 900;
-            margin-bottom: 10px;
             color: #6ecbff;
             text-shadow: 0 0 15px #6ecbff;
+            margin-bottom: 10px;
         }
 
         .featured-desc {
             font-size: 18px;
             color: #ccc;
             line-height: 1.6;
-            max-width: 800px;
         }
 
         /* ECOSYSTEM GRID */
@@ -115,11 +138,6 @@
             box-shadow: 0 0 20px #00aaff55;
         }
 
-        .eco-icon {
-            font-size: 40px;
-            margin-bottom: 15px;
-        }
-
         .eco-title {
             font-size: 20px;
             font-weight: 700;
@@ -134,6 +152,11 @@
             line-height: 1.5;
         }
 
+        .coming-soon {
+            color: #7f5cff;
+            text-shadow: 0 0 15px #7f5cff;
+        }
+
         /* FOOTER */
         footer {
             margin-top: 120px;
@@ -146,16 +169,6 @@
         footer p {
             color: #888;
             font-size: 14px;
-        }
-
-        /* RESPONSIVE */
-        @media (max-width: 768px) {
-            .featured-title {
-                font-size: 32px;
-            }
-            .featured-desc {
-                font-size: 16px;
-            }
         }
     </style>
 </head>
@@ -181,13 +194,16 @@
         </ul>
     </nav>
 
+    <!-- PAGE TITLE -->
+    <h1 class="page-title">MOONVIC ECOSYSTEM</h1>
+    <p class="page-subtitle">A structured, transparent, zero‑tax ecosystem built for long‑term growth.</p>
+
     <!-- FEATURED UTILITY -->
     <section class="featured">
-        <div class="featured-title">MOONVIC AI Terminal</div>
+        <div class="featured-title">MOONVIC AI Terminal — LIVE</div>
         <div class="featured-desc">
-            A next‑generation AI‑powered analytics and automation hub designed to give MOONVIC holders
-            real‑time insights, trading tools, ecosystem data, and intelligent automation — all in one
-            cinematic, Web3‑native interface.
+            The core of the MOONVIC ecosystem.  
+            Real‑time analytics, automated insights, and AI‑powered tools designed to support holders and accelerate growth.
         </div>
     </section>
 
@@ -195,39 +211,33 @@
     <section class="ecosystem-grid">
 
         <div class="eco-card">
-            <div class="eco-icon">📊</div>
-            <div class="eco-title">Analytics Dashboard</div>
-            <div class="eco-desc">Real‑time charts, metrics, and ecosystem data powered by AI.</div>
+            <div class="eco-title">MOONVIC Tracker</div>
+            <div class="eco-desc coming-soon">Coming Soon</div>
         </div>
 
         <div class="eco-card">
-            <div class="eco-icon">🤖</div>
-            <div class="eco-title">AI Trading Tools</div>
-            <div class="eco-desc">Smart alerts, automated strategies, and predictive insights.</div>
+            <div class="eco-title">MOONVIC Tools</div>
+            <div class="eco-desc coming-soon">Coming Soon</div>
         </div>
 
         <div class="eco-card">
-            <div class="eco-icon">🛡️</div>
-            <div class="eco-title">Security Scanner</div>
-            <div class="eco-desc">AI‑driven contract scanning and wallet safety monitoring.</div>
+            <div class="eco-title">MOONVIC Hub</div>
+            <div class="eco-desc coming-soon">Coming Soon</div>
         </div>
 
         <div class="eco-card">
-            <div class="eco-icon">🚀</div>
-            <div class="eco-title">Launchpad Access</div>
-            <div class="eco-desc">Exclusive early access to vetted Web3 projects.</div>
+            <div class="eco-title">AI Integrations</div>
+            <div class="eco-desc coming-soon">Coming Soon</div>
         </div>
 
         <div class="eco-card">
-            <div class="eco-icon">🎁</div>
-            <div class="eco-title">Rewards Hub</div>
-            <div class="eco-desc">Earn ecosystem rewards through participation and holding.</div>
+            <div class="eco-title">Community Dashboard</div>
+            <div class="eco-desc coming-soon">Coming Soon</div>
         </div>
 
         <div class="eco-card">
-            <div class="eco-icon">🌐</div>
-            <div class="eco-title">DEX Aggregator</div>
-            <div class="eco-desc">Find the best swap rates across multiple decentralized exchanges.</div>
+            <div class="eco-title">Reinvestment Engine</div>
+            <div class="eco-desc coming-soon">Coming Soon</div>
         </div>
 
     </section>
