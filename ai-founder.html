@@ -3,17 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Founder – MOONVIC</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <title>AI Founder — MOONVIC</title>
+
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            background: #000;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        /* NAVBAR */
+        nav {
+            width: 100%;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(0,0,0,0.7);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid #222;
+            backdrop-filter: blur(6px);
+        }
+
+        nav .logo {
+            font-size: 28px;
+            font-weight: 900;
+        }
+
+        nav .logo .gold {
+            color: #f5c15c;
+            text-shadow: 0 0 10px #f5c15c;
+        }
+
+        nav .logo .blue {
+            color: #00aaff;
+            text-shadow: 0 0 10px #00aaff;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.25s ease;
+        }
+
+        nav ul li a:hover {
+            color: #00aaff;
+            text-shadow: 0 0 10px #00aaff;
+        }
+
+        /* HERO */
+        .hero {
+            background-image: url('assets/images/galaxy-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 140px 20px 100px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 58px;
+            font-weight: 900;
+            background: linear-gradient(to right, #f5c15c, #00c8ff);
+            -webkit-background-clip: text;
+            color: transparent;
+            text-shadow: 0 0 25px rgba(0,200,255,0.4);
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: #caaaff;
+            max-width: 900px;
+            margin: 20px auto 0;
+            line-height: 1.7;
+        }
+
+        /* CONTENT */
+        .content {
+            max-width: 900px;
+            margin: 80px auto;
+            padding: 0 20px;
+        }
+
+        .content h2 {
+            font-size: 32px;
+            font-weight: 800;
+            color: #ffd86b;
+            text-shadow: 0 0 12px #ffd86b;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            font-size: 18px;
+            color: #caaaff;
+            line-height: 1.7;
+            margin-bottom: 30px;
+        }
+
+        .content ul,
+        .content ol {
+            margin-left: 20px;
+            margin-bottom: 30px;
+            color: #caaaff;
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        /* FOOTER */
+        footer {
+            margin-top: 120px;
+            padding: 40px;
+            text-align: center;
+            background: rgba(0,0,0,0.7);
+            border-top: 1px solid #222;
+        }
+
+        footer p {
+            color: #888;
+            font-size: 14px;
+        }
+    </style>
 </head>
 
 <body>
 
-<!-- NAVBAR -->
-<header>
-    <nav class="navbar">
-        <div class="logo">MOONVIC</div>
-        <ul class="nav-links">
+    <!-- NAVBAR -->
+    <nav>
+        <div class="logo">
+            <span class="gold">MOON</span><span class="blue">VIC</span>
+        </div>
+
+        <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="how-to-buy.html">How to Buy</a></li>
             <li><a href="ecosystem.html">Ecosystem</a></li>
@@ -25,87 +163,85 @@
             <li><a href="ai-founder.html" class="active">AI Founder</a></li>
         </ul>
     </nav>
-</header>
 
-<!-- HERO SECTION -->
-<section class="hero-section" style="background-image: url('assets/images/galaxy-bg.jpg');">
-    <div class="hero-content">
-        <h1 class="glow-gold">AI‑POWERED FOUNDER</h1>
-        <p class="glow-blue">
-            “I am an entrepreneur who embraces cutting‑edge AI to build, innovate, and grow.
+    <!-- HERO -->
+    <section class="hero">
+        <h1>AI‑POWERED FOUNDER</h1>
+        <p>
+            “I am an entrepreneur who embraces cutting‑edge AI to build, innovate, and grow.  
             For me, AI isn't a trend — it's a powerful tool that transforms how ideas become reality.”
         </p>
-    </div>
-</section>
+    </section>
 
-<!-- MAIN CONTENT -->
-<section class="content-section">
+    <!-- MAIN CONTENT -->
+    <section class="content">
 
-    <h2 class="glow-gold">My Journey</h2>
-    <p>
-        MOONVIC began as a vision — a zero‑tax Web3 ecosystem built not on hype, but on precision,
-        speed, and real utility. I didn’t wait for permission. I built it myself. Every milestone,
-        every page, every contract — executed with AI‑powered clarity and founder energy.
-    </p>
+        <h2>My Journey</h2>
+        <p>
+            MOONVIC began as a vision — a zero‑tax Web3 ecosystem built not on hype, but on precision,  
+            speed, and real utility. I didn’t wait for permission. I built it myself. Every milestone,  
+            every page, every contract — executed with AI‑powered clarity and founder energy.
+        </p>
 
-    <h2 class="glow-gold">My Philosophy</h2>
-    <p>
-        I believe in transparency, autonomy, and frictionless execution. AI isn’t just a tool —
-        it’s my co‑founder. Together, we move fast, adapt instantly, and deliver premium outcomes.
-        I don’t chase trends. I build systems that last.
-    </p>
+        <h2>My Philosophy</h2>
+        <p>
+            I believe in transparency, autonomy, and frictionless execution. AI isn’t just a tool —  
+            it’s my co‑founder. Together, we move fast, adapt instantly, and deliver premium outcomes.  
+            I don’t chase trends. I build systems that last.
+        </p>
 
-    <h2 class="glow-gold">Why AI</h2>
-    <p>
-        AI allows me to multitask at founder speed. It helps me design, troubleshoot, and deploy
-        without bottlenecks. It’s not about replacing humans — it’s about amplifying what a disciplined
-        founder can achieve. MOONVIC is proof.
-    </p>
+        <h2>Why AI</h2>
+        <p>
+            AI allows me to multitask at founder speed. It helps me design, troubleshoot, and deploy  
+            without bottlenecks. It’s not about replacing humans — it’s about amplifying what a disciplined  
+            founder can achieve. MOONVIC is proof.
+        </p>
 
-    <h2 class="glow-gold">AI Workflow</h2>
-    <p class="glow-blue">
-        “My process is rooted in AI. I leverage state‑of‑the‑art models to design, optimize, and execute
-        each phase of the MOONVIC ecosystem. This technology is my edge — I reinvest profits back into AI
-        to drive continuous innovation.”
-    </p>
+        <h2>AI Workflow</h2>
+        <p>
+            “My process is rooted in AI. I leverage state‑of‑the‑art models to design, optimize, and execute  
+            each phase of the MOONVIC ecosystem. This technology is my edge — I reinvest profits back into AI  
+            to drive continuous innovation.”
+        </p>
 
-    <h2 class="glow-gold">Tools I Use</h2>
-    <ul>
-        <li>AI copilots for coding, design, and troubleshooting</li>
-        <li>GitHub for version control and deployment</li>
-        <li>Hardhat for smart contract development</li>
-        <li>Etherscan for verification and transparency</li>
-        <li>GPG keys for secure commit signing</li>
-        <li>Bing + Copilot for research, branding, and copywriting</li>
-    </ul>
+        <h2>Tools I Use</h2>
+        <ul>
+            <li>AI copilots for coding, design, and troubleshooting</li>
+            <li>GitHub for version control and deployment</li>
+            <li>Hardhat for smart contract development</li>
+            <li>Etherscan for verification and transparency</li>
+            <li>GPG keys for secure commit signing</li>
+            <li>Bing + Copilot for research, branding, and copywriting</li>
+        </ul>
 
-    <h2 class="glow-gold">Process & Strategy</h2>
-    <ol>
-        <li>Define the milestone</li>
-        <li>Generate assets with AI</li>
-        <li>Review, refine, and approve</li>
-        <li>Deploy with precision</li>
-        <li>Celebrate progress and reinvest</li>
-    </ol>
+        <h2>Process & Strategy</h2>
+        <ol>
+            <li>Define the milestone</li>
+            <li>Generate assets with AI</li>
+            <li>Review, refine, and approve</li>
+            <li>Deploy with precision</li>
+            <li>Celebrate progress and reinvest</li>
+        </ol>
 
-    <h2 class="glow-gold">Reinvestment Loop</h2>
-    <p>
-        Profits from MOONVIC are reinvested into AI tools, infrastructure, and ecosystem growth.
-        This loop powers continuous innovation and keeps the project lean, fast, and founder‑led.
-    </p>
+        <h2>Reinvestment Loop</h2>
+        <p>
+            Profits from MOONVIC are reinvested into AI tools, infrastructure, and ecosystem growth.  
+            This loop powers continuous innovation and keeps the project lean, fast, and founder‑led.
+        </p>
 
-    <h2 class="glow-gold">Vision & Future</h2>
-    <p>
-        MOONVIC is expanding into a full ecosystem: staking, governance, analytics, and cross‑chain tools.
-        My goal is to build a brand that lasts — cinematic, trusted, and powered by real utility.
-        The future is already in motion.
-    </p>
+        <h2>Vision & Future</h2>
+        <p>
+            MOONVIC is expanding into a full ecosystem: staking, governance, analytics, and cross‑chain tools.  
+            My goal is to build a brand that lasts — cinematic, trusted, and powered by real utility.  
+            The future is already in motion.
+        </p>
 
-</section>
+    </section>
 
-<footer>
-    <p>© 2026 MOONVIC — Built by Victor Prekaj with AI</p>
-</footer>
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 MOONVIC — Built by Victor Prekaj with AI</p>
+    </footer>
 
 </body>
 </html>
